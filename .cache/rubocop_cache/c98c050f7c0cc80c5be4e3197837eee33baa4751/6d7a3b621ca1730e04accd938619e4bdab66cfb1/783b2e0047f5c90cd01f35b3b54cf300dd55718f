@@ -1,0 +1,1 @@
+[{"severity":"convention","location":{"begin_pos":1564,"end_pos":1589},"message":"Style/RedundantParentheses: Don't use parentheses around a method call.","cop_name":"Style/RedundantParentheses","status":"uncorrected"}]

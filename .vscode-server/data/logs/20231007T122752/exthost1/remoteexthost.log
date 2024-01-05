@@ -1,0 +1,48 @@
+2023-10-07 12:27:55.320 [info] Extension host with pid 1095 started
+2023-10-07 12:27:55.324 [error] Error: EEXIST: file already exists, open '/home/mattmcgovern/.vscode-server/data/User/workspaceStorage/978414b3e6b93de2ade1dbad7c977327/vscode.lock'
+2023-10-07 12:27:55.340 [info] Lock '/home/mattmcgovern/.vscode-server/data/User/workspaceStorage/978414b3e6b93de2ade1dbad7c977327/vscode.lock': Could not acquire lock, checking if the file is stale.
+2023-10-07 12:27:55.357 [info] ExtensionService#_doActivateExtension GrapeCity.gc-excelviewer, startup: false, activationEvent: 'onLanguage:plaintext'
+2023-10-07 12:27:55.357 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2023-10-07 12:27:55.357 [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
+2023-10-07 12:27:55.441 [info] Lock '/home/mattmcgovern/.vscode-server/data/User/workspaceStorage/978414b3e6b93de2ade1dbad7c977327/vscode.lock': The pid 1129 appears to be gone.
+2023-10-07 12:27:55.441 [info] Lock '/home/mattmcgovern/.vscode-server/data/User/workspaceStorage/978414b3e6b93de2ade1dbad7c977327/vscode.lock': Deleting a stale lock.
+2023-10-07 12:27:55.459 [info] Lock '/home/mattmcgovern/.vscode-server/data/User/workspaceStorage/978414b3e6b93de2ade1dbad7c977327/vscode.lock': Lock acquired.
+2023-10-07 12:27:55.916 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2023-10-07 12:27:55.916 [info] ExtensionService#_doActivateExtension christian-kohler.path-intellisense, startup: true, activationEvent: '*'
+2023-10-07 12:27:55.916 [info] ExtensionService#_doActivateExtension ms-vscode.sublime-keybindings, startup: true, activationEvent: '*'
+2023-10-07 12:27:55.916 [info] ExtensionService#_doActivateExtension oderwat.indent-rainbow, startup: true, activationEvent: '*'
+2023-10-07 12:27:55.917 [info] ExtensionService#_doActivateExtension WallabyJs.quokka-vscode, startup: true, activationEvent: '*'
+2023-10-07 12:27:56.116 [info] ExtensionService#_doActivateExtension ms-vsliveshare.vsliveshare, startup: false, activationEvent: 'api', root cause: WallabyJs.quokka-vscode
+2023-10-07 12:27:56.739 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2023-10-07 12:27:56.739 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-10-07 12:27:57.131 [info] Eager extensions activated
+2023-10-07 12:27:57.132 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2023-10-07 12:27:57.133 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2023-10-07 12:27:57.134 [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint, startup: false, activationEvent: 'onStartupFinished'
+2023-10-07 12:27:57.134 [info] ExtensionService#_doActivateExtension GitHub.copilot, startup: false, activationEvent: 'onStartupFinished'
+2023-10-07 12:27:57.134 [info] ExtensionService#_doActivateExtension GitHub.copilot-chat, startup: false, activationEvent: 'onStartupFinished'
+2023-10-07 12:27:57.135 [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: false, activationEvent: 'onStartupFinished'
+2023-10-07 12:27:57.135 [info] ExtensionService#_doActivateExtension voldemortensen.rainbow-tags, startup: false, activationEvent: 'onStartupFinished'
+2023-10-07 12:27:58.907 [info] ExtensionService#_doActivateExtension GitHub.vscode-pull-request-github, startup: false, activationEvent: 'onStartupFinished'
+2023-10-07 12:28:01.020 [error] Error: Git model not found
+    at s.getAPI (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/extensions/git/dist/main.js:2:1188586)
+    at new Hl (/home/mattmcgovern/.vscode-server/extensions/github.vscode-pull-request-github-0.72.0/dist/extension.js:1772:27216)
+    at Function.createProvider (/home/mattmcgovern/.vscode-server/extensions/github.vscode-pull-request-github-0.72.0/dist/extension.js:1772:27861)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at mg (/home/mattmcgovern/.vscode-server/extensions/github.vscode-pull-request-github-0.72.0/dist/extension.js:1772:33925)
+    at Mp (/home/mattmcgovern/.vscode-server/extensions/github.vscode-pull-request-github-0.72.0/dist/extension.js:1818:5584)
+    at M0 (/home/mattmcgovern/.vscode-server/extensions/github.vscode-pull-request-github-0.72.0/dist/extension.js:1818:6689)
+2023-10-12 15:09:45.876 [error] Error: getaddrinfo EAI_AGAIN default.exp-tas.com
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:107:26)
+2023-10-12 15:39:31.487 [error] Error: getaddrinfo EAI_AGAIN default.exp-tas.com
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:107:26)
+2023-10-13 21:05:06.132 [error] Error: getaddrinfo EAI_AGAIN default.exp-tas.com
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:107:26)
+2023-10-13 21:35:06.104 [error] Error: getaddrinfo EAI_AGAIN default.exp-tas.com
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:107:26)
+2023-10-13 22:05:06.111 [error] Error: getaddrinfo EAI_AGAIN default.exp-tas.com
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:107:26)
+2023-10-13 22:35:06.154 [error] Error: getaddrinfo EAI_AGAIN default.exp-tas.com
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:107:26)
+2023-10-13 23:05:06.140 [error] Error: getaddrinfo EAI_AGAIN default.exp-tas.com
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:107:26)

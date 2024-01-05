@@ -1,0 +1,59 @@
+2023-09-17 15:26:50.630 [info] 
+
+
+
+
+2023-09-17 15:26:50.660 [info] Extension host agent started.
+2023-09-17 15:26:50.877 [info] [127.0.0.1][12989bc0][ManagementConnection] New connection established.
+2023-09-17 15:26:51.747 [info] [127.0.0.1][a3fd4002][ExtensionHostConnection] New connection established.
+2023-09-17 15:26:53.208 [info] [127.0.0.1][a3fd4002][ExtensionHostConnection] <57656> Launched Extension Host Process.
+2023-09-17 15:27:08.218 [info] [127.0.0.1][12989bc0][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2023-09-17 15:27:08.219 [error] Error: Throttler is disposed
+    at c.queue (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:13632)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:15216
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:14852
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at listOnTimeout (node:internal/timers:538:9)
+    at process.processTimers (node:internal/timers:512:7)
+2023-09-17 15:27:08.222 [error] Error: Throttler is disposed
+    at c.queue (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:13632)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:15216
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:14852
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at listOnTimeout (node:internal/timers:538:9)
+    at process.processTimers (node:internal/timers:512:7)
+2023-09-17 15:27:08.222 [error] Error: Throttler is disposed
+    at c.queue (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:13632)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:15216
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:14852
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at listOnTimeout (node:internal/timers:538:9)
+    at process.processTimers (node:internal/timers:512:7)
+2023-09-17 15:27:08.222 [error] Error: Throttler is disposed
+    at c.queue (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:13632)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:15216
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:14852
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at listOnTimeout (node:internal/timers:538:9)
+    at process.processTimers (node:internal/timers:512:7)
+2023-09-17 15:27:08.222 [error] Error: Throttler is disposed
+    at c.queue (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:13632)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:15216
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:14852
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at listOnTimeout (node:internal/timers:538:9)
+    at process.processTimers (node:internal/timers:512:7)
+2023-09-17 15:27:08.222 [error] Error: Throttler is disposed
+    at c.queue (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:13632)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:15216
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:14852
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at listOnTimeout (node:internal/timers:538:9)
+    at process.processTimers (node:internal/timers:512:7)
+2023-09-17 15:27:08.222 [error] Error: Throttler is disposed
+    at c.queue (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:13632)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:15216
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:14852
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at listOnTimeout (node:internal/timers:538:9)
+    at process.processTimers (node:internal/timers:512:7)

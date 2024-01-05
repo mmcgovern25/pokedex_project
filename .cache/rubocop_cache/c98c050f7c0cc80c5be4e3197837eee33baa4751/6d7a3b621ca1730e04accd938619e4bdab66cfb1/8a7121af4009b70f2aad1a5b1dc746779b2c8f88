@@ -1,0 +1,1 @@
+[{"severity":"convention","location":{"begin_pos":18,"end_pos":20},"message":"Style/RedundantCurrentDirectoryInPath: Remove the redundant current directory path.","cop_name":"Style/RedundantCurrentDirectoryInPath","status":"uncorrected"}]

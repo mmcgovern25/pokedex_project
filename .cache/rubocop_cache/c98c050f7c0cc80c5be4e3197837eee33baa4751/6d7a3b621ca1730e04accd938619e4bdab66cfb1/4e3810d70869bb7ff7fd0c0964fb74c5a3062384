@@ -1,0 +1,1 @@
+[{"severity":"convention","location":{"begin_pos":139,"end_pos":140},"message":"Layout/SpaceBeforeComma: Space found before comma.","cop_name":"Layout/SpaceBeforeComma","status":"uncorrected"}]

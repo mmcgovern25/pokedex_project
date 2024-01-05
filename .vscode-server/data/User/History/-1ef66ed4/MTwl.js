@@ -1,0 +1,12 @@
+import { Controller } from "@hotwired/stimulus";
+
+export default class extends Controller {
+  connect() {
+    console.log("Oi! ta bom?");
+  }
+
+  copy() {
+    this.element.setAttribute("copy", "");
+    console.log('LOOK AT ME IM COPY');
+  }
+}

@@ -1,0 +1,1 @@
+[{"severity":"warning","location":{"begin_pos":0,"end_pos":22},"message":"Lint/RequireRelativeSelfPath: Remove the `require_relative` that requires itself.","cop_name":"Lint/RequireRelativeSelfPath","status":"uncorrected"}]

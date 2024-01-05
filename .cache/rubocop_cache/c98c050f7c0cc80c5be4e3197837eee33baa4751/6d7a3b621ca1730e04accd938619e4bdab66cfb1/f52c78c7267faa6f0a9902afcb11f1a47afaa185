@@ -1,0 +1,1 @@
+[{"severity":"warning","location":{"begin_pos":1005,"end_pos":1032},"message":"Lint/RedundantCopEnableDirective: Unnecessary enabling of Lint/LiteralInInterpolation.","cop_name":"Lint/RedundantCopEnableDirective","status":"uncorrected"}]

@@ -1,0 +1,40 @@
+2023-10-07 10:42:55.039 [info] 
+
+
+
+
+2023-10-07 10:42:55.099 [info] Extension host agent started.
+2023-10-07 10:42:55.284 [info] [127.0.0.1][774c523c][ManagementConnection] New connection established.
+2023-10-07 10:42:55.678 [info] Deleted uninstalled extension from disk emmanuelbeziat.vscode-great-icons /home/mattmcgovern/.vscode-server/extensions/emmanuelbeziat.vscode-great-icons-2.1.98
+2023-10-07 10:42:55.681 [info] Deleted uninstalled extension from disk github.copilot /home/mattmcgovern/.vscode-server/extensions/github.copilot-1.111.404
+2023-10-07 10:42:55.682 [info] Deleted uninstalled extension from disk github.copilot /home/mattmcgovern/.vscode-server/extensions/github.copilot-1.114.426
+2023-10-07 10:42:55.684 [info] Deleted uninstalled extension from disk ms-vscode-remote.remote-wsl /home/mattmcgovern/.vscode-server/extensions/ms-vscode-remote.remote-wsl-0.81.3
+2023-10-07 10:42:55.685 [info] Deleted uninstalled extension from disk wallabyjs.quokka-vscode /home/mattmcgovern/.vscode-server/extensions/wallabyjs.quokka-vscode-1.0.564
+2023-10-07 10:42:56.215 [info] [127.0.0.1][439980c7][ExtensionHostConnection] New connection established.
+2023-10-07 10:42:58.434 [info] [127.0.0.1][439980c7][ExtensionHostConnection] <1129> Launched Extension Host Process.
+2023-10-07 10:43:01.339 [info] Getting Manifest... github.copilot
+2023-10-07 10:43:01.340 [info] Getting Manifest... ms-vscode-remote.remote-wsl
+2023-10-07 10:43:01.340 [info] Getting Manifest... wallabyjs.quokka-vscode
+2023-10-07 10:43:01.596 [info] Installing extension: ms-vscode-remote.remote-wsl
+2023-10-07 10:43:01.610 [info] Installing extension: github.copilot
+2023-10-07 10:43:01.696 [info] Installing extension: wallabyjs.quokka-vscode
+2023-10-07 10:43:04.137 [warning] Extension signature verification failed with error 'ENOENT': ms-vscode-remote.remote-wsl
+2023-10-07 10:43:04.398 [info] Extracted extension to file:///home/mattmcgovern/.vscode-server/extensions/ms-vscode-remote.remote-wsl-0.81.7: ms-vscode-remote.remote-wsl
+2023-10-07 10:43:04.407 [info] Renamed to /home/mattmcgovern/.vscode-server/extensions/ms-vscode-remote.remote-wsl-0.81.7
+2023-10-07 10:43:04.412 [info] Extracting extension completed. ms-vscode-remote.remote-wsl
+2023-10-07 10:43:04.424 [info] Extension installed successfully: ms-vscode-remote.remote-wsl
+2023-10-07 10:43:04.431 [info] Marked extension as uninstalled ms-vscode-remote.remote-wsl-0.81.4
+2023-10-07 10:43:12.818 [warning] Extension signature verification failed with error 'ENOENT': github.copilot
+2023-10-07 10:43:13.218 [info] Extracted extension to file:///home/mattmcgovern/.vscode-server/extensions/github.copilot-1.123.0: github.copilot
+2023-10-07 10:43:13.233 [info] Renamed to /home/mattmcgovern/.vscode-server/extensions/github.copilot-1.123.0
+2023-10-07 10:43:13.236 [info] Extracting extension completed. github.copilot
+2023-10-07 10:43:13.245 [info] Extension installed successfully: github.copilot
+2023-10-07 10:43:13.251 [info] Marked extension as uninstalled github.copilot-1.115.430
+2023-10-07 10:43:26.926 [warning] Extension signature verification failed with error 'ENOENT': wallabyjs.quokka-vscode
+2023-10-07 10:43:29.812 [info] Extracted extension to file:///home/mattmcgovern/.vscode-server/extensions/wallabyjs.quokka-vscode-1.0.569: wallabyjs.quokka-vscode
+2023-10-07 10:43:29.855 [info] Renamed to /home/mattmcgovern/.vscode-server/extensions/wallabyjs.quokka-vscode-1.0.569
+2023-10-07 10:43:29.857 [info] Extracting extension completed. wallabyjs.quokka-vscode
+2023-10-07 10:43:29.865 [info] Extension installed successfully: wallabyjs.quokka-vscode
+2023-10-07 10:43:29.872 [info] Marked extension as uninstalled wallabyjs.quokka-vscode-1.0.565
+2023-10-07 11:43:32.880 [info] [127.0.0.1][774c523c][ManagementConnection] The client has reconnected.
+2023-10-07 11:43:33.930 [info] [127.0.0.1][439980c7][ExtensionHostConnection] The client has reconnected.

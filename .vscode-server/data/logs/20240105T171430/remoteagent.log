@@ -1,0 +1,53 @@
+2024-01-05 17:14:30.377 [info] 
+
+
+
+
+2024-01-05 17:14:30.400 [info] Extension host agent started.
+2024-01-05 17:14:30.505 [info] [127.0.0.1][722516d5][ManagementConnection] New connection established.
+2024-01-05 17:14:30.520 [info] Deleted uninstalled extension from disk github.copilot /home/mattmcgovern/.vscode-server/extensions/github.copilot-1.127.0
+2024-01-05 17:14:30.831 [info] [127.0.0.1][342ae06e][ExtensionHostConnection] New connection established.
+2024-01-05 17:14:32.111 [info] [127.0.0.1][342ae06e][ExtensionHostConnection] <5411> Launched Extension Host Process.
+2024-01-05 17:14:33.522 [info] [127.0.0.1][722516d5][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2024-01-05 17:14:33.525 [error] Error: Throttler is disposed
+    at c.queue (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:13632)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:15216
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:14852
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at listOnTimeout (node:internal/timers:538:9)
+    at process.processTimers (node:internal/timers:512:7)
+2024-01-05 17:14:33.530 [error] Error: Throttler is disposed
+    at c.queue (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:13632)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:15216
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:14852
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at listOnTimeout (node:internal/timers:538:9)
+    at process.processTimers (node:internal/timers:512:7)
+2024-01-05 17:14:33.531 [error] Error: Throttler is disposed
+    at c.queue (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:13632)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:15216
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:14852
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at listOnTimeout (node:internal/timers:538:9)
+    at process.processTimers (node:internal/timers:512:7)
+2024-01-05 17:14:33.532 [error] Error: Throttler is disposed
+    at c.queue (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:13632)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:15216
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:14852
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at listOnTimeout (node:internal/timers:538:9)
+    at process.processTimers (node:internal/timers:512:7)
+2024-01-05 17:14:33.533 [error] Error: Throttler is disposed
+    at c.queue (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:13632)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:15216
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:14852
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at listOnTimeout (node:internal/timers:538:9)
+    at process.processTimers (node:internal/timers:512:7)
+2024-01-05 17:14:33.534 [error] Error: Throttler is disposed
+    at c.queue (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:13632)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:15216
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:14852
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at listOnTimeout (node:internal/timers:538:9)
+    at process.processTimers (node:internal/timers:512:7)

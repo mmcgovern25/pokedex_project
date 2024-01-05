@@ -1,0 +1,89 @@
+2023-09-15 10:11:21.125 [info] 
+
+
+
+
+2023-09-15 10:11:21.140 [info] Extension host agent started.
+2023-09-15 10:11:21.352 [info] [127.0.0.1][1eeb34fb][ManagementConnection] New connection established.
+2023-09-15 10:11:22.604 [info] [127.0.0.1][6c156950][ExtensionHostConnection] New connection established.
+2023-09-15 10:11:23.348 [info] [127.0.0.1][6c156950][ExtensionHostConnection] <10004> Launched Extension Host Process.
+2023-09-15 10:11:46.182 [info] [127.0.0.1][6c156950][ExtensionHostConnection] <10004> [0mGET /favicon.ico [33m404[0m 2.550 ms - 150[0m
+
+2023-09-15 10:54:35.857 [info] [127.0.0.1][6c156950][ExtensionHostConnection] The client has reconnected.
+2023-09-15 10:54:36.042 [info] [127.0.0.1][1eeb34fb][ManagementConnection] The client has reconnected.
+2023-09-15 11:30:40.014 [info] [127.0.0.1][1eeb34fb][ManagementConnection] The client has reconnected.
+2023-09-15 11:30:40.240 [info] [127.0.0.1][6c156950][ExtensionHostConnection] The client has reconnected.
+2023-09-15 11:47:31.281 [info] [127.0.0.1][1eeb34fb][ManagementConnection] The client has reconnected.
+2023-09-15 11:47:31.540 [info] [127.0.0.1][6c156950][ExtensionHostConnection] The client has reconnected.
+2023-09-15 11:53:39.434 [info] [127.0.0.1][6c156950][ExtensionHostConnection] The client has reconnected.
+2023-09-15 11:53:39.711 [info] [127.0.0.1][1eeb34fb][ManagementConnection] The client has reconnected.
+2023-09-15 12:01:55.993 [info] [127.0.0.1][1eeb34fb][ManagementConnection] The client has reconnected.
+2023-09-15 12:01:56.218 [info] [127.0.0.1][6c156950][ExtensionHostConnection] The client has reconnected.
+2023-09-15 12:07:30.104 [info] [127.0.0.1][6c156950][ExtensionHostConnection] The client has reconnected.
+2023-09-15 12:07:30.341 [info] [127.0.0.1][1eeb34fb][ManagementConnection] The client has reconnected.
+2023-09-15 12:20:33.157 [info] [127.0.0.1][6c156950][ExtensionHostConnection] The client has reconnected.
+2023-09-15 12:20:33.558 [info] [127.0.0.1][1eeb34fb][ManagementConnection] The client has reconnected.
+2023-09-16 11:00:52.437 [info] [127.0.0.1][6c156950][ExtensionHostConnection] The client has reconnected.
+2023-09-16 11:00:52.890 [info] [127.0.0.1][1eeb34fb][ManagementConnection] The client has reconnected.
+2023-09-16 14:55:10.077 [info] [127.0.0.1][1eeb34fb][ManagementConnection] The client has reconnected.
+2023-09-16 14:55:10.411 [info] [127.0.0.1][6c156950][ExtensionHostConnection] The client has reconnected.
+2023-09-17 12:09:14.463 [info] [127.0.0.1][6c156950][ExtensionHostConnection] The client has reconnected.
+2023-09-17 12:09:14.747 [info] [127.0.0.1][1eeb34fb][ManagementConnection] The client has reconnected.
+2023-09-17 12:10:04.524 [info] [127.0.0.1][6c156950][ExtensionHostConnection] The client has reconnected.
+2023-09-17 12:10:05.018 [info] [127.0.0.1][1eeb34fb][ManagementConnection] The client has reconnected.
+2023-09-17 13:10:37.439 [info] [127.0.0.1][1eeb34fb][ManagementConnection] The client has reconnected.
+2023-09-17 13:10:37.841 [info] [127.0.0.1][6c156950][ExtensionHostConnection] The client has reconnected.
+2023-09-17 14:31:47.076 [info] [127.0.0.1][1eeb34fb][ManagementConnection] The client has reconnected.
+2023-09-17 14:31:47.403 [info] [127.0.0.1][6c156950][ExtensionHostConnection] The client has reconnected.
+2023-09-17 15:10:02.555 [info] [127.0.0.1][6c156950][ExtensionHostConnection] The client has reconnected.
+2023-09-17 15:10:02.843 [info] [127.0.0.1][1eeb34fb][ManagementConnection] The client has reconnected.
+2023-09-17 15:26:39.849 [info] [127.0.0.1][1eeb34fb][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2023-09-17 15:26:39.937 [error] Error: Throttler is disposed
+    at c.queue (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:13632)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:15216
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:14852
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at listOnTimeout (node:internal/timers:538:9)
+    at process.processTimers (node:internal/timers:512:7)
+2023-09-17 15:26:39.961 [error] Error: Throttler is disposed
+    at c.queue (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:13632)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:15216
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:14852
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at listOnTimeout (node:internal/timers:538:9)
+    at process.processTimers (node:internal/timers:512:7)
+2023-09-17 15:26:39.962 [error] Error: Throttler is disposed
+    at c.queue (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:13632)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:15216
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:14852
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at listOnTimeout (node:internal/timers:538:9)
+    at process.processTimers (node:internal/timers:512:7)
+2023-09-17 15:26:39.964 [error] Error: Throttler is disposed
+    at c.queue (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:13632)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:15216
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:14852
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at listOnTimeout (node:internal/timers:538:9)
+    at process.processTimers (node:internal/timers:512:7)
+2023-09-17 15:26:39.965 [error] Error: Throttler is disposed
+    at c.queue (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:13632)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:15216
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:14852
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at listOnTimeout (node:internal/timers:538:9)
+    at process.processTimers (node:internal/timers:512:7)
+2023-09-17 15:26:39.965 [error] Error: Throttler is disposed
+    at c.queue (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:13632)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:15216
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:14852
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at listOnTimeout (node:internal/timers:538:9)
+    at process.processTimers (node:internal/timers:512:7)
+2023-09-17 15:26:39.966 [error] Error: Throttler is disposed
+    at c.queue (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:13632)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:15216
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/server/node/server.main.js:70:14852
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at listOnTimeout (node:internal/timers:538:9)
+    at process.processTimers (node:internal/timers:512:7)

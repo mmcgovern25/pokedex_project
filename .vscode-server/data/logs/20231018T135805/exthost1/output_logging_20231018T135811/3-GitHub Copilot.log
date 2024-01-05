@@ -1,0 +1,2 @@
+[INFO] [auth] [2023-10-18T16:58:17.898Z] Invalid copilot token: missing token: 403 
+[ERROR] [default] [2023-10-18T16:58:17.904Z] Extension activation failed: "No access to GitHub Copilot found. You are currently logged in as mmcgovern25."

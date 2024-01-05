@@ -1,0 +1,399 @@
+2024-01-05 17:14:32.553 [info] Extension host with pid 5411 started
+2024-01-05 17:14:32.562 [error] Error: EEXIST: file already exists, open '/home/mattmcgovern/.vscode-server/data/User/workspaceStorage/978414b3e6b93de2ade1dbad7c977327/vscode.lock'
+2024-01-05 17:14:32.572 [info] Lock '/home/mattmcgovern/.vscode-server/data/User/workspaceStorage/978414b3e6b93de2ade1dbad7c977327/vscode.lock': Could not acquire lock, checking if the file is stale.
+2024-01-05 17:14:32.575 [info] Lock '/home/mattmcgovern/.vscode-server/data/User/workspaceStorage/978414b3e6b93de2ade1dbad7c977327/vscode.lock': The pid 1154 appears to be gone.
+2024-01-05 17:14:32.575 [info] Lock '/home/mattmcgovern/.vscode-server/data/User/workspaceStorage/978414b3e6b93de2ade1dbad7c977327/vscode.lock': Deleting a stale lock.
+2024-01-05 17:14:32.592 [info] Lock '/home/mattmcgovern/.vscode-server/data/User/workspaceStorage/978414b3e6b93de2ade1dbad7c977327/vscode.lock': Lock acquired.
+2024-01-05 17:14:32.659 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-01-05 17:14:32.661 [info] ExtensionService#_doActivateExtension christian-kohler.path-intellisense, startup: true, activationEvent: '*'
+2024-01-05 17:14:32.662 [info] ExtensionService#_doActivateExtension ms-vscode.sublime-keybindings, startup: true, activationEvent: '*'
+2024-01-05 17:14:32.663 [info] ExtensionService#_doActivateExtension oderwat.indent-rainbow, startup: true, activationEvent: '*'
+2024-01-05 17:14:32.663 [info] ExtensionService#_doActivateExtension WallabyJs.quokka-vscode, startup: true, activationEvent: '*'
+2024-01-05 17:14:32.727 [info] ExtensionService#_doActivateExtension vscode.npm, startup: true, activationEvent: 'workspaceContains:package.json'
+2024-01-05 17:14:32.763 [info] ExtensionService#_doActivateExtension vscode.tunnel-forwarding, startup: false, activationEvent: 'onTunnel'
+2024-01-05 17:14:32.912 [info] ExtensionService#_doActivateExtension ms-vsliveshare.vsliveshare, startup: false, activationEvent: 'api', root cause: WallabyJs.quokka-vscode
+2024-01-05 17:14:33.318 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-01-05 17:14:33.318 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-01-05 17:14:33.610 [info] Extension host terminating: received terminate message from renderer
+2024-01-05 17:14:33.614 [info] Lock '/home/mattmcgovern/.vscode-server/data/User/workspaceStorage/978414b3e6b93de2ade1dbad7c977327/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2024-01-05 17:14:33.624 [error] ProxyResolver#resolveProxy undefined Canceled: Canceled
+	at Object.I [as $4] (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:10:1032)
+	at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:117:7647
+	at Array.forEach (<anonymous>)
+	at i.dispose (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:117:7612)
+	at n.terminate (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:7821)
+	at o.terminate (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:123:1513)
+	at D (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:136:9800)
+	at n.value (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:136:7847)
+	at m.w (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:63:1902)
+	at m.fire (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:63:2119)
+	at v.fire (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:79:13940)
+	at s.z (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:79:17005)
+	at n.value (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:79:15457)
+	at m.w (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:63:1902)
+	at m.fire (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:63:2119)
+	at n.acceptChunk (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:79:11714)
+	at n.value (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:79:11001)
+	at m.w (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:63:1902)
+	at m.fire (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:63:2119)
+	at m.u (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:133:19093)
+	at m.acceptFrame (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:133:18899)
+	at a.l (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:133:17532)
+	at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:133:14879
+	at Socket.p (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:133:12793)
+	at Socket.emit (node:events:513:28)
+	at addChunk (node:internal/streams/readable:324:12)
+	at readableAddChunk (node:internal/streams/readable:297:9)
+	at Readable.push (node:internal/streams/readable:234:10)
+	at TCP.onStreamRead (node:internal/stream_base_commons:190:23) 
+2024-01-05 17:14:33.625 [error] ProxyResolver#resolveProxy undefined Canceled: Canceled
+	at Object.I [as $4] (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:10:1032)
+	at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:117:7647
+	at Array.forEach (<anonymous>)
+	at i.dispose (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:117:7612)
+	at n.terminate (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:7821)
+	at o.terminate (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:123:1513)
+	at D (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:136:9800)
+	at n.value (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:136:7847)
+	at m.w (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:63:1902)
+	at m.fire (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:63:2119)
+	at v.fire (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:79:13940)
+	at s.z (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:79:17005)
+	at n.value (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:79:15457)
+	at m.w (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:63:1902)
+	at m.fire (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:63:2119)
+	at n.acceptChunk (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:79:11714)
+	at n.value (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:79:11001)
+	at m.w (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:63:1902)
+	at m.fire (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:63:2119)
+	at m.u (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:133:19093)
+	at m.acceptFrame (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:133:18899)
+	at a.l (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:133:17532)
+	at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:133:14879
+	at Socket.p (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:133:12793)
+	at Socket.emit (node:events:513:28)
+	at addChunk (node:internal/streams/readable:324:12)
+	at readableAddChunk (node:internal/streams/readable:297:9)
+	at Readable.push (node:internal/streams/readable:234:10)
+	at TCP.onStreamRead (node:internal/stream_base_commons:190:23) 
+2024-01-05 17:14:33.629 [error] Canceled: Canceled
+	at Object.I [as $4] (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:10:1032)
+	at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:117:7647
+	at Array.forEach (<anonymous>)
+	at i.dispose (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:117:7612)
+	at n.terminate (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:7821)
+	at o.terminate (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:123:1513)
+	at D (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:136:9800)
+	at n.value (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:136:7847)
+	at m.w (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:63:1902)
+	at m.fire (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:63:2119)
+	at v.fire (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:79:13940)
+	at s.z (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:79:17005)
+	at n.value (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:79:15457)
+	at m.w (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:63:1902)
+	at m.fire (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:63:2119)
+	at n.acceptChunk (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:79:11714)
+	at n.value (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:79:11001)
+	at m.w (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:63:1902)
+	at m.fire (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:63:2119)
+	at m.u (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:133:19093)
+	at m.acceptFrame (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:133:18899)
+	at a.l (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:133:17532)
+	at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:133:14879
+	at Socket.p (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:133:12793)
+	at Socket.emit (node:events:513:28)
+	at addChunk (node:internal/streams/readable:324:12)
+	at readableAddChunk (node:internal/streams/readable:297:9)
+	at Readable.push (node:internal/streams/readable:234:10)
+	at TCP.onStreamRead (node:internal/stream_base_commons:190:23) setContext undefined
+2024-01-05 17:14:33.712 [error] Canceled: Canceled
+	at new h (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:57382)
+	at i.O (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:117:10850)
+	at j.<computed>.T.charCodeAt.j.<computed> (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:117:8289)
+	at r.g (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:82208)
+	at r.executeCommand (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:81646)
+	at u.registerCommand.description (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:80967)
+	at r.h (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:82744)
+	at r.g (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:81739)
+	at r.executeCommand (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:81646)
+	at Object.executeCommand (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:123:21247)
+	at Object.dispose (/home/mattmcgovern/.vscode-server/extensions/wallabyjs.quokka-vscode-1.0.572/dist/index.js:6:73930)
+	at /home/mattmcgovern/.vscode-server/extensions/wallabyjs.quokka-vscode-1.0.572/dist/index.js:6:13143
+	at Array.forEach (<anonymous>)
+	at t.exports.dispose (/home/mattmcgovern/.vscode-server/extensions/wallabyjs.quokka-vscode-1.0.572/dist/index.js:6:13130)
+	at P.deactivate (/home/mattmcgovern/.vscode-server/extensions/wallabyjs.quokka-vscode-1.0.572/dist/index.js:6:75197)
+	at Object.dispose (/home/mattmcgovern/.vscode-server/extensions/wallabyjs.quokka-vscode-1.0.572/dist/index.js:6:1096)
+	at /home/mattmcgovern/.vscode-server/extensions/wallabyjs.quokka-vscode-1.0.572/dist/index.js:6:13143
+	at Array.forEach (<anonymous>)
+	at t.exports.dispose (/home/mattmcgovern/.vscode-server/extensions/wallabyjs.quokka-vscode-1.0.572/dist/index.js:6:13130)
+	at h.deactivate (/home/mattmcgovern/.vscode-server/extensions/wallabyjs.quokka-vscode-1.0.572/dist/index.js:6:3331)
+	at Object.dispose (/home/mattmcgovern/.vscode-server/extensions/wallabyjs.quokka-vscode-1.0.572/dist/index.js:6:3406)
+	at k (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:13:11730)
+	at n.Z (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:9652)
+	at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:7585
+	at Array.map (<anonymous>)
+	at n.S (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:7572)
+	at n.terminate (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:7844)
+	at o.terminate (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:123:1513)
+	at D (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:136:9800)
+	at n.value (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:136:7847)
+	at m.w (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:63:1902)
+	at m.fire (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:63:2119)
+	at v.fire (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:79:13940)
+	at s.z (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:79:17005)
+	at n.value (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:79:15457)
+	at m.w (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:63:1902)
+	at m.fire (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:63:2119)
+	at n.acceptChunk (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:79:11714)
+	at n.value (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:79:11001)
+	at m.w (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:63:1902)
+	at m.fire (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:63:2119)
+	at m.u (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:133:19093)
+	at m.acceptFrame (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:133:18899)
+	at a.l (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:133:17532)
+	at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:133:14879
+	at Socket.p (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:133:12793)
+	at Socket.emit (node:events:513:28)
+	at addChunk (node:internal/streams/readable:324:12)
+	at readableAddChunk (node:internal/streams/readable:297:9)
+	at Readable.push (node:internal/streams/readable:234:10)
+	at TCP.onStreamRead (node:internal/stream_base_commons:190:23) setContext undefined
+2024-01-05 17:14:33.738 [info] Eager extensions activated
+2024-01-05 17:14:33.739 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-01-05 17:14:33.739 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-01-05 17:14:33.740 [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint, startup: false, activationEvent: 'onStartupFinished'
+2024-01-05 17:14:33.740 [info] ExtensionService#_doActivateExtension GitHub.copilot, startup: false, activationEvent: 'onStartupFinished'
+2024-01-05 17:14:33.740 [info] ExtensionService#_doActivateExtension GitHub.copilot-chat, startup: false, activationEvent: 'onStartupFinished'
+2024-01-05 17:14:33.741 [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: false, activationEvent: 'onStartupFinished'
+2024-01-05 17:14:33.741 [info] ExtensionService#_doActivateExtension voldemortensen.rainbow-tags, startup: false, activationEvent: 'onStartupFinished'
+2024-01-05 17:14:34.053 [error] Activating extension vscode.github-authentication failed due to an error:
+2024-01-05 17:14:34.053 [error] Canceled: Canceled
+    at new h (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:57382)
+    at i.O (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:117:10850)
+    at Proxy.j.<computed>.T.charCodeAt.j.<computed> (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:117:8289)
+    at Object.actualActivateExtension (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:7006)
+    at E.n (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:6219)
+    at E.m (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:6180)
+    at E.l (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:5637)
+    at new E (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:5564)
+    at C.k (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:5117)
+    at C.j (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:4160)
+    at C.j (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:4591)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:4039
+    at Array.map (<anonymous>)
+    at C.h (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:4027)
+    at C.activateById (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:3939)
+    at n.W (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:8386)
+    at n.fb (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:13242)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:13920
+2024-01-05 17:14:34.053 [error] Activating extension vscode.debug-auto-launch failed due to an error:
+2024-01-05 17:14:34.053 [error] Canceled: Canceled
+    at new h (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:57382)
+    at i.O (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:117:10850)
+    at Proxy.j.<computed>.T.charCodeAt.j.<computed> (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:117:8289)
+    at L.initializeExtensionStorage (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:110:135105)
+    at new F (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:100:12342)
+    at new h (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:100:13217)
+    at n.cb (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:10996)
+    at n.bb (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:10768)
+    at n.$ (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:9952)
+    at Object.actualActivateExtension (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:7098)
+    at E.n (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:6219)
+    at E.m (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:6180)
+    at E.l (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:5637)
+    at new E (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:5564)
+    at C.k (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:5117)
+    at C.j (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:5072)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:4039
+    at Array.map (<anonymous>)
+    at C.h (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:4027)
+    at C.activateById (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:3939)
+    at n.W (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:8386)
+    at n.fb (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:13242)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:13920
+2024-01-05 17:14:34.068 [error] Activating extension vscode.merge-conflict failed due to an error:
+2024-01-05 17:14:34.068 [error] Canceled: Canceled
+    at new h (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:57382)
+    at i.O (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:117:10850)
+    at Proxy.j.<computed>.T.charCodeAt.j.<computed> (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:117:8289)
+    at L.initializeExtensionStorage (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:110:135105)
+    at new F (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:100:12342)
+    at new h (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:100:13217)
+    at n.cb (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:10996)
+    at n.bb (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:10768)
+    at n.$ (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:9952)
+    at Object.actualActivateExtension (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:7098)
+    at E.n (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:6219)
+    at E.m (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:6180)
+    at E.l (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:5637)
+    at new E (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:5564)
+    at C.k (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:5117)
+    at C.j (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:5072)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:4039
+    at Array.map (<anonymous>)
+    at C.h (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:4027)
+    at C.activateById (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:3939)
+    at n.W (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:8386)
+    at n.fb (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:13242)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:13920
+2024-01-05 17:14:34.068 [error] Activating extension dbaeumer.vscode-eslint failed due to an error:
+2024-01-05 17:14:34.068 [error] Canceled: Canceled
+    at new h (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:57382)
+    at i.O (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:117:10850)
+    at Proxy.j.<computed>.T.charCodeAt.j.<computed> (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:117:8289)
+    at L.initializeExtensionStorage (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:110:135105)
+    at new F (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:100:12342)
+    at new h (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:100:13217)
+    at n.cb (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:10996)
+    at n.bb (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:10768)
+    at n.$ (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:9952)
+    at Object.actualActivateExtension (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:7098)
+    at E.n (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:6219)
+    at E.m (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:6180)
+    at E.l (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:5637)
+    at new E (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:5564)
+    at C.k (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:5117)
+    at C.j (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:5072)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:4039
+    at Array.map (<anonymous>)
+    at C.h (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:4027)
+    at C.activateById (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:3939)
+    at n.W (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:8386)
+    at n.fb (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:13242)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:13920
+2024-01-05 17:14:34.069 [error] Activating extension GitHub.copilot failed due to an error:
+2024-01-05 17:14:34.069 [error] Canceled: Canceled
+    at new h (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:57382)
+    at i.O (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:117:10850)
+    at Proxy.j.<computed>.T.charCodeAt.j.<computed> (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:117:8289)
+    at L.initializeExtensionStorage (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:110:135105)
+    at new F (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:100:12342)
+    at new h (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:100:13217)
+    at n.cb (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:10996)
+    at n.bb (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:10768)
+    at n.$ (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:9952)
+    at Object.actualActivateExtension (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:7098)
+    at E.n (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:6219)
+    at E.m (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:6180)
+    at E.l (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:5637)
+    at new E (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:5564)
+    at C.k (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:5117)
+    at C.j (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:5072)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:4039
+    at Array.map (<anonymous>)
+    at C.h (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:4027)
+    at C.activateById (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:3939)
+    at n.W (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:8386)
+    at n.fb (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:13242)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:13920
+2024-01-05 17:14:34.069 [error] Activating extension GitHub.copilot-chat failed due to an error:
+2024-01-05 17:14:34.069 [error] Canceled: Canceled
+    at new h (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:57382)
+    at i.O (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:117:10850)
+    at Proxy.j.<computed>.T.charCodeAt.j.<computed> (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:117:8289)
+    at L.initializeExtensionStorage (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:110:135105)
+    at new F (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:100:12342)
+    at new h (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:100:13217)
+    at n.cb (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:10996)
+    at n.bb (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:10768)
+    at n.$ (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:9952)
+    at Object.actualActivateExtension (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:7098)
+    at E.n (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:6219)
+    at E.m (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:6180)
+    at E.l (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:5637)
+    at new E (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:5564)
+    at C.k (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:5117)
+    at C.j (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:5072)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:4039
+    at Array.map (<anonymous>)
+    at C.h (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:4027)
+    at C.activateById (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:3939)
+    at n.W (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:8386)
+    at n.fb (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:13242)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:13920
+2024-01-05 17:14:34.070 [error] Activating extension ritwickdey.LiveServer failed due to an error:
+2024-01-05 17:14:34.070 [error] Canceled: Canceled
+    at new h (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:57382)
+    at i.O (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:117:10850)
+    at Proxy.j.<computed>.T.charCodeAt.j.<computed> (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:117:8289)
+    at L.initializeExtensionStorage (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:110:135105)
+    at new F (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:100:12342)
+    at new h (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:100:13217)
+    at n.cb (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:10996)
+    at n.bb (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:10768)
+    at n.$ (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:9952)
+    at Object.actualActivateExtension (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:7098)
+    at E.n (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:6219)
+    at E.m (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:6180)
+    at E.l (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:5637)
+    at new E (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:5564)
+    at C.k (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:5117)
+    at C.j (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:5072)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:4039
+    at Array.map (<anonymous>)
+    at C.h (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:4027)
+    at C.activateById (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:3939)
+    at n.W (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:8386)
+    at n.fb (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:13242)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:13920
+2024-01-05 17:14:34.072 [error] Activating extension voldemortensen.rainbow-tags failed due to an error:
+2024-01-05 17:14:34.072 [error] Canceled: Canceled
+    at new h (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:57382)
+    at i.O (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:117:10850)
+    at Proxy.j.<computed>.T.charCodeAt.j.<computed> (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:117:8289)
+    at L.initializeExtensionStorage (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:110:135105)
+    at new F (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:100:12342)
+    at new h (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:100:13217)
+    at n.cb (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:10996)
+    at n.bb (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:10768)
+    at n.$ (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:9952)
+    at Object.actualActivateExtension (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:7098)
+    at E.n (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:6219)
+    at E.m (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:6180)
+    at E.l (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:5637)
+    at new E (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:5564)
+    at C.k (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:5117)
+    at C.j (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:5072)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:4039
+    at Array.map (<anonymous>)
+    at C.h (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:4027)
+    at C.activateById (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:108:3939)
+    at n.W (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:8386)
+    at n.fb (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:13242)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:119:13920
+2024-01-05 17:14:34.716 [error] Canceled (FileSystemError): Canceled
+    at Function.e (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:110:27846)
+    at Object.createDirectory (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:110:24938)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:118:2313
+    at m.o (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:118:1915)
+2024-01-05 17:14:34.716 [error] Canceled (FileSystemError): Canceled
+    at Function.e (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:110:27846)
+    at Object.createDirectory (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:110:24938)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:118:2313
+    at m.o (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:118:1915)
+2024-01-05 17:14:34.716 [error] Canceled (FileSystemError): Canceled
+    at Function.e (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:110:27846)
+    at Object.createDirectory (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:110:24938)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:118:2313
+    at m.o (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:118:1915)
+2024-01-05 17:14:34.717 [error] Canceled (FileSystemError): Canceled
+    at Function.e (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:110:27846)
+    at Object.createDirectory (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:110:24938)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:118:2313
+    at m.o (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:118:1915)
+2024-01-05 17:14:34.717 [error] Canceled (FileSystemError): Canceled
+    at Function.e (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:110:27846)
+    at Object.createDirectory (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:110:24938)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:118:2313
+    at m.o (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:118:1915)
+2024-01-05 17:14:34.717 [error] Canceled (FileSystemError): Canceled
+    at Function.e (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:110:27846)
+    at Object.createDirectory (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:110:24938)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at /home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:118:2313
+    at m.o (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/out/vs/workbench/api/node/extensionHostProcess.js:118:1915)

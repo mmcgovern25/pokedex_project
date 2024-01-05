@@ -1,0 +1,1 @@
+[{"severity":"warning","location":{"begin_pos":1566,"end_pos":1619},"message":"Lint/PercentStringArray: Within `%w`/`%W`, quotes and ',' are unnecessary and may be unwanted in the resulting strings.","cop_name":"Lint/PercentStringArray","status":"uncorrected"}]

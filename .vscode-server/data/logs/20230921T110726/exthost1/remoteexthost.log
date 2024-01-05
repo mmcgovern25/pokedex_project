@@ -1,0 +1,166 @@
+2023-09-21 11:07:31.346 [info] Extension host with pid 1147 started
+2023-09-21 11:07:31.348 [error] Error: EEXIST: file already exists, open '/home/mattmcgovern/.vscode-server/data/User/workspaceStorage/978414b3e6b93de2ade1dbad7c977327/vscode.lock'
+2023-09-21 11:07:31.384 [info] Lock '/home/mattmcgovern/.vscode-server/data/User/workspaceStorage/978414b3e6b93de2ade1dbad7c977327/vscode.lock': Could not acquire lock, checking if the file is stale.
+2023-09-21 11:07:31.394 [info] ExtensionService#_doActivateExtension GrapeCity.gc-excelviewer, startup: false, activationEvent: 'onLanguage:plaintext'
+2023-09-21 11:07:31.396 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2023-09-21 11:07:31.397 [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
+2023-09-21 11:07:31.636 [info] Lock '/home/mattmcgovern/.vscode-server/data/User/workspaceStorage/978414b3e6b93de2ade1dbad7c977327/vscode.lock': The pid 64751 appears to be gone.
+2023-09-21 11:07:31.637 [info] Lock '/home/mattmcgovern/.vscode-server/data/User/workspaceStorage/978414b3e6b93de2ade1dbad7c977327/vscode.lock': Deleting a stale lock.
+2023-09-21 11:07:31.774 [info] Lock '/home/mattmcgovern/.vscode-server/data/User/workspaceStorage/978414b3e6b93de2ade1dbad7c977327/vscode.lock': Lock acquired.
+2023-09-21 11:07:32.400 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2023-09-21 11:07:32.400 [info] ExtensionService#_doActivateExtension christian-kohler.path-intellisense, startup: true, activationEvent: '*'
+2023-09-21 11:07:32.401 [info] ExtensionService#_doActivateExtension ms-vscode.sublime-keybindings, startup: true, activationEvent: '*'
+2023-09-21 11:07:32.401 [info] ExtensionService#_doActivateExtension oderwat.indent-rainbow, startup: true, activationEvent: '*'
+2023-09-21 11:07:32.401 [info] ExtensionService#_doActivateExtension WallabyJs.quokka-vscode, startup: true, activationEvent: '*'
+2023-09-21 11:07:32.895 [info] ExtensionService#_doActivateExtension ms-vsliveshare.vsliveshare, startup: false, activationEvent: 'api', root cause: WallabyJs.quokka-vscode
+2023-09-21 11:07:33.489 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2023-09-21 11:07:33.489 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-09-21 11:07:33.925 [info] Eager extensions activated
+2023-09-21 11:07:33.925 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2023-09-21 11:07:33.926 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2023-09-21 11:07:33.927 [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint, startup: false, activationEvent: 'onStartupFinished'
+2023-09-21 11:07:33.928 [info] ExtensionService#_doActivateExtension GitHub.copilot, startup: false, activationEvent: 'onStartupFinished'
+2023-09-21 11:07:33.929 [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: false, activationEvent: 'onStartupFinished'
+2023-09-21 11:07:33.929 [info] ExtensionService#_doActivateExtension voldemortensen.rainbow-tags, startup: false, activationEvent: 'onStartupFinished'
+2023-09-21 11:07:36.067 [info] ExtensionService#_doActivateExtension GitHub.vscode-pull-request-github, startup: false, activationEvent: 'onStartupFinished'
+2023-09-21 11:07:38.290 [error] Error: Git model not found
+    at s.getAPI (/home/mattmcgovern/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/extensions/git/dist/main.js:2:1188586)
+    at new Hl (/home/mattmcgovern/.vscode-server/extensions/github.vscode-pull-request-github-0.72.0/dist/extension.js:1772:27216)
+    at Function.createProvider (/home/mattmcgovern/.vscode-server/extensions/github.vscode-pull-request-github-0.72.0/dist/extension.js:1772:27861)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at mg (/home/mattmcgovern/.vscode-server/extensions/github.vscode-pull-request-github-0.72.0/dist/extension.js:1772:33925)
+    at Mp (/home/mattmcgovern/.vscode-server/extensions/github.vscode-pull-request-github-0.72.0/dist/extension.js:1818:5584)
+    at M0 (/home/mattmcgovern/.vscode-server/extensions/github.vscode-pull-request-github-0.72.0/dist/extension.js:1818:6689)
+2023-09-21 11:16:18.353 [info] ExtensionService#_doActivateExtension vscode.tunnel-forwarding, startup: false, activationEvent: 'onTunnel'
+2023-09-21 16:40:19.398 [info] ExtensionService#_doActivateExtension GitHub.copilot-chat, startup: false, activationEvent: 'onStartupFinished'
+2023-09-22 15:58:11.918 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-22 16:25:57.557 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-22 16:55:57.614 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-22 17:25:57.628 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-22 17:55:57.662 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-25 09:03:51.747 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-25 09:33:51.773 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-25 10:03:51.782 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-25 10:33:51.771 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-25 11:03:51.766 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-25 11:33:51.812 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-25 12:03:51.778 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-25 12:33:51.783 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-25 13:03:51.787 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-25 13:33:51.806 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-25 14:03:51.917 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-25 14:33:51.902 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-25 15:03:51.908 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-25 15:33:51.941 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-25 16:03:51.954 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-25 16:33:52.142 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-25 17:03:52.237 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-25 17:33:52.479 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-25 18:03:52.436 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-27 11:35:30.699 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-27 12:05:30.632 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-27 12:35:30.632 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-27 13:05:30.644 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-27 13:35:30.642 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-27 14:05:30.645 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-27 14:35:30.683 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-28 14:54:44.896 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-28 15:24:44.894 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-29 08:54:27.593 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-29 09:24:27.658 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-29 09:54:27.627 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-29 10:24:27.601 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-29 10:54:27.624 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-29 11:24:27.670 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-29 11:54:27.620 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-29 12:24:27.639 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-29 12:54:27.673 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-09-29 13:24:27.633 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-10-03 10:20:16.125 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-10-03 10:50:16.132 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-10-03 11:20:16.131 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-10-03 11:50:16.156 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-10-03 23:24:26.125 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-10-04 09:33:56.493 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-10-04 10:03:56.513 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-10-04 10:33:56.495 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-10-04 11:03:56.492 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-10-04 11:23:45.289 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:javascript'
+2023-10-04 11:33:56.485 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-10-04 12:03:56.514 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-10-04 12:33:56.492 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-10-04 13:03:56.526 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-10-04 13:33:56.496 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-10-04 14:03:56.519 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-10-04 14:33:56.521 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-10-04 15:03:56.522 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-10-04 15:33:56.573 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-10-04 16:03:56.546 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-10-06 15:25:26.731 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-10-06 15:55:26.795 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+2023-10-06 16:25:26.809 [error] Error: connect ETIMEDOUT 13.107.5.93:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)

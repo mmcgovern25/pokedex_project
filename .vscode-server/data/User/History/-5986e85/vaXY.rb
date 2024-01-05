@@ -1,0 +1,13 @@
+# Each meal has an id, a name and a price.
+# initialize with a hash?
+
+class Meal
+  attr_accessor :id, :name, :price
+
+  def initialize(attributes = {})
+    @id = attributes[:id]
+    @name = name
+    @price = price
+  end
+
+end

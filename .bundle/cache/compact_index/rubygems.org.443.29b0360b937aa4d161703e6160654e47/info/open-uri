@@ -1,0 +1,4 @@
+---
+0.1.0 |checksum:a45d7327cb6a15ff3d6466e59a68b3c3407054de4fa72c36acbe837a10903e00,ruby:>= 2.3.0
+0.2.0 stringio:>= 0,time:>= 0,uri:>= 0|checksum:9bf3e7752d17809da2426f762c9b021fb7c2b1367558ca7aedf639fdee1e52fc,ruby:>= 2.3.0
+0.3.0 stringio:>= 0,time:>= 0,uri:>= 0|checksum:5c9e62c841422a2ad2c66f162658b82737711931ce6d5965901d3518564db090,ruby:>= 2.3.0

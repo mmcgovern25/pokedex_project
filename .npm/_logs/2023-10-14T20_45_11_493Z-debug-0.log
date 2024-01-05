@@ -1,0 +1,286 @@
+0 verbose cli /home/mattmcgovern/.nvm/versions/node/v16.15.1/bin/node /home/mattmcgovern/.nvm/versions/node/v16.15.1/bin/npm
+1 info using npm@8.11.0
+2 info using node@v16.15.1
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:/home/mattmcgovern/.nvm/versions/node/v16.15.1/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 2ms
+7 timing config:load:cli Completed in 2ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:file:/home/mattmcgovern/.cache/typescript/5.2/.npmrc Completed in 0ms
+10 timing config:load:project Completed in 10ms
+11 timing config:load:file:/home/mattmcgovern/.npmrc Completed in 0ms
+12 timing config:load:user Completed in 0ms
+13 timing config:load:file:/home/mattmcgovern/.nvm/versions/node/v16.15.1/etc/npmrc Completed in 0ms
+14 timing config:load:global Completed in 1ms
+15 timing config:load:validate Completed in 0ms
+16 timing config:load:credentials Completed in 1ms
+17 timing config:load:setEnvs Completed in 1ms
+18 timing config:load Completed in 19ms
+19 timing npm:load:configload Completed in 19ms
+20 timing npm:load:mkdirpcache Completed in 1ms
+21 timing npm:load:mkdirplogs Completed in 1ms
+22 verbose title npm install @types/browser-sync@ts5.2
+23 verbose argv "install" "--ignore-scripts" "@types/browser-sync@ts5.2" "--save-dev" "--user-agent" "typesInstaller/5.2.2"
+24 timing npm:load:setTitle Completed in 1ms
+25 timing config:load:flatten Completed in 2ms
+26 timing npm:load:display Completed in 3ms
+27 verbose logfile logs-max:10 dir:/home/mattmcgovern/.npm/_logs
+28 verbose logfile /home/mattmcgovern/.npm/_logs/2023-10-14T20_45_11_493Z-debug-0.log
+29 timing npm:load:logFile Completed in 4ms
+30 timing npm:load:timers Completed in 0ms
+31 timing npm:load:configScope Completed in 0ms
+32 timing npm:load Completed in 30ms
+33 timing arborist:ctor Completed in 1ms
+34 silly logfile start cleaning logs, removing 1 files
+35 silly logfile done cleaning log files
+36 timing idealTree:init Completed in 17ms
+37 timing arborist:ctor Completed in 0ms
+38 http fetch GET 200 https://registry.npmjs.org/npm 1161ms (cache updated)
+39 http fetch GET 200 https://registry.npmjs.org/@types%2fbrowser-sync 1921ms (cache miss)
+40 timing idealTree:userRequests Completed in 1926ms
+41 silly idealTree buildDeps
+42 silly fetch manifest @types/browser-sync@2.27.2
+43 silly placeDep ROOT @types/browser-sync@2.27.2 OK for:  want: 2.27.2
+44 silly fetch manifest @types/micromatch@^2
+45 silly fetch manifest @types/node@*
+46 silly fetch manifest @types/serve-static@*
+47 silly fetch manifest chokidar@^3.0.0
+48 http fetch GET 200 https://registry.npmjs.org/@types%2fserve-static 127ms (cache miss)
+49 http fetch GET 200 https://registry.npmjs.org/chokidar 201ms (cache miss)
+50 http fetch GET 200 https://registry.npmjs.org/@types%2fnode 1029ms (cache miss)
+51 http fetch GET 200 https://registry.npmjs.org/@types%2fmicromatch 1807ms (cache miss)
+52 timing idealTree:#root Completed in 1818ms
+53 silly placeDep ROOT @types/micromatch@2.3.32 OK for: @types/browser-sync@2.27.2 want: ^2
+54 silly placeDep ROOT @types/node@20.8.6 OK for: @types/browser-sync@2.27.2 want: *
+55 silly placeDep ROOT @types/serve-static@1.15.3 OK for: @types/browser-sync@2.27.2 want: *
+56 silly placeDep ROOT chokidar@3.5.3 OK for: @types/browser-sync@2.27.2 want: ^3.0.0
+57 silly fetch manifest @types/parse-glob@*
+58 silly fetch manifest undici-types@~5.25.1
+59 silly fetch manifest @types/http-errors@*
+60 silly fetch manifest @types/mime@*
+61 silly fetch manifest anymatch@~3.1.2
+62 silly fetch manifest braces@~3.0.2
+63 silly fetch manifest glob-parent@~5.1.2
+64 silly fetch manifest is-binary-path@~2.1.0
+65 silly fetch manifest is-glob@~4.0.1
+66 silly fetch manifest normalize-path@~3.0.0
+67 silly fetch manifest readdirp@~3.6.0
+68 silly fetch manifest fsevents@~2.3.2
+69 http fetch GET 200 https://registry.npmjs.org/undici-types 60ms (cache miss)
+70 http fetch GET 200 https://registry.npmjs.org/@types%2fmime 111ms (cache miss)
+71 http fetch GET 200 https://registry.npmjs.org/normalize-path 120ms (cache miss)
+72 http fetch GET 200 https://registry.npmjs.org/@types%2fhttp-errors 132ms (cache miss)
+73 http fetch GET 200 https://registry.npmjs.org/anymatch 135ms (cache miss)
+74 http fetch GET 200 https://registry.npmjs.org/glob-parent 141ms (cache miss)
+75 http fetch GET 200 https://registry.npmjs.org/is-binary-path 145ms (cache miss)
+76 http fetch GET 200 https://registry.npmjs.org/braces 162ms (cache miss)
+77 http fetch GET 200 https://registry.npmjs.org/readdirp 173ms (cache miss)
+78 http fetch GET 200 https://registry.npmjs.org/fsevents 193ms (cache miss)
+79 http fetch GET 200 https://registry.npmjs.org/is-glob 981ms (cache miss)
+80 http fetch GET 200 https://registry.npmjs.org/@types%2fparse-glob 1887ms (cache miss)
+81 timing idealTree:node_modules/@types/browser-sync Completed in 1895ms
+82 silly placeDep ROOT @types/parse-glob@3.0.30 OK for: @types/micromatch@2.3.32 want: *
+83 timing idealTree:node_modules/@types/micromatch Completed in 3ms
+84 silly placeDep ROOT undici-types@5.25.3 OK for: @types/node@20.8.6 want: ~5.25.1
+85 timing idealTree:node_modules/@types/node Completed in 1ms
+86 timing idealTree:node_modules/@types/parse-glob Completed in 0ms
+87 silly placeDep ROOT @types/http-errors@2.0.2 OK for: @types/serve-static@1.15.3 want: *
+88 silly placeDep ROOT @types/mime@3.0.2 OK for: @types/serve-static@1.15.3 want: *
+89 timing idealTree:node_modules/@types/serve-static Completed in 7ms
+90 timing idealTree:node_modules/@types/http-errors Completed in 0ms
+91 timing idealTree:node_modules/@types/mime Completed in 0ms
+92 silly placeDep ROOT anymatch@3.1.3 OK for: chokidar@3.5.3 want: ~3.1.2
+93 silly placeDep ROOT braces@3.0.2 OK for: chokidar@3.5.3 want: ~3.0.2
+94 silly placeDep ROOT fsevents@2.3.3 OK for: chokidar@3.5.3 want: ~2.3.2
+95 silly placeDep ROOT glob-parent@5.1.2 OK for: chokidar@3.5.3 want: ~5.1.2
+96 silly placeDep ROOT is-binary-path@2.1.0 OK for: chokidar@3.5.3 want: ~2.1.0
+97 silly placeDep ROOT is-glob@4.0.3 OK for: chokidar@3.5.3 want: ~4.0.1
+98 silly placeDep ROOT normalize-path@3.0.0 OK for: chokidar@3.5.3 want: ~3.0.0
+99 silly placeDep ROOT readdirp@3.6.0 OK for: chokidar@3.5.3 want: ~3.6.0
+100 silly fetch manifest picomatch@^2.0.4
+101 silly fetch manifest fill-range@^7.0.1
+102 silly fetch manifest binary-extensions@^2.0.0
+103 silly fetch manifest is-extglob@^2.1.1
+104 silly fetch manifest picomatch@^2.2.1
+105 http fetch GET 200 https://registry.npmjs.org/is-extglob 44ms (cache miss)
+106 http fetch GET 200 https://registry.npmjs.org/fill-range 72ms (cache miss)
+107 http fetch GET 200 https://registry.npmjs.org/picomatch 101ms (cache miss)
+108 http fetch GET 200 https://registry.npmjs.org/picomatch 103ms (cache miss)
+109 http fetch GET 200 https://registry.npmjs.org/binary-extensions 913ms (cache miss)
+110 timing idealTree:node_modules/chokidar Completed in 929ms
+111 silly placeDep ROOT picomatch@2.3.1 OK for: anymatch@3.1.3 want: ^2.0.4
+112 timing idealTree:node_modules/anymatch Completed in 3ms
+113 silly placeDep ROOT fill-range@7.0.1 OK for: braces@3.0.2 want: ^7.0.1
+114 silly fetch manifest to-regex-range@^5.0.1
+115 http fetch GET 200 https://registry.npmjs.org/to-regex-range 939ms (cache miss)
+116 timing idealTree:node_modules/braces Completed in 942ms
+117 silly placeDep ROOT to-regex-range@5.0.1 OK for: fill-range@7.0.1 want: ^5.0.1
+118 silly fetch manifest is-number@^7.0.0
+119 http fetch GET 200 https://registry.npmjs.org/is-number 49ms (cache miss)
+120 timing idealTree:node_modules/fill-range Completed in 52ms
+121 timing idealTree:node_modules/fsevents Completed in 1ms
+122 timing idealTree:node_modules/glob-parent Completed in 0ms
+123 silly placeDep ROOT binary-extensions@2.2.0 OK for: is-binary-path@2.1.0 want: ^2.0.0
+124 timing idealTree:node_modules/is-binary-path Completed in 1ms
+125 timing idealTree:node_modules/binary-extensions Completed in 0ms
+126 silly placeDep ROOT is-extglob@2.1.1 OK for: is-glob@4.0.3 want: ^2.1.1
+127 timing idealTree:node_modules/is-glob Completed in 1ms
+128 timing idealTree:node_modules/is-extglob Completed in 0ms
+129 timing idealTree:node_modules/normalize-path Completed in 0ms
+130 timing idealTree:node_modules/picomatch Completed in 0ms
+131 timing idealTree:node_modules/readdirp Completed in 0ms
+132 silly placeDep ROOT is-number@7.0.0 OK for: to-regex-range@5.0.1 want: ^7.0.0
+133 timing idealTree:node_modules/to-regex-range Completed in 1ms
+134 timing idealTree:node_modules/is-number Completed in 0ms
+135 timing idealTree:node_modules/undici-types Completed in 0ms
+136 timing idealTree:buildDeps Completed in 5657ms
+137 timing idealTree:fixDepFlags Completed in 1ms
+138 timing idealTree Completed in 7601ms
+139 timing reify:loadTrees Completed in 7602ms
+140 timing reify:diffTrees Completed in 1ms
+141 silly reify moves {}
+142 timing reify:retireShallow Completed in 0ms
+143 timing reify:createSparse Completed in 10ms
+144 timing reify:loadBundles Completed in 0ms
+145 silly audit bulk request {
+145 silly audit   'types-registry': [ '0.1.664' ],
+145 silly audit   '@types/browser-sync': [ '2.27.2' ],
+145 silly audit   '@types/micromatch': [ '2.3.32' ],
+145 silly audit   '@types/node': [ '20.8.6' ],
+145 silly audit   '@types/serve-static': [ '1.15.3' ],
+145 silly audit   chokidar: [ '3.5.3' ],
+145 silly audit   '@types/parse-glob': [ '3.0.30' ],
+145 silly audit   'undici-types': [ '5.25.3' ],
+145 silly audit   '@types/http-errors': [ '2.0.2' ],
+145 silly audit   '@types/mime': [ '3.0.2' ],
+145 silly audit   anymatch: [ '3.1.3' ],
+145 silly audit   braces: [ '3.0.2' ],
+145 silly audit   fsevents: [ '2.3.3' ],
+145 silly audit   'glob-parent': [ '5.1.2' ],
+145 silly audit   'is-binary-path': [ '2.1.0' ],
+145 silly audit   'is-glob': [ '4.0.3' ],
+145 silly audit   'normalize-path': [ '3.0.0' ],
+145 silly audit   readdirp: [ '3.6.0' ],
+145 silly audit   picomatch: [ '2.3.1' ],
+145 silly audit   'fill-range': [ '7.0.1' ],
+145 silly audit   'to-regex-range': [ '5.0.1' ],
+145 silly audit   'binary-extensions': [ '2.2.0' ],
+145 silly audit   'is-extglob': [ '2.1.1' ],
+145 silly audit   'is-number': [ '7.0.0' ]
+145 silly audit }
+146 verbose reify failed optional dependency /home/mattmcgovern/.cache/typescript/5.2/node_modules/fsevents
+147 silly reify mark deleted [ '/home/mattmcgovern/.cache/typescript/5.2/node_modules/fsevents' ]
+148 timing reifyNode:node_modules/fsevents Completed in 9ms
+149 silly tarball no local data for is-number@https://registry.npmjs.org/is-number/-/is-number-7.0.0.tgz. Extracting by manifest.
+150 silly tarball no local data for binary-extensions@https://registry.npmjs.org/binary-extensions/-/binary-extensions-2.2.0.tgz. Extracting by manifest.
+151 silly tarball no local data for picomatch@https://registry.npmjs.org/picomatch/-/picomatch-2.3.1.tgz. Extracting by manifest.
+152 silly tarball no local data for normalize-path@https://registry.npmjs.org/normalize-path/-/normalize-path-3.0.0.tgz. Extracting by manifest.
+153 silly tarball no local data for readdirp@https://registry.npmjs.org/readdirp/-/readdirp-3.6.0.tgz. Extracting by manifest.
+154 silly tarball no local data for is-glob@https://registry.npmjs.org/is-glob/-/is-glob-4.0.3.tgz. Extracting by manifest.
+155 silly tarball no local data for fill-range@https://registry.npmjs.org/fill-range/-/fill-range-7.0.1.tgz. Extracting by manifest.
+156 silly tarball no local data for to-regex-range@https://registry.npmjs.org/to-regex-range/-/to-regex-range-5.0.1.tgz. Extracting by manifest.
+157 silly tarball no local data for is-extglob@https://registry.npmjs.org/is-extglob/-/is-extglob-2.1.1.tgz. Extracting by manifest.
+158 silly tarball no local data for is-binary-path@https://registry.npmjs.org/is-binary-path/-/is-binary-path-2.1.0.tgz. Extracting by manifest.
+159 silly tarball no local data for braces@https://registry.npmjs.org/braces/-/braces-3.0.2.tgz. Extracting by manifest.
+160 silly tarball no local data for glob-parent@https://registry.npmjs.org/glob-parent/-/glob-parent-5.1.2.tgz. Extracting by manifest.
+161 silly tarball no local data for anymatch@https://registry.npmjs.org/anymatch/-/anymatch-3.1.3.tgz. Extracting by manifest.
+162 silly tarball no local data for @types/http-errors@https://registry.npmjs.org/@types/http-errors/-/http-errors-2.0.2.tgz. Extracting by manifest.
+163 silly tarball no local data for undici-types@https://registry.npmjs.org/undici-types/-/undici-types-5.25.3.tgz. Extracting by manifest.
+164 silly tarball no local data for @types/parse-glob@https://registry.npmjs.org/@types/parse-glob/-/parse-glob-3.0.30.tgz. Extracting by manifest.
+165 silly tarball no local data for chokidar@https://registry.npmjs.org/chokidar/-/chokidar-3.5.3.tgz. Extracting by manifest.
+166 silly tarball no local data for @types/node@https://registry.npmjs.org/@types/node/-/node-20.8.6.tgz. Extracting by manifest.
+167 silly tarball no local data for @types/micromatch@https://registry.npmjs.org/@types/micromatch/-/micromatch-2.3.32.tgz. Extracting by manifest.
+168 silly tarball no local data for @types/browser-sync@https://registry.npmjs.org/@types/browser-sync/-/browser-sync-2.27.2.tgz. Extracting by manifest.
+169 silly tarball no local data for @types/serve-static@https://registry.npmjs.org/@types/serve-static/-/serve-static-1.15.3.tgz. Extracting by manifest.
+170 silly tarball no local data for @types/mime@https://registry.npmjs.org/@types/mime/-/mime-3.0.2.tgz. Extracting by manifest.
+171 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 270ms
+172 timing auditReport:getReport Completed in 272ms
+173 silly audit report {}
+174 timing auditReport:init Completed in 0ms
+175 timing reify:audit Completed in 274ms
+176 http fetch GET 200 https://registry.npmjs.org/fill-range/-/fill-range-7.0.1.tgz 272ms (cache miss)
+177 timing reifyNode:node_modules/fill-range Completed in 319ms
+178 http fetch GET 200 https://registry.npmjs.org/normalize-path/-/normalize-path-3.0.0.tgz 290ms (cache miss)
+179 timing reifyNode:node_modules/normalize-path Completed in 323ms
+180 http fetch GET 200 https://registry.npmjs.org/is-number/-/is-number-7.0.0.tgz 308ms (cache miss)
+181 timing reifyNode:node_modules/is-number Completed in 329ms
+182 http fetch GET 200 https://registry.npmjs.org/binary-extensions/-/binary-extensions-2.2.0.tgz 308ms (cache miss)
+183 timing reifyNode:node_modules/binary-extensions Completed in 332ms
+184 http fetch GET 200 https://registry.npmjs.org/to-regex-range/-/to-regex-range-5.0.1.tgz 283ms (cache miss)
+185 timing reifyNode:node_modules/to-regex-range Completed in 341ms
+186 http fetch GET 200 https://registry.npmjs.org/is-extglob/-/is-extglob-2.1.1.tgz 288ms (cache miss)
+187 timing reifyNode:node_modules/is-extglob Completed in 349ms
+188 http fetch GET 200 https://registry.npmjs.org/is-binary-path/-/is-binary-path-2.1.0.tgz 289ms (cache miss)
+189 timing reifyNode:node_modules/is-binary-path Completed in 353ms
+190 http fetch GET 200 https://registry.npmjs.org/is-glob/-/is-glob-4.0.3.tgz 319ms (cache miss)
+191 timing reifyNode:node_modules/is-glob Completed in 360ms
+192 http fetch GET 200 https://registry.npmjs.org/braces/-/braces-3.0.2.tgz 307ms (cache miss)
+193 timing reifyNode:node_modules/braces Completed in 373ms
+194 http fetch GET 200 https://registry.npmjs.org/readdirp/-/readdirp-3.6.0.tgz 347ms (cache miss)
+195 timing reifyNode:node_modules/readdirp Completed in 384ms
+196 http fetch GET 200 https://registry.npmjs.org/@types/serve-static/-/serve-static-1.15.3.tgz 257ms (cache miss)
+197 timing reifyNode:node_modules/@types/serve-static Completed in 388ms
+198 http fetch GET 200 https://registry.npmjs.org/@types/http-errors/-/http-errors-2.0.2.tgz 306ms (cache miss)
+199 timing reifyNode:node_modules/@types/http-errors Completed in 390ms
+200 http fetch GET 200 https://registry.npmjs.org/anymatch/-/anymatch-3.1.3.tgz 313ms (cache miss)
+201 timing reifyNode:node_modules/anymatch Completed in 392ms
+202 http fetch GET 200 https://registry.npmjs.org/glob-parent/-/glob-parent-5.1.2.tgz 325ms (cache miss)
+203 timing reifyNode:node_modules/glob-parent Completed in 394ms
+204 http fetch GET 200 https://registry.npmjs.org/picomatch/-/picomatch-2.3.1.tgz 374ms (cache miss)
+205 timing reifyNode:node_modules/picomatch Completed in 402ms
+206 http fetch GET 200 https://registry.npmjs.org/chokidar/-/chokidar-3.5.3.tgz 298ms (cache miss)
+207 timing reifyNode:node_modules/chokidar Completed in 407ms
+208 http fetch GET 200 https://registry.npmjs.org/undici-types/-/undici-types-5.25.3.tgz 328ms (cache miss)
+209 timing reifyNode:node_modules/undici-types Completed in 419ms
+210 http fetch GET 200 https://registry.npmjs.org/@types/parse-glob/-/parse-glob-3.0.30.tgz 355ms (cache miss)
+211 timing reifyNode:node_modules/@types/parse-glob Completed in 450ms
+212 http fetch GET 200 https://registry.npmjs.org/@types/node/-/node-20.8.6.tgz 472ms (cache miss)
+213 timing reifyNode:node_modules/@types/node Completed in 585ms
+214 http fetch GET 200 https://registry.npmjs.org/@types/micromatch/-/micromatch-2.3.32.tgz 1008ms (cache miss)
+215 timing reifyNode:node_modules/@types/micromatch Completed in 1125ms
+216 http fetch GET 200 https://registry.npmjs.org/@types/mime/-/mime-3.0.2.tgz 1010ms (cache miss)
+217 timing reifyNode:node_modules/@types/mime Completed in 1145ms
+218 http fetch GET 200 https://registry.npmjs.org/@types/browser-sync/-/browser-sync-2.27.2.tgz 1058ms (cache miss)
+219 timing reifyNode:node_modules/@types/browser-sync Completed in 1179ms
+220 timing reify:unpack Completed in 1180ms
+221 timing reify:unretire Completed in 4ms
+222 timing build:queue Completed in 1ms
+223 timing build:deps Completed in 1ms
+224 timing build Completed in 2ms
+225 timing reify:build Completed in 2ms
+226 timing reify:trash Completed in 1ms
+227 timing reify:save Completed in 13ms
+228 timing reify Completed in 8834ms
+229 silly ADD node_modules/is-number
+230 silly ADD node_modules/is-extglob
+231 silly ADD node_modules/binary-extensions
+232 silly ADD node_modules/to-regex-range
+233 silly ADD node_modules/fill-range
+234 silly ADD node_modules/picomatch
+235 silly ADD node_modules/readdirp
+236 silly ADD node_modules/normalize-path
+237 silly ADD node_modules/is-glob
+238 silly ADD node_modules/is-binary-path
+239 silly ADD node_modules/glob-parent
+240 silly ADD
+241 silly ADD node_modules/braces
+242 silly ADD node_modules/anymatch
+243 silly ADD node_modules/@types/mime
+244 silly ADD node_modules/@types/http-errors
+245 silly ADD node_modules/undici-types
+246 silly ADD node_modules/@types/parse-glob
+247 silly ADD node_modules/chokidar
+248 silly ADD node_modules/@types/serve-static
+249 silly ADD node_modules/@types/node
+250 silly ADD node_modules/@types/micromatch
+251 silly ADD node_modules/@types/browser-sync
+252 timing command:install Completed in 8839ms
+253 notice
+253 notice New major version of npm available! 8.11.0 -> 10.2.0
+253 notice Changelog: <https://github.com/npm/cli/releases/tag/v10.2.0>
+253 notice Run `npm install -g npm@10.2.0` to update!
+253 notice
+254 verbose exit 0
+255 timing npm Completed in 8937ms
+256 info ok

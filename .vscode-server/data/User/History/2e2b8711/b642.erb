@@ -1,0 +1,12 @@
+<h1>Lists</h1>
+
+<div id="lists">
+<ul>
+  <% @lists.each do |list| %>
+    <li><%= list.name %></li>
+    <p>
+      <%= link_to "Show this list", list_path(list.id) %>
+    </p>
+  <% end %>
+  </ul>
+</div>

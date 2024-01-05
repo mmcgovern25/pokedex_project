@@ -1,0 +1,31 @@
+<body>
+<h1 class="d-flex flex-column justify-content-center text-center mt-4 mb-5">Your Properties 🏠</h1>
+
+
+<div class="container">
+
+  <ul class="list-group">
+    <% @properties.each do |property| %>
+      <div class="card-product btn border-radius-containers my-3">
+        <% if property.photo.attached? %>
+          <%= cl_image_tag property.photo.key, class:"custom-image-width col-2" %>
+        <% else %>
+          <img src="https://www.thehousedesigners.com/images/uploads/SiteImage-Landing-modern-house-plans-1.webp" class="custom-image-width col-2" />
+        <% end %>
+        <div class="container">
+          <div class="card-product-infos property-item d-flex justify-content-between align-items-center">
+              <%= property.title  %>
+              <div class="btn-group">
+                <%= link_to "Check this property", property_path(property), class: "btn btn-primary rounded-pill btn-1" %>
+                <%= link_to "Edit", edit_property_path(property), class: 'btn btn-warning text-white rounded-pill btn-1' %>
+                <%= link_to "Delete", property_path(property), data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' }, class: 'btn btn-danger text-white rounded-pill btn-1' %>
+              </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </ul>
+  <div class="button mt-4">
+    <%= link_to 'Add a new Property', new_property_path %>
+  </div>
+</body>

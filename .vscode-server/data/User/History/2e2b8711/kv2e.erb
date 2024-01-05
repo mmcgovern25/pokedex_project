@@ -1,0 +1,10 @@
+<h1>Welcome to your list</h1>
+
+<%= render "form", list: @lists %>
+
+<br>
+
+<div>
+  <%= link_to "Show this list", @lists %> |
+  <%= link_to "Back to lists", lists_path %>
+</div>

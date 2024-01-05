@@ -1,0 +1,26 @@
+body {
+  background-color: #333;
+}
+
+.img-home-slide-reverse {
+  width: 120px;
+  height: 120px;
+  animation: scroll 60s linear infinite;
+}
+
+.slide-track {
+  width: 100%;
+  display: flex;
+  gap: 3em;
+  overflow: hidden;
+}
+
+.slider {
+  margin-top: 0.5px;
+  padding: 2em;
+}
+
+@keyframes scroll {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(1000%)}
+}

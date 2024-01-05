@@ -1,0 +1,12 @@
+/* Style for the image */
+.custom-image-width {
+  // max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+  height: auto; /* Maintain the image's aspect ratio */
+}
+
+/* Style for the container */
+.card-product {
+  display: flex; /* Enable flex layout for the container */
+  align-items: center; /* Vertically center content */
+  margin-bottom: 20px; /* Adjust margin as needed */
+}

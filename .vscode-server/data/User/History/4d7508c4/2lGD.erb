@@ -1,0 +1,68 @@
+<div class="container text-bg-light rounded-4 p-3 mb-4">
+  <div class="row justify-content-evenly">
+
+    <% if @property.photo.attached? %>
+      <div class='col-5 m-2 card-category' style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url(<%= cl_image_path @property.photo.key %>)">
+    <% else %>
+      <div class='col-5 m-2 card-category' style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url(https://res.cloudinary.com/dgabkyhfa/image/upload/v1694529741/sexs5cxn4dj15cav0qs3.jpg)">
+
+      <%= link_to 'Add a picture', edit_property_path(@property), class: 'btn btn-primary' %>
+    <% end %>
+    </div>
+    <div id="name-address" class="col-5 m-2 d-flex flex-md-column">
+      <div id="Name" class='mb-4'>
+        <p class='mb-2 text-secondary'>Name</p>
+        <%= @property.title %>
+      </div>
+      <div id="address mt-4">
+        <p class='mb-2 text-secondary'>Address</p>
+        <%= @property.address %>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <div class="col-3 m-2">
+      <div id='Available-between' class='mb-4'>
+        <p class='mb-2 text-secondary'>Available between</p>
+        <%= "#{@property.default_cleaning_from} to #{@property.default_cleaning_until}" %>
+      </div>
+      <div id='price' class='mt-4'>
+        <p class='mb-2 text-secondary'>Price</p>
+        <%= "$ #{@property.default_job_price.round}" %>
+      </div>
+    </div>
+
+    <div class="col-3 m-2">
+      <div class="mb-2">
+        <p class="mb-2 text-secondary">Cleaners Team</p>
+        <% @property.teams.each do |employee| %>
+          <% if employee.profession == "cleaner" %>
+            <p> <%= employee.user.first_name %></p>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="col-3 m-2">
+      <div class="mb-2">
+        <p class="mb-2 text-secondary">Managers Team</p>
+        <% @property.teams.each do |employee| %>
+          <% if employee.profession == "manager" %>
+            <p> <%= employee.user.first_name %></p>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+
+
+  </div>
+
+<div style="width: 100%; height: 300px;"
+    data-controller="map"
+    data-map-markers-value="<%= @markers.to_json %>"
+    data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
+</div>
+
+</div>

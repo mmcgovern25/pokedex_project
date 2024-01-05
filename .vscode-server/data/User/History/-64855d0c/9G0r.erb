@@ -1,0 +1,37 @@
+<div class="d-flex justify-content-center align-items-center" style="background-color: red; color: white; height: 100px;">
+  <h1><strong>Account Overview</strong></h1>
+  </div>
+
+  <div class="container mt-5 justify content between">
+    <div class="row">
+      <div class="col-md-4">
+        <!-- Profile Card -->
+
+            <%# <%= cl_image_tag current_user.photo.key, class: "rounded-circle", height: 150, width: 150, crop: :fill %
+          <div class="card-body">
+            <%# <h5 class="card-title"><%= @user.name %>
+            <div class="card mb-3 card-body text-center rounded">
+              <p class="card-text"><strong>Email:</strong> <%= @user.email %></p>
+            </div>
+
+            <div class="card mb-3 card-body text-center rounded">
+              <p class="card-text"><strong>Birth Date:</strong> <%= @user.birth_date %></p>
+            </div>
+
+            <div class="card mb-3 card-body text-center">
+              <p class="card-text"><strong>Address:</strong> <%= @user.address %></p>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <!-- User Reviews Section -->
+        <div class="card">
+          <div class="card-body">
+            <h3>User Reviews</h3>
+            <!-- Add review cards here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,73 @@
+require_relative 'lib/recipe'
+recipe = Recipe.new("chocolate cake", "a delicious chocolate cake"
+  require_relative 'lib/recipe']
+clear]
+clear
+equire_relative 'lib/recipe'
+exit
+equire_relative 'lib/recipe'
+require_relative 'lib/recipe'
+recipe = Recipe.new("chocolate cake", "a delicious chocolate cake")
+exit]
+exit
+require_relative 'lib/recipe'
+recipe = Recipe.new("chocolate cake", "a delicious chocolate cake")
+recipe.name
+exit
+require_relative 'lib/recipe'
+recipe = Recipe.new("chocolate cake", "a delicious chocolate cake")
+recipe.name
+recipe.description
+rake
+exit
+3.times do
+  puts "hello"
+end
+exit
+puts x_men
+x_men = ["Wolverine", "Jean Gray", "Professor X", "Magneto"]
+puts x_men
+exit
+x_men.each do |wolverine
+  puts "#{wolverine} is really powerfull!"
+x_men.each do |wolverine
+  exit]"#{wolverine} is really powerfull!"
+clear
+x_men.each do |wolverine|
+  puts "#{wolverine} is really powerfull!"
+  x_men.each do |wolverine|
+    "#{wolverine} is really powerfull!"
+    exit
+x_men = ["Wolverine", "Jean Gray", "Professor X", "Magneto"]
+x_men.each do |xmen|
+  puts "#{xmen} is really powerfull!"
+end
+exit
+my_hash = {
+  name: "Matt",
+  favorite_team: "Celtics",
+  favorite_band: "Coldplay",
+  age: 26
+}
+my_hash[:name]
+my_hash[:favorite_band]
+my_hash:[favorite_team]
+my_hash:[:favorite_team]
+my_hash[:favorite_team]
+my_hash[:age]
+my_hash.each do |key, index|
+  puts |key, index|
+my_hash.each do |key, index|
+  puts "key: #{key}, index: #{index}"
+end
+my_hash.each do |key, index|
+  puts "#{key}, #{index}"
+end
+exit
+def upcase_string(word)
+  word.upcase
+end
+def upcase_string(massachusetts)
+  massachusetts.upcase
+end
+exit

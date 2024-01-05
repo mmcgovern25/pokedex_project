@@ -1,0 +1,166 @@
+2023-09-21 11:07:26.887 [info] 
+
+
+
+
+2023-09-21 11:07:26.906 [info] Extension host agent started.
+2023-09-21 11:07:27.315 [info] [127.0.0.1][2c2aeef9][ManagementConnection] New connection established.
+2023-09-21 11:07:28.392 [info] [127.0.0.1][697727a3][ExtensionHostConnection] New connection established.
+2023-09-21 11:07:30.895 [info] [127.0.0.1][697727a3][ExtensionHostConnection] <1147> Launched Extension Host Process.
+2023-09-21 11:07:34.044 [info] Getting Manifest... emmanuelbeziat.vscode-great-icons
+2023-09-21 11:07:34.052 [info] Getting Manifest... github.copilot
+2023-09-21 11:07:34.052 [info] Getting Manifest... ms-vscode-remote.remote-wsl
+2023-09-21 11:07:34.053 [info] Getting Manifest... wallabyjs.quokka-vscode
+2023-09-21 11:07:34.271 [info] Installing extension: github.copilot
+2023-09-21 11:07:34.278 [info] Installing extension: emmanuelbeziat.vscode-great-icons
+2023-09-21 11:07:34.394 [info] Installing extension: wallabyjs.quokka-vscode
+2023-09-21 11:07:34.544 [info] Installing extension: ms-vscode-remote.remote-wsl
+2023-09-21 11:07:37.106 [warning] Extension signature verification failed with error 'ENOENT': github.copilot
+2023-09-21 11:07:37.356 [warning] Extension signature verification failed with error 'ENOENT': wallabyjs.quokka-vscode
+2023-09-21 11:07:37.377 [warning] Extension signature verification failed with error 'ENOENT': ms-vscode-remote.remote-wsl
+2023-09-21 11:07:37.504 [warning] Extension signature verification failed with error 'ENOENT': emmanuelbeziat.vscode-great-icons
+2023-09-21 11:07:38.513 [info] Extracted extension to file:///home/mattmcgovern/.vscode-server/extensions/ms-vscode-remote.remote-wsl-0.81.4: ms-vscode-remote.remote-wsl
+2023-09-21 11:07:38.543 [info] Renamed to /home/mattmcgovern/.vscode-server/extensions/ms-vscode-remote.remote-wsl-0.81.4
+2023-09-21 11:07:38.567 [info] Extracting extension completed. ms-vscode-remote.remote-wsl
+2023-09-21 11:07:38.591 [info] Extension installed successfully: ms-vscode-remote.remote-wsl
+2023-09-21 11:07:38.654 [info] Marked extension as uninstalled ms-vscode-remote.remote-wsl-0.81.3
+2023-09-21 11:07:39.662 [info] Extracted extension to file:///home/mattmcgovern/.vscode-server/extensions/github.copilot-1.114.426: github.copilot
+2023-09-21 11:07:39.673 [info] Renamed to /home/mattmcgovern/.vscode-server/extensions/github.copilot-1.114.426
+2023-09-21 11:07:39.677 [info] Extracting extension completed. github.copilot
+2023-09-21 11:07:39.688 [info] Extension installed successfully: github.copilot
+2023-09-21 11:07:39.696 [info] Marked extension as uninstalled github.copilot-1.111.404
+2023-09-21 11:07:39.737 [info] Extracted extension to file:///home/mattmcgovern/.vscode-server/extensions/emmanuelbeziat.vscode-great-icons-2.1.102: emmanuelbeziat.vscode-great-icons
+2023-09-21 11:07:39.747 [info] Renamed to /home/mattmcgovern/.vscode-server/extensions/emmanuelbeziat.vscode-great-icons-2.1.102
+2023-09-21 11:07:39.753 [info] Extracting extension completed. emmanuelbeziat.vscode-great-icons
+2023-09-21 11:07:39.770 [info] Extension installed successfully: emmanuelbeziat.vscode-great-icons
+2023-09-21 11:07:39.778 [info] Marked extension as uninstalled emmanuelbeziat.vscode-great-icons-2.1.98
+2023-09-21 11:07:42.484 [info] Extracted extension to file:///home/mattmcgovern/.vscode-server/extensions/wallabyjs.quokka-vscode-1.0.565: wallabyjs.quokka-vscode
+2023-09-21 11:07:42.496 [info] Renamed to /home/mattmcgovern/.vscode-server/extensions/wallabyjs.quokka-vscode-1.0.565
+2023-09-21 11:07:42.499 [info] Extracting extension completed. wallabyjs.quokka-vscode
+2023-09-21 11:07:42.509 [info] Extension installed successfully: wallabyjs.quokka-vscode
+2023-09-21 11:07:42.516 [info] Marked extension as uninstalled wallabyjs.quokka-vscode-1.0.564
+2023-09-21 11:12:06.654 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-09-21 11:12:06.936 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-09-21 11:16:20.999 [info] [127.0.0.1][697727a3][ExtensionHostConnection] <1147> [0mGET /favicon.ico [33m404[0m 2.434 ms - 150[0m
+
+2023-09-21 12:25:58.612 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-09-21 12:26:03.421 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-09-21 12:26:03.662 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-09-21 15:01:17.644 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-09-21 15:01:17.927 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-09-21 15:23:37.813 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-09-21 15:23:38.039 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-09-21 16:40:14.925 [info] Getting Manifest... github.copilot
+2023-09-21 16:40:15.394 [info] Installing extension: github.copilot
+2023-09-21 16:40:16.615 [info] Getting Manifest... github.copilot-chat
+2023-09-21 16:40:16.782 [info] Installing extension: github.copilot-chat github.copilot
+2023-09-21 16:40:17.607 [warning] Extension signature verification failed with error 'ENOENT': github.copilot-chat
+2023-09-21 16:40:17.929 [info] Extracted extension to file:///home/mattmcgovern/.vscode-server/extensions/github.copilot-chat-0.7.1: github.copilot-chat
+2023-09-21 16:40:17.935 [info] Renamed to /home/mattmcgovern/.vscode-server/extensions/github.copilot-chat-0.7.1
+2023-09-21 16:40:17.938 [info] Extracting extension completed. github.copilot-chat
+2023-09-21 16:40:18.716 [warning] Extension signature verification failed with error 'ENOENT': github.copilot
+2023-09-21 16:40:19.053 [info] Extracted extension to file:///home/mattmcgovern/.vscode-server/extensions/github.copilot-1.115.430: github.copilot
+2023-09-21 16:40:19.060 [info] Renamed to /home/mattmcgovern/.vscode-server/extensions/github.copilot-1.115.430
+2023-09-21 16:40:19.062 [info] Extracting extension completed. github.copilot
+2023-09-21 16:40:19.070 [info] Extension installed successfully: github.copilot-chat
+2023-09-21 16:40:19.070 [info] Extension installed successfully: github.copilot
+2023-09-21 16:40:19.074 [info] Marked extension as uninstalled github.copilot-1.114.426
+2023-09-22 09:27:02.683 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-09-22 09:27:03.209 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-09-22 09:34:59.435 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-09-22 09:34:59.739 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-09-22 09:51:36.217 [info] [127.0.0.1][697727a3][ExtensionHostConnection] <1147> [0mGET /favicon.ico [33m404[0m 5.113 ms - 150[0m
+
+2023-09-22 11:09:50.379 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-09-22 11:09:50.547 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-09-22 11:27:16.149 [info] [127.0.0.1][697727a3][ExtensionHostConnection] <1147> [0mGET /favicon.ico [33m404[0m 2.446 ms - 150[0m
+
+2023-09-22 12:57:28.568 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-09-22 12:57:31.686 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-09-22 13:45:09.444 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-09-22 13:45:10.306 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-09-22 13:45:15.549 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-09-22 13:45:15.857 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-09-22 14:30:52.996 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-09-22 14:30:53.553 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-09-22 15:51:59.685 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-09-22 15:52:00.546 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-09-22 16:16:39.849 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-09-22 16:16:40.118 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-09-22 17:37:42.159 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-09-22 17:37:42.550 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-09-22 18:13:26.241 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-09-25 08:51:37.283 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-09-25 08:51:37.691 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-09-25 08:51:58.583 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-09-25 08:51:58.851 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-09-25 09:58:45.100 [info] [127.0.0.1][697727a3][ExtensionHostConnection] <1147> [0mGET /favicon.ico [33m404[0m 69.197 ms - 150[0m
+
+2023-09-25 11:22:10.398 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-09-25 11:22:14.601 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-09-25 13:13:39.805 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-09-25 13:13:40.170 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-09-25 13:13:44.446 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-09-25 13:13:44.816 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-09-25 16:48:21.977 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-09-25 16:48:22.623 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-09-25 16:49:21.056 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-09-25 16:49:21.325 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-09-25 16:50:33.072 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-09-25 16:50:33.355 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-09-25 16:50:39.377 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-09-25 16:50:39.638 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-09-25 17:20:06.022 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-09-25 17:20:06.287 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-09-25 17:47:56.074 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-09-25 17:48:00.916 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-09-27 11:32:39.475 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-09-27 11:32:40.652 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-09-27 11:33:17.905 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-09-27 11:33:18.136 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-09-27 13:49:06.209 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-09-27 13:49:10.966 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-09-27 13:54:58.243 [info] [127.0.0.1][697727a3][ExtensionHostConnection] <1147> [0mGET /favicon.ico [33m404[0m 10.452 ms - 150[0m
+
+2023-09-27 13:57:22.910 [info] [127.0.0.1][697727a3][ExtensionHostConnection] <1147> [0mGET /favicon.ico [33m404[0m 1.188 ms - 150[0m
+
+2023-09-27 14:29:47.101 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-09-27 14:29:47.921 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-09-27 14:45:52.649 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-09-27 14:45:53.102 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-09-28 14:37:20.030 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-09-28 14:37:21.045 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-09-28 15:27:05.317 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-09-28 15:27:05.647 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-09-28 15:50:08.836 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-09-28 15:50:09.042 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-09-28 15:53:54.591 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-09-28 15:53:55.033 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-09-29 08:53:53.420 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-09-29 08:53:54.712 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-09-29 13:32:19.087 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-09-29 13:32:19.832 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-09-29 13:40:22.562 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-09-29 13:40:22.988 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-10-03 10:06:27.591 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-10-03 10:06:29.476 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-10-03 23:00:55.039 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-10-03 23:00:56.221 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-10-03 23:27:12.068 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-10-04 09:06:58.771 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-10-04 09:07:00.374 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-10-04 15:22:01.189 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-10-04 15:22:01.645 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-10-05 12:28:59.436 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-10-05 12:29:00.373 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-10-06 15:14:58.838 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-10-06 15:14:59.861 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-10-06 15:27:58.704 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-10-06 15:27:59.108 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-10-06 15:31:31.493 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-10-06 15:31:32.051 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-10-06 15:31:36.923 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+2023-10-06 15:31:37.160 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-10-06 16:08:00.287 [info] [127.0.0.1][2c2aeef9][ManagementConnection] The client has reconnected.
+2023-10-06 16:08:00.625 [info] [127.0.0.1][697727a3][ExtensionHostConnection] The client has reconnected.
+                                                                                                                                                                                                

@@ -1,0 +1,48 @@
+// Import your components CSS files here.
+@import "alert";
+@import "avatar";
+@import "form_legend_clear";
+@import "navbar";
+@import "hover";
+
+body {
+	background: linear-gradient(-45deg,  #ffffff, #23a6d5, #87ceeb);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.property-item {
+  margin-bottom: 10px; /* Adjust the value as needed */
+}
+
+.btn-group .btn {
+  margin-right: 10px; /* Adjust the value as needed */
+}
+
+.btn-1 {
+  transition: 0.2s all;
+}
+
+.btn-1:hover {
+  font-weight: bold;
+  border-radius: 5px
+}
+
+.w-100 {
+  width: 85% !important;
+}
+
+@import "message";

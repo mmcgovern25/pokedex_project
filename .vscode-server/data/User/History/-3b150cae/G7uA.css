@@ -1,0 +1,28 @@
+/* Import fonts from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;500;700");
+
+/* Importing all components file */
+@import url("components/cards.css");
+
+/* General for fonts and colors */
+body {
+  margin: 100px;
+  font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3 {
+  font-family: Raleway, Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.text-center {
+  text-align: center;
+}
+
+.card-category {
+  border-radius: 8px;
+  height: 200px;
+  width: 200px;
+  background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fsimply-delicious-food.com%2Feasy-breakfast-board%2F&psig=AOvVaw0r8aETTYBu_ji1W2HXwwB2&ust=1691596384370000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOjawuC1zYADFQAAAAAdAAAAABAE");
+}
+fdf

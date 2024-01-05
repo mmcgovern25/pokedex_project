@@ -1,0 +1,1 @@
+[{"severity":"fatal","location":{"begin_pos":1309,"end_pos":1310},"message":"Lint/Syntax: unexpected token tCOLON\n(Using Ruby 3.1 parser; configure using `TargetRubyVersion` parameter, under `AllCops`)","cop_name":"Lint/Syntax","status":"unsupported"}]

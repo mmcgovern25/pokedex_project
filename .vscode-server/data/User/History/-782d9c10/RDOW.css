@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Handjet:wght@500&display=swap');
+body {
+  background-color: mediumaquamarine;
+  font-weight: 200;
+}
+
+h1 {
+  color: burlywood;
+  text-align: center;
+  font-size: 150px;
+  font-family: Handjet;
+  line-height: normal;
+}
+
+h2 {
+  color:black;
+  text-align: center;
+  font-size: 50px;
+  font-family: Handjet;
+  line-height: normal;
+}
+
+h3 {
+  color: black;
+  text-align: center;
+  font-size: 50px;
+  font-family: "Dancing Script";
+  line-height: normal;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+li {
+display: inline-block;
+font-size: 100px;
+text-decoration: none;
+}
+
+li > a {
+  color: violet;
+}

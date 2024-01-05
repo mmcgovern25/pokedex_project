@@ -1,0 +1,4 @@
+2023-09-17 15:41:24.929 [warning] /home/mattmcgovern/.ssh/config: ENOENT: no such file or directory, open '/home/mattmcgovern/.ssh/config'
+2023-09-17 15:41:25.171 [info] Looking for git repository
+2023-09-17 15:41:25.171 [info] Found 0 repositories during activation
+2023-09-17 15:41:25.171 [info] Git repository found, initializing review manager and pr tree view.

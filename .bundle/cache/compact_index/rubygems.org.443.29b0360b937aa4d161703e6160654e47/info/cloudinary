@@ -1,0 +1,136 @@
+---
+1.0.0 rest-client:>= 0|checksum:670e6a5b0a8de4da213bf988b49907a0597c563aee222a551bc97fadcd17290c
+1.0.1 rest-client:>= 0|checksum:f2e9806ac3a73357a0321628f4d30d911345d9c885c614182c095ac1371cdd10
+1.0.2 rest-client:>= 0|checksum:8c92b70c3c0f51ea86ae904926161f4a4c407e8670fabc8f4d32714a08dca035
+1.0.3 rest-client:>= 0|checksum:b41c776e891299a0bdbaed1339c74c87ccec6e7e8667e1bd4d923408dcf75220
+1.0.4 rest-client:>= 0|checksum:b23f28de1c4d2971087e34a637a76fd0d22e689f2dac20a99da41463e13ec1d6
+1.0.5 rest-client:>= 0|checksum:730dc348ec8dee326c504231b700c7ee88ffc3b96278cca76382b299ea2776f2
+1.0.6 rest-client:>= 0|checksum:6814b12ba17660123aa9e8b7edff324e57ed07de2fe7e1f13d4769b07d3204e7
+1.0.7 rest-client:>= 0|checksum:2e38a00ae006c0fa02640d0728032bad9938159b94052a8141fd3704aa4fe015
+1.0.8 rest-client:>= 0|checksum:5ee5a74d5705552e51f0541af00003221ec7959700556b059f60d6c5df2e012b
+1.0.9 rest-client:>= 0|checksum:5e037d8ec54a5261548a6d74330edaa7cab57b9afdc6ac7c48d87b435ab15d77
+1.0.10 rest-client:>= 0|checksum:335542f5ac8fffbcb1a2152b2cc81ca09135d5b51cc17eb639f4bd4ae8b2ff7e
+1.0.11 rest-client:>= 0|checksum:174a118bc8aee92e521236868952e0af8fd5530b7493139a0ffc08da5a779d22
+1.0.12 rest-client:>= 0|checksum:1a3484969048d0f2ef5cae1226c9dca984abdf2532f313d978fe4e0acb9e09c8
+1.0.13 rest-client:>= 0|checksum:f31f629be24180dc7257afdf11f862a10eb4ebb83ff5d294886b71bd97f776ef
+1.0.14 rest-client:>= 0|checksum:77076c0d0b637d523a5964a8d0ca29143dbd9db38fc6f18e866674d7eab50a95
+1.0.15 rest-client:>= 0|checksum:fbd46cb3c83079c804ba254a95a0c306137c1b4a8550b284d2f96d9c50667aff
+1.0.16 rest-client:>= 0|checksum:f75da2b20e0ed642420648c2bd296f0fe3f74fd52017d092069437e0c81c9029
+1.0.17 rest-client:>= 0|checksum:071fab803194944285fd27208219099b639b311b750f60e237cf12bd3c317567
+1.0.18 rest-client:>= 0|checksum:b402097de665a289cf22e957f033cf8ad8058bc29d5f4988f962a2f334bdcdb7
+1.0.19 rest-client:>= 0|checksum:eb95c95a0e2627c5d659c12bf1a7de7684d96d2857328b193145f769e7b2bceb
+1.0.20 rest-client:>= 0|checksum:5cf8817da9c39755d8b7300fdd5ba222ee5be9894e19cfbf3f909227b2037844
+1.0.21 rest-client:>= 0|checksum:472850b6f3a7f7ed3bc570f9d1af1430b5558e815d0bcc31cb0ee0cbb28b7ad7
+1.0.22 rest-client:>= 0|checksum:8249c622cf31d6eb8db696bb24ba74a814443ed3a00aee817206d6a910842d13
+1.0.23 rest-client:>= 0|checksum:19c920af912de111cbfea30d54ab0a7aa0e526bf2b700a8dbb065504811e82cf
+1.0.24 rest-client:>= 0|checksum:93085cf46e764508f3ec4befbab7cfb066fe556ce790749cfbda8d5392633215
+1.0.25 rest-client:>= 0|checksum:371b3e12c1b187c3798ad8d12bf1b0d356063c7d1475982bb4fb59cf1c827bb3
+1.0.26 rest-client:>= 0|checksum:ccec3519fdddc7c88683ce5fd181b14d075df71de266aa8f3509d96ca238f670
+1.0.27 rest-client:>= 0|checksum:a3f721de06da12e4806ea3136d57d2643c39844b29e732866281438f4ce7c2d1
+1.0.28 rest-client:>= 0|checksum:8f16c376c77b5a6c9ff44996edb912993aa464e500fecc8ff698e5b0b1a58748
+1.0.29 rest-client:>= 0|checksum:9483ff305b7794010abf40d6b57cae8fbe3033962ec5d7e440309f5d08e00c1b
+1.0.30 rest-client:>= 0|checksum:98f03b5b436a3c46c0bfb5e45f5e7dcd99cb1370966e0f8502d5bb6e0572f1cb
+1.0.31 rest-client:>= 0|checksum:1d13264289c5eb7376f9ed9acbc970b62057d12031ac1df2c5559bbc96dc33d1
+1.0.32 rest-client:>= 0|checksum:24cd78f3f80afebcb986a4cb4a0a3c1a23f707a91af500daa12171146c0e780e
+1.0.33 aws_cf_signer:>= 0,rest-client:>= 0|checksum:d484494edb9b75bdfe6c5757aa27432e250d80a84eaeee37b16433bead67c5f8
+1.0.34 aws_cf_signer:>= 0,rest-client:>= 0|checksum:f6dd4f68d0035a862fe5c8f789bbb91e1df9db9567c0afd0e65c4edabd89498d
+1.0.35 aws_cf_signer:>= 0,rest-client:>= 0|checksum:1bf4800e709e26c261cd996266bd8d1a18885c811246162be061348f7892e809
+1.0.36 aws_cf_signer:>= 0,rest-client:>= 0|checksum:d148215b2897a33e9dc1341626c282485f56ec3d3fbb39bc1d02c6c064334e18
+1.0.37 aws_cf_signer:>= 0,rest-client:>= 0|checksum:3248c28730fbb75a4a9b9b4c7779ede36912279f2a83dd1d20a02c3e7039a198
+1.0.38 aws_cf_signer:>= 0,rest-client:>= 0|checksum:4e56abdfc6d5975751e39d29272b6037594eb14e3158d417988c1c8f38d7c2a6
+1.0.39 aws_cf_signer:>= 0,rest-client:>= 0|checksum:3d17198a7b627506820c5a386e0f7c7b82ee4ae039b8c447df99bc6b13ae1f67
+1.0.40 aws_cf_signer:>= 0,rest-client:>= 0|checksum:f1c6821baea3f8020db583ba2de3bdb9d2cd4593661b0fe7a9948dc4eb2c2185
+1.0.41 aws_cf_signer:>= 0,rest-client:>= 0|checksum:7567bbb83cefde63348053cb3201ee04e855ccf2e26a62ad326b659021a41fba
+1.0.42 aws_cf_signer:>= 0,rest-client:>= 0|checksum:cdd9089ed6e1dcb212d522f9542220cfbf16dece72f72b707aa8049523e6c300
+1.0.43 aws_cf_signer:>= 0,rest-client:>= 0|checksum:0e0cd4eb987bdfae3bbfa9268785a3acd433908bedf017ccdbafe27a4c90d9f7
+1.0.44 aws_cf_signer:>= 0,rest-client:>= 0|checksum:b029363928b1782d0d04ddb1505d9db16a3f2175db86fe37efade80df7fdaf57
+1.0.45 aws_cf_signer:>= 0,rest-client:>= 0|checksum:2fe83a0423afebc9039206d1212203bf2c262e3cee4f39b4715dbc300248889a
+1.0.46 aws_cf_signer:>= 0,rest-client:>= 0|checksum:1d47e5a8375c094962dc24a463fd575bd33b2a059c8cea31d3768fdad6984420
+1.0.47 aws_cf_signer:>= 0,rest-client:>= 0|checksum:a3e7066370e1f8aad86bc2f49597d287c581fff21897c67f0acbf12ecb513935
+1.0.48 aws_cf_signer:>= 0,rest-client:>= 0|checksum:45e21f853f4eb8f20a5052d37863f6e79aa47a857165419fa72d5667bca9746c
+1.0.49 aws_cf_signer:>= 0,rest-client:>= 0|checksum:d748fb0d05d2f1c220c597f7493860a9cb84157bc43fd788f82ce173d5fa90a2
+1.0.50 aws_cf_signer:>= 0,rest-client:>= 0|checksum:ec1d24c5b66f318b1c4f6f42862bf93472b4a69ae938b3033b94bdbb01e6db35
+1.0.51 aws_cf_signer:>= 0,rest-client:>= 0|checksum:a969b6b3faf76032d933cafc9f8b724d605e36d15f822ec281f718dec99c3d2c
+1.0.52 aws_cf_signer:>= 0,rest-client:>= 0|checksum:9ea8bb44104dd3a32856abd438dc35f5656afdab064cd8e47674c4ff7dd46182
+1.0.53 aws_cf_signer:>= 0,rest-client:>= 0|checksum:c0fd35cf281848b3d6cd2b621d65b6dbb96dc27a220d48db40b911a9e8ecabf4
+1.0.54 aws_cf_signer:>= 0,rest-client:>= 0|checksum:99d847e5d5fbb25583f2322d7aaab131f5f1cdc0f6473ad767440b7636764a6b
+1.0.55 aws_cf_signer:>= 0,rest-client:>= 0|checksum:015ec03b589faeb5acee6f24f7fa807495bb05bdb2f3afc2c6fdb954fb98c4d4
+1.0.56 aws_cf_signer:>= 0,rest-client:>= 0|checksum:714b6a9d112c07deddcd21d1373fd19ca2c764863c42a0e886a1ea5b2402ff1c
+1.0.57 aws_cf_signer:>= 0,rest-client:>= 0|checksum:4854b0316055dd22e9aa2fce59ca578e9021cf8babcdd8c08cd103ab3fa64cb8
+1.0.58 aws_cf_signer:>= 0,rest-client:>= 0|checksum:2db013de4edc975e74ddc567f133e433a65ce877ed408bc5734bf6d91b4cbdd6
+1.0.59 aws_cf_signer:>= 0,rest-client:>= 0|checksum:ab73fb32723e0a0f14a5272e82f3b2c95d936cc73496477aa9471ca887281954
+1.0.60 aws_cf_signer:>= 0,rest-client:>= 0|checksum:ed6afa229bd4f545fcfe0ab7cd375997702b0b7a73cd9bbb16ea7c5f47c9c993
+1.0.61 aws_cf_signer:>= 0,rest-client:>= 0|checksum:41703030bdc9dc412b093e73556a9844679e289d9c4317e3cbe891ed5dfd0999
+1.0.62 aws_cf_signer:>= 0,rest-client:>= 0|checksum:41bc1de0596d4a1024c2d01b31e5685d6ff59443414d630f7f1b118257dfce82
+1.0.63 aws_cf_signer:>= 0,rest-client:>= 0|checksum:a1c2de166bbbfca9791bf499555d42979b41128612ad6270e304b714d76ef5bb
+1.0.64 aws_cf_signer:>= 0,rest-client:>= 0|checksum:3da78b359a687228d16253060c89cd10bf9151a121c195788fcee4742673ccd7
+1.0.65 aws_cf_signer:>= 0,rest-client:>= 0|checksum:8c51d6ae5a711f6030b0d12e4c70a5cf64ae03d8122db6ecf62231881b2befbf
+1.0.66 aws_cf_signer:>= 0,rest-client:>= 0|checksum:f09747e1ba92aae874787fdd4c8b16a690e2a559b474c4abf4fa0b52228dd9d3
+1.0.67 aws_cf_signer:>= 0,rest-client:>= 0|checksum:c99fc246ae7973db1249782d29e8d7668d3f407756df9f61b7fd0146b2c04282
+1.0.68 aws_cf_signer:>= 0,rest-client:>= 0|checksum:83a53b9e55f515de3e41b53e486e2b3945a38baa8b922ebaf25c2973c231f854
+1.0.69 aws_cf_signer:>= 0,rest-client:>= 0|checksum:936ca3a4473bf6e5b2f3c05d6d8321a22fdd5ea2bfdfa6c08dc682eaf4227d4d
+1.0.70 aws_cf_signer:>= 0,rest-client:>= 0|checksum:8653557d6f139e0c4e5ed5e60dbc2a930624b1731aa2f01e75da712ee674a88b
+1.0.71 aws_cf_signer:>= 0,rest-client:>= 0|checksum:7074f2fe76ce0c726cd21dbb32ded985188dee070faf7e49dfbc7896ce783404
+1.0.72 aws_cf_signer:>= 0,rest-client:>= 0|checksum:d529f7231a1698a0eb9826ec825d42a963892f2e4f058b36a732a6234523676f
+1.0.73 aws_cf_signer:>= 0,rest-client:>= 0|checksum:21c31c852eba5163ed6d984b3a7e765318c3d8b07f884ef8070f6d9bbc701c6d
+1.0.74 aws_cf_signer:>= 0,rest-client:>= 0|checksum:e562c6f1eff69164d6a3b5b226ec953798a00ee743410d0f4bb29a95d503efb1
+1.0.75 aws_cf_signer:>= 0,rest-client:>= 0|checksum:fe3bd3acac32eea6f62e50d45fcee75ebb848be420b6336207612f236e297a4d
+1.0.76 aws_cf_signer:>= 0,rest-client:>= 0|checksum:22fd4648ddeb5f787ddf803a8f2369a73b561fdbe9a6b05592ace4df0f4a19d2
+1.0.77 aws_cf_signer:>= 0,rest-client:>= 0|checksum:ee7e7cd9e519d28887f84b828dc26cb96b69b88d08318ff7130ad199f6ad34c8
+1.0.78 aws_cf_signer:>= 0,rest-client:>= 0|checksum:ce7f160e92193b13abe53d0a3c3372456931d997044598ec548b3b88a6acd3f0
+1.0.79 aws_cf_signer:>= 0,rest-client:>= 0|checksum:2ebd59195fd906bfd2af977143a8a7fe3f3aa49b6c7c6fbb207c9a893ed5af1c
+1.0.80 aws_cf_signer:>= 0,rest-client:>= 0|checksum:6d92a74839abc88190a1d619177d143333d42a0789dd15caeccfa617896effad
+1.0.81 aws_cf_signer:>= 0,rest-client:>= 0|checksum:4f6902372c3f7c2e941f3a2a99b1911229a5750f58cb7548bbfe30a8fc4ebc25
+1.0.82 aws_cf_signer:>= 0,rest-client:>= 0|checksum:8e08f5cad61cd33650ae18abc508e62b2f92f8a505c718ea2a2fa6185103148f
+1.0.83 aws_cf_signer:>= 0,rest-client:>= 0|checksum:46149e7adf59bc421f26e636ae076e00bde29ae8b631757b932361289577ccd5
+1.0.84 aws_cf_signer:>= 0,rest-client:>= 0|checksum:1a07a45bf194b20ce5270d31d92a05960eae90f4ffe5fdc9f266f485fa22b833
+1.0.85 aws_cf_signer:>= 0,rest-client:>= 0|checksum:71ff8293fd3f52001935045c322ff3d741c74e5a219d958778108fd5d7d9b6a4
+1.1.0 aws_cf_signer:>= 0,rest-client:>= 0|checksum:f406d0001fddaa745b7eec44489b2ec4341b241cfc801aba2c0440be0be7ccff
+1.1.1 aws_cf_signer:>= 0,rest-client:>= 0|checksum:e93921d21ded9f2cd9e8d7c8fe1049e1ea95fdb3a77fdbe1b0a4a335f17d203e
+1.1.2 aws_cf_signer:>= 0,rest-client:>= 0|checksum:2aca1539e2797187bd82f63c1a9145a4acc5974c2f21d6d4df4890c79f05b918
+1.1.3 aws_cf_signer:>= 0,rest-client:>= 0|checksum:1388f6e2db7a82d0a95f6eb1223e91aaabd47f750ad3ed1fca2b722a8be3c05d
+1.1.4 aws_cf_signer:>= 0,rest-client:>= 0|checksum:fabbb0bb238d316dc5ae0dee5a9c4221c4888adcf086dc98d3f4d764277edcbb
+1.1.5 aws_cf_signer:>= 0,rest-client:>= 0|checksum:83eb21a3e3d57c65d6559319aff674d494ed4166bcbdfbc874df271273278edf
+1.1.6 aws_cf_signer:>= 0,rest-client:>= 0|checksum:3d7ee5f5e137c9b13026d244ce9ba278d54c55055c43541cf3bf21ae8ff12d65
+1.1.7 aws_cf_signer:>= 0,rest-client:>= 0|checksum:5192b138bf654a83d82910e5b85d4d8a014e78bd2cd46866733f18f132fa50fa
+1.2.0 aws_cf_signer:>= 0,rest-client:>= 0|checksum:7850706f3d3fc62b37a4bb11b20f36c3712de73f1840b5c133a699e6f624dc7a
+1.2.1 aws_cf_signer:>= 0,rest-client:>= 0|checksum:b3bd1fd057e7c6be872295bff52a95b02d055ba33f7bae7c8f14c8505cc641d0
+1.2.2 aws_cf_signer:>= 0,rest-client:>= 0|checksum:3bbb33eb56d66ff7b040473683ae0d8361a7d199c67ce51a9ef52e042bf63b33
+1.2.3 aws_cf_signer:>= 0,rest-client:>= 0|checksum:3333ec37a25088bc683adba9fef9e1fa3c4f70f25b48b38000899aa3f80fdc2e
+1.2.4 aws_cf_signer:>= 0,rest-client:>= 0|checksum:ac45155e2e2e032ee38a775b4d93e28daa2f1bc21713366910fc5bbeb34c07a5
+1.3.0 aws_cf_signer:>= 0,rest-client:>= 0|checksum:30351b7418bf582f606e5936b7004811de6419763d8b020ec64fb4d6137656d8
+1.4.0 aws_cf_signer:>= 0,rest-client:>= 0|checksum:a951236522bb766f6af60ef0705cc7a70de0bef33589388282ae0804e9badc55
+1.5.2 aws_cf_signer:>= 0,json:~> 1.8,rest-client:< 2.0|checksum:7c41eefe5e9eceb4aa5e6c1f8549a468d00172f0ac12dc3797105eaad5fe150d
+1.6.0 aws_cf_signer:>= 0,rest-client:>= 0|checksum:2c8c3916cb7027e57381b76fb7bbb412115502a6289ad0c061762a1933b0181f
+1.7.0 aws_cf_signer:>= 0,rest-client:>= 0|checksum:fa2858976eda292a087eca898b975b7e3c8cac36f5a7dda47fbcdf66e2e643a7
+1.8.0 aws_cf_signer:>= 0,rest-client:>= 0|checksum:028e62c4158fb796e5d408d2da461bb2741a0700513c6b131f56dc627c56d982
+1.8.1 aws_cf_signer:>= 0,rest-client:>= 0|checksum:37716aa4ada72724244a3c39021af2f677f41dc912ddd208f9716b6dc31c8608
+1.8.2 aws_cf_signer:>= 0,rest-client:>= 0|checksum:a1191e363e2a07febd7b5851eca2557346a000da2c2f5bc7dbd53d923828e6b7
+1.8.3 aws_cf_signer:>= 0,rest-client:>= 0|checksum:8595acf085c3a92d8834fe9e0a4ae4729e1083d3e8982d8b9653c38aa99d3c67
+1.9.0 aws_cf_signer:>= 0,rest-client:>= 0|checksum:24c1390f8c574b6406fd20e0097dc65184e0ac60577f434a87019e2a7452cbb0
+1.9.1 aws_cf_signer:>= 0,rest-client:>= 0|checksum:24ac49ad6aacfd234aae8a968ae54f794a81b41b6883326cd47187b14f12f946
+1.10.0 aws_cf_signer:>= 0,json:~> 1.8,rest-client:< 2.0|checksum:b75993fe0eb07d6ca91d3db0abf9915c6cfa883afcd1e844ac80dbe73d216f2c
+1.10.1.pre.rc aws_cf_signer:>= 0,rest-client:>= 0|checksum:c9a57489ea4a81d9495d2abb5825c7a2da5f154cd26d9abf6cf17a0917eaf72b,rubygems:> 1.3.1
+1.11.0 aws_cf_signer:>= 0,rest-client:>= 0|checksum:315707c15e00d8fc22217291ae21d0d5827250827fc3537eaa79052c3041ebb7
+1.11.1 aws_cf_signer:>= 0,rest-client:>= 0|checksum:1cc346642cdbd565c2d12e9b8f510aa43c303d36b1a6d8f4e65cc01783d489fb
+1.12.0 aws_cf_signer:>= 0,rest-client:>= 0|checksum:c445749bfea0e68bd0840f1ae44e50e592e3b8ad4cc6c244658905f5229d8806
+1.13.0 aws_cf_signer:>= 0,rest-client:>= 0|checksum:3770f23e90efe38ea0416f84871e318bb019ccf0c4d44c0cd6926172e3601221
+1.13.1 aws_cf_signer:>= 0,rest-client:>= 0|checksum:9131241e11d250db029ab4b88ccf3bd01a99af430f1685389ddba8ec8498d54d
+1.13.2 aws_cf_signer:>= 0,rest-client:>= 0|checksum:9307a1bc0b1d8a168bff9ef343d76d0f7ef19207e0b02c613779245abc6c767d
+1.14.0 aws_cf_signer:>= 0,rest-client:>= 0|checksum:4674e01708fd6ac14e51a43bf350fecb00d1bf6f11d16e29c2e9547babbe46c8
+1.15.0 aws_cf_signer:>= 0,rest-client:>= 0|checksum:6c0db0c85f3dd5f2a52fcbc115e57db4432f1b162bf4ad70f5ddda4dbfd754b5
+1.16.0 aws_cf_signer:>= 0,rest-client:>= 0|checksum:ee342f39c1167c8121bb2bb64ef2966875d2597ced38ceca4c919289a1b2e22e
+1.16.1 aws_cf_signer:>= 0,rest-client:>= 0|checksum:e1a366cf267ae478c31e9be32e4db7378aa39d2c8f1a29967b36375b3f9d184b
+1.17.0 aws_cf_signer:>= 0,rest-client:>= 0|checksum:7782a78d41fdefc1a17e297623e709bafa261fefa5bb603fda5a2af2872678a6
+1.17.1 aws_cf_signer:>= 0,rest-client:>= 0|checksum:d2fddacfa55bba5ead4424d8e39c0c4e0bb16f6582c4b92e05e1adde4332c4d5
+1.18.0 aws_cf_signer:>= 0,rest-client:>= 0|checksum:80e1ce576d4103e5d1e47030e4e875a930979c4947569078edcb90b00970eb66
+1.18.1 aws_cf_signer:>= 0,rest-client:>= 0|checksum:50051d664b972b2ac41f6037b965b57e2a98b7faf54ab3953074bf462a9cd9f1
+1.19.0 aws_cf_signer:>= 0,rest-client:>= 2.0.0|checksum:aa10f7b792a884d69136485c8902b117428c6f00a469d8634d923273553c2623
+1.20.0 aws_cf_signer:>= 0,rest-client:>= 2.0.0|checksum:b8bb9b99979694140c0d13c5fb8941ad3cb260593f99c8db876db5f12277a71b
+1.21.0 aws_cf_signer:>= 0,rest-client:>= 2.0.0|checksum:5f39bc10cc19405e3fc8af714db094e7d59b1f029cfd96d596e48d0b437a471b
+1.22.0 aws_cf_signer:>= 0,rest-client:>= 2.0.0|checksum:e98049669e2df004c1d3fc5dfdd18fae2641b90efdce59a874f588e52304cc82
+1.23.0 aws_cf_signer:>= 0,rest-client:>= 2.0.0|checksum:b23175eb88dbeae8995598ed31a31df90e4ede8b047dc63a6f2f896cf1c1fbb7
+1.24.0 aws_cf_signer:>= 0,rest-client:>= 2.0.0|checksum:ff1b22ce50c580690365b3fc520723efe1d9c1051c7e34e96ed9e354b3a23db0
+1.25.0 aws_cf_signer:>= 0,rest-client:>= 2.0.0|checksum:b8c4ee9f88671ee1f0354d9f4afe4d9041abec9f6ae109a361305bf702ccf85a
+1.26.0 aws_cf_signer:>= 0,rest-client:>= 2.0.0|checksum:67931d9ca50efababd610549baa29c8cf5d635da884d63921ace72481d8b57a1
+1.27.0 aws_cf_signer:>= 0,rest-client:>= 2.0.0|checksum:b2f916a2b2222802062ad07657c0dbb318bf991724ce489d75ddf4727c1a17fe

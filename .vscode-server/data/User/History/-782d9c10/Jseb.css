@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@500&family=Noto+Sans+KR:wght@700&display=swap');
+h1 {
+  color: mediumaquamarine;
+  font-size: 70 px;
+  font-family: Handjet;
+  line-height: normal;
+}
+
+h2 {
+  color:burlywood;
+  font-size: 50 px;
+  font-family: Handjet;
+  line-height: normal;
+}
+
+h3 {
+  color: mediumaquamarine;
+  font-size: 30 px;
+  font-family: Noto Sans Korean;
+  line-height: normal;
+}

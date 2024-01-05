@@ -1,0 +1,37 @@
+require_relative "./calling_challenge.rb"
+
+# In this exercise all the methods are already created! Yey!
+# Your challenge is: take a look into the methods inside calling_challenge.rb and call/invoke them, printing the results in the terminal!
+
+# method 1
+
+puts calculator("-", 9, 1)
+
+# method 2
+
+array = [1, 3, 5, 6, -1]
+puts positive_sum(array)
+
+# method 3
+
+puts upcase_string("I am intelligent")
+
+# method 4
+
+puts student_infos("Matt", "McGovern", 1, 26, "Boston", "United States")
+
+# method 5
+
+hash = {
+  first_name: "Matt",
+  last_name: "McGovern"
+}
+puts print_student_name(hash)
+
+# method 6
+
+puts sum_numbers(1, 2, 3, 4, 5, 6)
+
+# method 7
+
+puts sunny_or_shinny("sunny")

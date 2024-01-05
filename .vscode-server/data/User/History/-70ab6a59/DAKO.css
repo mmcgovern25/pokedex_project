@@ -1,0 +1,26 @@
+.btn-medium {
+  border-radius: 2rem;
+  border: 0.2rem solid gray;
+  margin: 1rem;
+  padding: 0.5rem;
+  width: 2rem;
+  height: 5rem;
+}
+
+.btn-treehouse {
+  background-color: lightgreen;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin: 1rem;
+  width: 2rem;
+  height: 5rem;
+}
+
+
+.btn-yours {
+  border-radius: 4rem;
+  background-color: orangered;
+  padding: 0.6rem;
+  width: 2rem;
+  height: 5rem;
+}

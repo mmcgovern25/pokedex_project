@@ -1,0 +1,1 @@
+[{"severity":"warning","location":{"begin_pos":67,"end_pos":71},"message":"Lint/UnusedBlockArgument: Unused block argument - `meal`. If it's necessary, use `_` or `_meal` as an argument name to indicate that it won't be used.","cop_name":"Lint/UnusedBlockArgument","status":"uncorrected"}]
