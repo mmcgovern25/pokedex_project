@@ -14,8 +14,14 @@ fetch(`https://pokeapi.co/api/v2/pokemon?limit=${MAX_POKEMON}`)
     displayPokemons(allPokemons);
   });
 
+  listWrapper.addEventListener("scroll", () => {
+    localStorage.setItem('scrollPosition', listWrapper.scrollTop);
+  });
+
+
 async function fetchPokemonDataBeforeRedirect(id) {
   try {
+
     const [pokemon, pokemonSpecies] = await Promise.all([
       fetch(`https://pokeapi.co/api/v2/pokemon/${id}`).then((res) =>
         res.json()
@@ -24,6 +30,8 @@ async function fetchPokemonDataBeforeRedirect(id) {
         res.json()
       ),
     ]);
+    localStorage.setItem('scrollPosition', listWrapper.scrollTop);
+
     return true;
   } catch (error) {
     console.error("Failed to fetch Pokemon data before redirect");
@@ -189,3 +197,9 @@ viewMtBattleText.addEventListener('click', navigateToMtBattle);
 function navigateToMtBattle() {
     window.location.href = 'mt-battle.html';
 }
+
+
+
+  
+
+  

@@ -2,8 +2,17 @@ let currentPokemonId = null;
 
 document.addEventListener("DOMContentLoaded", () => {
   const MAX_POKEMONS = 649;
+  const backButton = document.getElementById("back-btn");
   const pokemonID = new URLSearchParams(window.location.search).get("id");
   const id = parseInt(pokemonID, 10);
+
+  if (backButton) {
+    backButton.addEventListener("click", () => {
+      // Store the current scroll position
+      localStorage.setItem('scrollPosition', window.scrollY);
+      window.location.href = './index.html';
+    });
+  }
 
   if (id < 1 || id > MAX_POKEMONS) {
     return (window.location.href = "./index.html");
@@ -15,6 +24,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
 async function loadPokemon(id) {
   try {
+
+    const storedScrollPosition = localStorage.getItem('scrollPosition');
+
+    // Check if there's a stored scroll position
+    if (storedScrollPosition) {
+      // Scroll to the stored position
+      window.scrollTo(0, parseInt(storedScrollPosition));
+    }
+
     const [pokemon, pokemonSpecies] = await Promise.all([
       fetch(`https://pokeapi.co/api/v2/pokemon/${id}`).then((res) =>
         res.json()
@@ -296,6 +314,42 @@ async function addPokemonToParty(pokemonId) {
   }
 }
 
+const addToDreamTeamButton = document.querySelector('.dream-team-btn');
+
+// Add click event listener to the "Add to Party" button
+addToDreamTeamButton.addEventListener('click', () => addPokemonToDreamTeam(currentPokemonId));
+
+async function addPokemonToDreamTeam(pokemonId) {
+  // Retrieve existing party data or initialize an empty array
+  const dreamTeamData = JSON.parse(localStorage.getItem('dreamTeam')) || [];
+
+  if (dreamTeamData.length < 15) {
+    // Check if the selected Pokemon is not already in the party
+    if (!dreamTeamData.includes(pokemonId)) {
+      // Add the Pokemon ID to the party data
+      dreamTeamData.push(pokemonId);
+
+      // Save the updated party data to localStorage
+      localStorage.setItem('dreamTeam', JSON.stringify(dreamTeamData));
+
+      // Log success or handle it in your own way
+      console.log(`Pokemon with ID ${pokemonId} added to the dream team!`);
+      
+      // Fetch and log the Pokemon details
+      const pokemonDetails = await fetchPokemonDetails(pokemonId);
+      console.log(`Pokemon details for ID ${pokemonId}:`, pokemonDetails);
+    } else {
+      // Log a message if the Pokemon is already in the party
+      console.log(`Pokemon with ID ${pokemonId} is already in the party.`);
+    }
+  } else {
+    console.log('Party is full! Cannot add more Pokemon.');
+  }
+}
+
+
+
+
 async function fetchPokemonDetails(pokemonId) {
   try {
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonId}`);
@@ -306,3 +360,16 @@ async function fetchPokemonDetails(pokemonId) {
     return null;
   }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  // ... rest of your existing code
+
+  // Retrieve the stored scroll position
+  const storedScrollPosition = localStorage.getItem('scrollPosition');
+
+  // Check if there's a stored scroll position
+  if (storedScrollPosition) {
+    // Scroll to the stored position
+    window.scrollTo(0, parseInt(storedScrollPosition));
+  }
+});

@@ -273,6 +273,22 @@ body {
   }
 }
 
+.dream-team-pokemon-list {
+  background-color: var(--grayscale-white);
+  box-shadow: var(--drop-shadow-inner);
+  border-radius: 0.75rem;
+  min-height: calc(40% - 1rem);
+  width: calc(100% - 1rem);
+  max-height: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  /* Adjust styles for screens with a minimum width of 768 pixels */
+  .dream-team-pokemon-list {
+    min-height: calc(20% - 1rem);
+  }
+}
+
 .list-wrapper {
   margin: 1rem 0;
   display: flex;
