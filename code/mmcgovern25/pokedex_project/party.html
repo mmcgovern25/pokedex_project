@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="./pokemon.js" defer></script>
-    <script src="./search.js" defer></script>
-    
-  </head>
-  <body>
+    <script src="./party.js" defer></script> 
+</head>
+<body>
     <main class="main">
       <header class="header home">
         <div class="container">
           <div class="logo-wrapper">
             <img src="./assets/pokeball.svg" alt="pokeball" />
-            <h1>Pokedex</h1>
+            <h1>Party</h1>
           </div>
           <div class="search-wrapper">
             <div class="search-wrap">
@@ -105,10 +103,13 @@
       </header>
       <section class="pokemon-list">
         <div class="container">
-          <div class="list-wrapper"></div>
+          <div class="list-wrapper">
+            <div class="party-container"></div>
+          </div>
         </div>
         <div id="not-found-message">Pokemon not found</div>
       </section>
     </main>
   </body>
 </html>
+

@@ -30,36 +30,6 @@ async function fetchPokemonDataBeforeRedirect(id) {
   }
 }
 
-function displayPokemons(pokemon) {
-  listWrapper.innerHTML = "";
-
-  pokemon.forEach((pokemon) => {
-    const pokemonID = pokemon.url.split("/")[6];
-    const listItem = document.createElement("div");
-    listItem.className = "list-item";
-
-    listItem.innerHTML = `
-        <div class="number-wrap">
-            <p class="caption-fonts">${pokemonID}</p>
-        </div>
-        <div class="img-wrap">
-            <img src="https://raw.githubusercontent.com/pokeapi/sprites/master/sprites/pokemon/other/dream-world/${pokemonID}.svg" alt="${pokemon.name}" />
-        </div>
-        <div class="name-wrap">
-            <p class="body3-fonts">${pokemon.name}</p>
-        </div>
-    `;
-
-    listItem.addEventListener("click", async () => {
-      const success = await fetchPokemonDataBeforeRedirect(pokemonID);
-      if (success) {
-        window.location.href = `./detail.html?id=${pokemonID}`;
-      }
-    });
-
-    listWrapper.appendChild(listItem);
-  });
-}
 
 searchInput.addEventListener("keyup", handleSearch);
 
@@ -188,4 +158,56 @@ viewMtBattleText.addEventListener('click', navigateToMtBattle);
 
 function navigateToMtBattle() {
     window.location.href = 'mt-battle.html';
+}
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Retrieve party data from localStorage
+    const partyData = JSON.parse(localStorage.getItem('party')) || [];
+
+    // Check if there are Pokemon IDs in the partyData
+    if (partyData.length > 0) {
+        // Iterate through each Pokemon ID in the partyData
+        partyData.forEach((pokemonId) => {
+            // Fetch Pokemon details using the ID and display them on the party page
+            fetchPokemonDetails(pokemonId);
+        });
+    } else {
+        // Handle the case when the party is empty
+        console.log('The party is empty.');
+    }
+});
+
+// party.js
+
+// ... (other code)
+
+async function fetchPokemonDetails(pokemonId) {
+    try {
+        const pokemon = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonId}`).then((res) => res.json());
+
+        // Create a div element to represent the Pokemon card
+        const pokemonCard = document.createElement('div');
+        pokemonCard.classList.add('pokemon-card'); // Add a class for styling
+
+        // Create an image element for the Pokemon's sprite
+        const pokemonImage = document.createElement('img');
+        pokemonImage.src = pokemon.sprites.front_default;
+      
+
+        // Create a span element for the Pokemon's name
+        const pokemonName = document.createElement('span');
+    
+
+        // Append the image and name to the card
+        pokemonCard.appendChild(pokemonImage);
+        pokemonCard.appendChild(pokemonName);
+
+        // Append the Pokemon card to the listWrapper
+        listWrapper.appendChild(pokemonCard);
+
+        console.log(`Pokemon details for ID ${pokemonId}:`, pokemon);
+    } catch (error) {
+        console.error(`An error occurred while fetching Pokemon details for ID ${pokemonId}:`, error);
+    }
 }

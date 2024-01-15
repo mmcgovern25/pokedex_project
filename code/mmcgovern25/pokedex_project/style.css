@@ -1,5 +1,5 @@
 :root {
-    --identity-primary: #dc0a2d;
+    --identity-primary: red;
   
     --grayscale-dark: #212121;
     --grayscale-medium: #666666;
@@ -249,17 +249,7 @@
     max-height: 100px;
     overflow-y: auto;
   }
-  
-  .pokemon-list .list-item:hover {
-    /* Add a transition for a smooth effect */
-    transition: background-color 0.3s ease;
-    background-color: var(--button-background); /* Set the default button background color */
-  }
-  
-  .pokemon-list .list-item:hover .name-wrap {
-    transition: background-color 0.3s ease;
-    background-color: var(--button-background); /* Apply the hover effect to the .name-wrap */
-  }
+
   
   .list-wrapper {
     margin: 1rem 0;
@@ -645,18 +635,18 @@
   .cool > li:hover .dropdown {
     display: block;
     opacity: 1;
+    cursor: pointer;
   }
   
   .dropdown li:hover {
-    background-color: #dc0a2d;
+    background-color: red;
     border-radius: 8px;
-    box-shadow: var(--drop-shadow-inner);
   }
   
   .dropdown a {
     font-weight: bold;
     text-decoration: none;
-    color: #dc0a2d;
+    color: red;
   }
   
   
@@ -675,6 +665,10 @@
   .code {
     padding-left: 10px;
   }
+
+  .view-party {
+    padding-left: 10px;
+  }
   
   .button-wrapper {
     justify-content: center;
@@ -682,7 +676,7 @@
   
   .pill-button {
     border-radius: 12px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, box-shadow 0.3s;
     color: white;
     padding: 9px 7px; /* Adjust the padding as needed */
     margin: 1px;
@@ -696,8 +690,19 @@
   
   
   .pill-button:hover {
-    filter: brightness(90%);
+    filter: brightness(70%);
+    box-shadow: 0px 1px 3px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    
   }
   
+  .pokemon-list .list-item:hover {
+    transition: background-color 0.3s ease;
+    background-color: red;  /* Set the desired hover background color */
+  }
   
+  .pokemon-list .list-item:hover .name-wrap {
+    transition: background-color 0.3s ease;
+    background-color: red; /* Apply the hover effect to the .name-wrap */
+  }
   

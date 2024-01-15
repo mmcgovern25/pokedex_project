@@ -258,3 +258,30 @@ function getEnglishFlavorText(pokemonSpecies) {
   }
   return "";
 }
+
+
+// Assuming you have a reference to the "Add to Party" button
+const addToPartyButton = document.querySelector('.party-btn');
+
+// Add click event listener to the "Add to Party" button
+addToPartyButton.addEventListener('click', () => addPokemonToParty(currentPokemonId));
+
+function addPokemonToParty(pokemonId) {
+  // Retrieve existing party data or initialize an empty array
+  const partyData = JSON.parse(localStorage.getItem('party')) || [];
+
+  // Check if the selected Pokemon is not already in the party
+  if (!partyData.includes(pokemonId)) {
+      // Add the Pokemon ID to the party data
+      partyData.push(pokemonId);
+
+      // Save the updated party data to localStorage
+      localStorage.setItem('party', JSON.stringify(partyData));
+
+      // Log success or handle it in your own way
+      console.log(`Pokemon with ID ${pokemonId} added to the party!`);
+  } else {
+      // Log a message if the Pokemon is already in the party
+      console.log(`Pokemon with ID ${pokemonId} is already in the party.`);
+  }
+}
