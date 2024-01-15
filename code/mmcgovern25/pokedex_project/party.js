@@ -161,23 +161,6 @@ function navigateToMtBattle() {
 }
 
 
-document.addEventListener("DOMContentLoaded", () => {
-    // Retrieve party data from localStorage
-    const partyData = JSON.parse(localStorage.getItem('party')) || [];
-
-    // Check if there are Pokemon IDs in the partyData
-    if (partyData.length > 0) {
-        // Iterate through each Pokemon ID in the partyData
-        partyData.forEach((pokemonId) => {
-            // Fetch Pokemon details using the ID and display them on the party page
-            fetchPokemonDetails(pokemonId);
-        });
-    } else {
-        // Handle the case when the party is empty
-        console.log('The party is empty.');
-    }
-});
-
 // party.js
 
 // ... (other code)
@@ -196,12 +179,11 @@ async function fetchPokemonDetails(pokemonId) {
       
 
         // Create a span element for the Pokemon's name
-        const pokemonName = document.createElement('span');
+    
     
 
         // Append the image and name to the card
         pokemonCard.appendChild(pokemonImage);
-        pokemonCard.appendChild(pokemonName);
 
         // Append the Pokemon card to the listWrapper
         listWrapper.appendChild(pokemonCard);
@@ -210,4 +192,45 @@ async function fetchPokemonDetails(pokemonId) {
     } catch (error) {
         console.error(`An error occurred while fetching Pokemon details for ID ${pokemonId}:`, error);
     }
+}
+
+// Add this script to your existing JavaScript
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Retrieve party data from localStorage
+    const partyData = JSON.parse(localStorage.getItem('party')) || [];
+
+    // Get the container where Pokemon cards will be displayed
+    const listWrapper = document.querySelector('.pokemon-list');
+
+    // Check if there are Pokemon IDs in the partyData
+    if (partyData.length > 0) {
+        // Iterate through each Pokemon ID in the partyData
+        partyData.forEach((pokemonId) => {
+            // Fetch Pokemon details using the ID and display them on the party page
+            fetchPokemonDetails(pokemonId, listWrapper);
+        });
+    } else {
+        // Handle the case when the party is empty
+        console.log('The party is empty.');
+    }
+
+    const clearButton = document.querySelector('.clear-button');
+    clearButton.addEventListener('click', clearParty);
+});
+
+// ... (other code)
+
+function clearParty() {
+    // Your existing logic to clear local storage
+    // ...
+
+    // Clear all Pokemon sprites from the current page
+    const pokemonList = document.querySelector('.pokemon-list');
+    pokemonList.innerHTML = '';
+
+    localStorage.removeItem('party');
+    localStorage.setItem('isPartyCleared', 'true');
+
+    console.log('Clear Party button clicked!');
 }

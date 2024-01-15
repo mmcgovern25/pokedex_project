@@ -261,17 +261,20 @@ function getEnglishFlavorText(pokemonSpecies) {
 
 
 // Assuming you have a reference to the "Add to Party" button
+// Add click event listener to the "Add to Party" button
+// Assuming you have a reference to the "Add to Party" button
 const addToPartyButton = document.querySelector('.party-btn');
 
 // Add click event listener to the "Add to Party" button
 addToPartyButton.addEventListener('click', () => addPokemonToParty(currentPokemonId));
 
-function addPokemonToParty(pokemonId) {
+async function addPokemonToParty(pokemonId) {
   // Retrieve existing party data or initialize an empty array
   const partyData = JSON.parse(localStorage.getItem('party')) || [];
 
-  // Check if the selected Pokemon is not already in the party
-  if (!partyData.includes(pokemonId)) {
+  if (partyData.length < 6) {
+    // Check if the selected Pokemon is not already in the party
+    if (!partyData.includes(pokemonId)) {
       // Add the Pokemon ID to the party data
       partyData.push(pokemonId);
 
@@ -280,8 +283,26 @@ function addPokemonToParty(pokemonId) {
 
       // Log success or handle it in your own way
       console.log(`Pokemon with ID ${pokemonId} added to the party!`);
-  } else {
+      
+      // Fetch and log the Pokemon details
+      const pokemonDetails = await fetchPokemonDetails(pokemonId);
+      console.log(`Pokemon details for ID ${pokemonId}:`, pokemonDetails);
+    } else {
       // Log a message if the Pokemon is already in the party
       console.log(`Pokemon with ID ${pokemonId} is already in the party.`);
+    }
+  } else {
+    console.log('Party is full! Cannot add more Pokemon.');
+  }
+}
+
+async function fetchPokemonDetails(pokemonId) {
+  try {
+    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonId}`);
+    const pokemonDetails = await response.json();
+    return pokemonDetails;
+  } catch (error) {
+    console.error(`An error occurred while fetching Pokemon details for ID ${pokemonId}:`, error);
+    return null;
   }
 }
