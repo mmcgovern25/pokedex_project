@@ -235,3 +235,12 @@ function clearParty() {
 
     console.log('Clear Party button clicked!');
 }
+
+// Get the Pokeball image element
+const pokeballBackBtn = document.querySelector('.pokeball-back-btn');
+
+// Add click event listener
+pokeballBackBtn.addEventListener('click', () => {
+  // Redirect to the home page (you should replace 'index.html' with the actual home page file)
+  window.location.href = 'index.html';
+});

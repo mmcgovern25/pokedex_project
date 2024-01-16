@@ -308,10 +308,16 @@ body {
   background-color: var(--grayscale-white);
   box-shadow: var(--drop-shadow-inner);
   border-radius: 0.75rem;
+  min-height: calc(100% - 1rem);
   width: calc(100% - 1rem);
 }
 
-
+@media screen and (min-width: 860px) {
+  /* Adjust styles for screens with a minimum width of 768 pixels */
+  .mt-battle-pokemon-list {
+    min-height: calc(55% - 1rem);
+  }
+}
 
 
 
@@ -804,5 +810,12 @@ a.button {
 
 .clear-button:active {
     transform: translateY(1px);
+}.mt-battle-pokemon-list
+
+.pokeball-back-btn {
+  cursor: pointer;
 }
 
+.pokeball-back-btn:hover {
+  filter: brightness(70%);
+}

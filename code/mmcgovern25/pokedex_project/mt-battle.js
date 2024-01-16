@@ -235,3 +235,11 @@ function clearMtBattle() {
 
     console.log('Box One Data Cleared!');
 }
+
+const pokeballBackBtn = document.querySelector('.pokeball-back-btn');
+
+// Add click event listener
+pokeballBackBtn.addEventListener('click', () => {
+  // Redirect to the home page (you should replace 'index.html' with the actual home page file)
+  window.location.href = 'index.html';
+});
