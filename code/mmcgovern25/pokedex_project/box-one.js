@@ -199,39 +199,39 @@ async function fetchPokemonDetails(pokemonId) {
 
 document.addEventListener("DOMContentLoaded", () => {
     // Retrieve party data from localStorage
-    const dreamTeamData = JSON.parse(localStorage.getItem('dream-team')) || [];
+    const boxOneData = JSON.parse(localStorage.getItem('box-one')) || [];
 
     // Get the container where Pokemon cards will be displayed
-    const listWrapper = document.querySelector('.dream-team-pokemon-list');
+    const listWrapper = document.querySelector('.box-one-pokemon-list');
 
     // Check if there are Pokemon IDs in the partyData
-    if (dreamTeamData.length > 0) {
+    if (boxOneData.length > 0) {
         // Iterate through each Pokemon ID in the partyData
-        dreamTeamData.forEach((pokemonId) => {
+        boxOneData.forEach((pokemonId) => {
             // Fetch Pokemon details using the ID and display them on the party page
             fetchPokemonDetails(pokemonId, listWrapper);
         });
     } else {
         // Handle the case when the party is empty
-        console.log('The dream team is empty.');
+        console.log('box one is empty.');
     }
 
-    const clearDreamTeamButton = document.querySelector('.clear-button');
-    clearDreamTeamButton.addEventListener('click', clearDreamTeam);
+    const clearBoxOneButton = document.querySelector('.clear-button');
+    clearBoxOneButton.addEventListener('click', clearBoxOne);
 });
 
 // ... (other code)
 
-function clearDreamTeam() {
+function clearBoxOne() {
     // Your existing logic to clear local storage
-    console.log('Clearing dream team Data');
-    localStorage.removeItem('dream-team');
-    localStorage.setItem('isDreamTeamCleared', 'true');
+    console.log('Clearing Box One Data');
+    localStorage.removeItem('box-one');
+    localStorage.setItem('isBoxOneCleared', 'true');
 
-
+    console.log('Box One Data Cleared!');
     // Clear all Pokemon sprites from the current page
-    const dreamTeamPokemonList = document.querySelector('.dream-team-pokemon-list');
-    dreamTeamPokemonList.innerHTML = '';
+    const boxOnePokemonList = document.querySelector('.box-one-pokemon-list');
+    boxOnePokemonList.innerHTML = '';
 
-    console.log('dream team cleared');
+    console.log('Box One Data Cleared!');
 }
