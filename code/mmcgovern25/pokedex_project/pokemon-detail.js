@@ -380,6 +380,38 @@ async function addPokemonToBoxOne(pokemonId) {
   }
 }
 
+const addToMtBattleButton = document.querySelector('.mt-battle-btn');
+
+// Add click event listener to the "Add to Party" button
+addToMtBattleButton.addEventListener('click', () => addPokemonToMtbattle(currentPokemonId));
+
+async function addPokemonToMtbattle(pokemonId) {
+  // Retrieve existing party data or initialize an empty array
+  const mtBattleData = JSON.parse(localStorage.getItem('mt-battle')) || [];
+
+  if (mtBattleData.length < 100) {
+    // Check if the selected Pokemon is not already in the party
+    if (!mtBattleData.includes(pokemonId)) {
+      // Add the Pokemon ID to the party data
+      mtBattleData.push(pokemonId);
+
+      // Save the updated party data to localStorage
+      localStorage.setItem('mt-battle', JSON.stringify(mtBattleData));
+
+      // Log success or handle it in your own way
+      console.log(`Pokemon with ID ${pokemonId} added to the Box 1!`);
+      
+      // Fetch and log the Pokemon details
+      const pokemonDetails = await fetchPokemonDetails(pokemonId);
+      console.log(`Pokemon details for ID ${pokemonId}:`, pokemonDetails);
+    } else {
+      // Log a message if the Pokemon is already in the party
+      console.log(`Pokemon with ID ${pokemonId} is already in box 1.`);
+    }
+  } else {
+    console.log('Box 1 is full! Cannot add more Pokemon.');
+  }
+}
 
 
 

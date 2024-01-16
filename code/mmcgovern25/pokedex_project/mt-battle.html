@@ -1,1 +1,112 @@
-<h1>this is mt battle</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./mt-battle.js" defer></script> 
+</head>
+<body>
+    <main class="main">
+      <header class="header home">
+        <div class="container">
+          <div class="logo-wrapper">
+            <img src="./assets/pokeball.svg" alt="pokeball" />
+            <h1>Mt. Battle</h1>
+          </div>
+          <div class="search-wrapper">
+            <div class="search-wrap">
+              <img
+                src="./assets/search.svg"
+                alt="search icon"
+                class="search-icon"
+              />
+              <input
+                type="text"
+                class="search-input body3-fonts"
+                placeholder="Search"
+                id="search-input"
+              />
+              <img
+                src="./assets/cross.svg"
+                alt="cross icon"
+                class="search-close-icon"
+                id="search-close-icon"
+              />
+            </div>
+            <div class="sort-wrapper">
+              <div class="sort-wrap">
+                <img
+                  src="./assets/sorting.svg"
+                  src
+                  alt="sorting"
+                  class="sort-icon"
+                  id="sort-icon"
+                />
+              </div>
+              <div class="filter-wrapper">
+                <p class="body2-fonts">Sort by:</p>
+                <div class="filter-wrap">
+                  <div>
+                    <input
+                      type="radio"
+                      id="number"
+                      name="filters"
+                      value="number"
+                    />
+                    <label for="number" class="body3-fonts">Number</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="name" name="filters" value="name" checked />
+                    <label for="name" class="body3-fonts">Name</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          
+            <nav class="top">
+              <div class="dropdownBackground">
+                <span class="arrow-rankings"></span>
+              </div>
+          
+              <ul class="cool">
+                <li>
+                  <a href="#">Rankings</a>
+                  <ul class="dropdown courses">
+                    <li>
+                      <span class="view-party">Party:</span>
+                      <a class="view-party-link">Top 6 All Time</a>
+                    </li>
+                    <li>
+                      <span class="dream-team">Dream Team:</span>
+                      <a class="dream-team-link">Top 12 All Time</a>
+                    </li>
+                    <li>
+                      <span class="box-1">Box 1:</span>
+                      <a class="box-1-link">Top 30 All Time</a>
+                    </li>
+                    <li>
+                      <span class="mt-battle">Mt. Battle:</span>
+                      <a class="mt-battle-link">Top 100 All Time</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+            <button class="clear-button" onclick="clearParty()">Clear Party</button>
+            </div>
+          </div>
+          </div>
+        </div>
+      </header>
+      <section class="mt-battle-pokemon-list">
+        <div class="container">
+          <div class="list-wrapper"></div>
+        </div>
+        <div id="not-found-message">Pokemon not found</div>
+      </section>
+    </main>
+  </body>
+</html>
