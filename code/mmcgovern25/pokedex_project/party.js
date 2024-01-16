@@ -202,7 +202,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const partyData = JSON.parse(localStorage.getItem('party')) || [];
 
     // Get the container where Pokemon cards will be displayed
-    const listWrapper = document.querySelector('.pokemon-list');
+    const listWrapper = document.querySelector('.party-pokemon-list');
 
     // Check if there are Pokemon IDs in the partyData
     if (partyData.length > 0) {
@@ -216,8 +216,8 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log('The party is empty.');
     }
 
-    const clearButton = document.querySelector('.clear-button');
-    clearButton.addEventListener('click', clearParty);
+    const clearPartyButton = document.querySelector('.clear-button');
+    clearPartyButton.addEventListener('click', clearParty);
 });
 
 // ... (other code)
@@ -227,8 +227,8 @@ function clearParty() {
     // ...
 
     // Clear all Pokemon sprites from the current page
-    const pokemonList = document.querySelector('.party-pokemon-list');
-    pokemonList.innerHTML = '';
+    const partyPokemonList = document.querySelector('.party-pokemon-list');
+    partyPokemonList.innerHTML = '';
 
     localStorage.removeItem('party');
     localStorage.setItem('isPartyCleared', 'true');

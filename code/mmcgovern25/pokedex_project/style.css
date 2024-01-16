@@ -266,7 +266,7 @@ body {
   max-height: 100px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 700px) {
   /* Adjust styles for screens with a minimum width of 768 pixels */
   .party-pokemon-list {
     min-height: calc(20% - 1rem);
@@ -277,15 +277,15 @@ body {
   background-color: var(--grayscale-white);
   box-shadow: var(--drop-shadow-inner);
   border-radius: 0.75rem;
-  min-height: calc(40% - 1rem);
+  min-height: calc(70% - 1rem);
   width: calc(100% - 1rem);
   max-height: 100px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 860px) {
   /* Adjust styles for screens with a minimum width of 768 pixels */
   .dream-team-pokemon-list {
-    min-height: calc(20% - 1rem);
+    min-height: calc(40% - 1rem);
   }
 }
 
@@ -540,7 +540,7 @@ body {
   fill: var(--grayscale-white);
 }
 
-div#not-found-message {
+#not-found-message {
   display: none;
   position: absolute;
   left: 50%;

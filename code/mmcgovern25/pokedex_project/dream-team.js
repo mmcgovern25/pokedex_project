@@ -199,15 +199,15 @@ async function fetchPokemonDetails(pokemonId) {
 
 document.addEventListener("DOMContentLoaded", () => {
     // Retrieve party data from localStorage
-    const partyData = JSON.parse(localStorage.getItem('party')) || [];
+    const dreamTeamData = JSON.parse(localStorage.getItem('dream-team')) || [];
 
     // Get the container where Pokemon cards will be displayed
-    const listWrapper = document.querySelector('.pokemon-list');
+    const listWrapper = document.querySelector('.dream-team-pokemon-list');
 
     // Check if there are Pokemon IDs in the partyData
-    if (partyData.length > 0) {
+    if (dreamTeamData.length > 0) {
         // Iterate through each Pokemon ID in the partyData
-        partyData.forEach((pokemonId) => {
+        dreamTeamData.forEach((pokemonId) => {
             // Fetch Pokemon details using the ID and display them on the party page
             fetchPokemonDetails(pokemonId, listWrapper);
         });
@@ -216,22 +216,22 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log('The party is empty.');
     }
 
-    const clearButton = document.querySelector('.clear-button');
-    clearButton.addEventListener('click', clearParty);
+    const clearDreamTeamButton = document.querySelector('.clear-button');
+    clearDreamTeamButton.addEventListener('click', clearDreamTeam);
 });
 
 // ... (other code)
 
-function clearParty() {
+function clearDreamTeam() {
     // Your existing logic to clear local storage
     // ...
+    localStorage.removeItem('dream-team');
+    localStorage.setItem('isDreamTeamCleared', 'true');
+
 
     // Clear all Pokemon sprites from the current page
-    const pokemonList = document.querySelector('.party-pokemon-list');
-    pokemonList.innerHTML = '';
+    const dreamTeamPokemonList = document.querySelector('.dream-team-pokemon-list');
+    dreamTeamPokemonList.innerHTML = '';
 
-    localStorage.removeItem('party');
-    localStorage.setItem('isPartyCleared', 'true');
-
-    console.log('Clear Party button clicked!');
+    console.log('dream team cleared');
 }

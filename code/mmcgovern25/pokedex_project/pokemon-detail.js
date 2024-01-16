@@ -321,7 +321,7 @@ addToDreamTeamButton.addEventListener('click', () => addPokemonToDreamTeam(curre
 
 async function addPokemonToDreamTeam(pokemonId) {
   // Retrieve existing party data or initialize an empty array
-  const dreamTeamData = JSON.parse(localStorage.getItem('dreamTeam')) || [];
+  const dreamTeamData = JSON.parse(localStorage.getItem('dream-team')) || [];
 
   if (dreamTeamData.length < 15) {
     // Check if the selected Pokemon is not already in the party
@@ -330,7 +330,7 @@ async function addPokemonToDreamTeam(pokemonId) {
       dreamTeamData.push(pokemonId);
 
       // Save the updated party data to localStorage
-      localStorage.setItem('dreamTeam', JSON.stringify(dreamTeamData));
+      localStorage.setItem('dream-team', JSON.stringify(dreamTeamData));
 
       // Log success or handle it in your own way
       console.log(`Pokemon with ID ${pokemonId} added to the dream team!`);
