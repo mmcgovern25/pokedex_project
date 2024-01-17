@@ -287,55 +287,73 @@ const addToPartyButton = document.querySelector('.party-btn');
 addToPartyButton.addEventListener('click', () => addPokemonToParty(currentPokemonId));
 
 async function addPokemonToParty(pokemonId) {
-  // Retrieve existing party data or initialize an empty array
-  const partyData = JSON.parse(localStorage.getItem('party')) || [];
+  // Retrieve existing party data or initialize an empty Set
+  const partyData = new Set(JSON.parse(localStorage.getItem('party')) || []);
 
   console.log('Current party data before checking length:', partyData);
-  console.log('Party length:', partyData.length);
+  console.log('Party length:', partyData.size);
   console.log('Pokemon ID:', pokemonId);
 
-  if (partyData.length < 6) {
-    // Check if the selected Pokemon is not already in the party
-    if (!partyData.includes(pokemonId)) {
+  // Check if the selected Pokemon is not already in the party
+  if (!partyData.has(pokemonId)) {
+    // Check if the party has room for more Pokemon
+    if (partyData.size < 6) {
       // Add the Pokemon ID to the party data
-      partyData.push(pokemonId);
+      partyData.add(pokemonId);
 
       // Save the updated party data to localStorage
-      localStorage.setItem('party', JSON.stringify(partyData));
+      localStorage.setItem('party', JSON.stringify(Array.from(partyData)));
 
       // Log success or handle it in your own way
       console.log(`Pokemon with ID ${pokemonId} added to the party!`);
-      
+
       // Fetch and log the Pokemon details
       const pokemonDetails = await fetchPokemonDetails(pokemonId);
       const capitalizedPokemonName = capitalizeFirstLetter(pokemonDetails.name);
-      const message = `${capitalizedPokemonName} has been added to your party!`;
-      alert(message);
+      const message1 = `${capitalizedPokemonName} has been added to your party!`;
+
+      Swal.fire({
+        title: 'Success!',
+        text: message1,
+        icon: 'success',
+        confirmButtonText: 'OK',
+        customClass: {
+          popup: 'custom-swal-popup', // Add your custom CSS class
+        },
+      });
       console.log(`Pokemon details for ID ${pokemonId}:`, pokemonDetails);
     } else {
-      const message = 'Party is already full! Cannot add more Pokemon.';
-      const userConfirmation = window.confirm(message);
+      const message1 = 'Party is already full! Cannot add more Pokemon.';
 
-      if (userConfirmation) {
-        // Optionally, you can redirect or perform other actions here
-      }
+      Swal.fire({
+        title: 'Error!',
+        text: message1,
+        icon: 'error',
+        confirmButtonText: 'OK',
+        customClass: {
+          popup: 'custom-swal-popup-error', // Add your custom CSS class for error
+        },
+      });
 
-      console.log(`Pokemon with ID ${pokemonId} is already in the party.`);
+      console.log(`Party is already full. Cannot add more Pokemon.`);
     }
   } else {
-    const message = 'Party is already full! Cannot add more Pokemon.';
-    const userConfirmation = window.confirm(message);
+    const message1 = 'This Pokemon is already in your party!';
 
-    if (userConfirmation) {
-      // Optionally, you can redirect or perform other actions here
-    }
+    Swal.fire({
+      title: 'Error!',
+      text: message1,
+      icon: 'error',
+      confirmButtonText: 'OK',
+      customClass: {
+        popup: 'custom-swal-popup-error', // Add your custom CSS class for error
+      },
+    });
 
-    console.log('Party is already full! Cannot add more Pokemon.');
-    console.log('Current party data:', partyData);
-    console.log('Party length:', partyData.length);
-    console.log('Pokemon ID:', pokemonId);
+    console.log(`Pokemon with ID ${pokemonId} is already in the party.`);
   }
 }
+
 
 
 const addToDreamTeamButton = document.querySelector('.dream-team-btn');
