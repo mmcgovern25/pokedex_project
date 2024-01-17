@@ -198,6 +198,12 @@ function navigateToMtBattle() {
     window.location.href = 'mt-battle.html';
 }
 
+const indexPokeballBackBtn = document.querySelector('.index-pokeball-back-btn');
+
+indexPokeballBackBtn.addEventListener('click', () => {
+  // Redirect to the home page (you should replace 'index.html' with the actual home page file)
+  window.location.href = 'intro.html';
+});
 
 
   

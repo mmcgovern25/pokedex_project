@@ -820,6 +820,14 @@ a.button {
   filter: brightness(70%);
 }
 
+.index-pokeball-back-btn {
+  cursor: pointer;
+}
+
+.index-pokeball-back-btn:hover {
+  filter: brightness(70%);
+}
+
 .custom-swal-popup {
   background-color: #ffcc00;
   border-radius: 10px;

@@ -9,6 +9,14 @@
     align-items: center;
  }
 
+ h1 {
+    position: relative;
+    margin-bottom: 200px;
+    font-size: inherit;
+    line-height: inherit; /* Set a higher z-index to make sure it appears above other elements */
+}
+
+
  .child-to-body {
     flex-shrink: 0;
 }
@@ -23,8 +31,8 @@
 
  .pokeball {
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
     background: white;
     border: 5px solid #000;
     border-radius: 50%;
@@ -79,6 +87,7 @@
     z-index: 10;
     animation: blink .5s alternate infinite;
     animation-play-state: paused;
+    cursor:pointer;
     }
     
     .pokeball:hover .pokeball__button{
@@ -89,3 +98,7 @@
     from { background: #eee;}
     to { background: #e74c3c; }
     }
+
+    .no-margin {
+        margin: 0;
+     }
