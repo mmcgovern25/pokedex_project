@@ -810,7 +810,7 @@ a.button {
 
 .clear-button:active {
     transform: translateY(1px);
-}.mt-battle-pokemon-list
+}
 
 .pokeball-back-btn {
   cursor: pointer;

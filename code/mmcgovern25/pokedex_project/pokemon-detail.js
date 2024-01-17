@@ -290,6 +290,10 @@ async function addPokemonToParty(pokemonId) {
   // Retrieve existing party data or initialize an empty array
   const partyData = JSON.parse(localStorage.getItem('party')) || [];
 
+  console.log('Current party data before checking length:', partyData);
+  console.log('Party length:', partyData.length);
+  console.log('Pokemon ID:', pokemonId);
+
   if (partyData.length < 6) {
     // Check if the selected Pokemon is not already in the party
     if (!partyData.includes(pokemonId)) {
@@ -304,15 +308,35 @@ async function addPokemonToParty(pokemonId) {
       
       // Fetch and log the Pokemon details
       const pokemonDetails = await fetchPokemonDetails(pokemonId);
+      const capitalizedPokemonName = capitalizeFirstLetter(pokemonDetails.name);
+      const message = `${capitalizedPokemonName} has been added to your party!`;
+      alert(message);
       console.log(`Pokemon details for ID ${pokemonId}:`, pokemonDetails);
     } else {
-      // Log a message if the Pokemon is already in the party
+      const message = 'Party is already full! Cannot add more Pokemon.';
+      const userConfirmation = window.confirm(message);
+
+      if (userConfirmation) {
+        // Optionally, you can redirect or perform other actions here
+      }
+
       console.log(`Pokemon with ID ${pokemonId} is already in the party.`);
     }
   } else {
-    console.log('Party is full! Cannot add more Pokemon.');
+    const message = 'Party is already full! Cannot add more Pokemon.';
+    const userConfirmation = window.confirm(message);
+
+    if (userConfirmation) {
+      // Optionally, you can redirect or perform other actions here
+    }
+
+    console.log('Party is already full! Cannot add more Pokemon.');
+    console.log('Current party data:', partyData);
+    console.log('Party length:', partyData.length);
+    console.log('Pokemon ID:', pokemonId);
   }
 }
+
 
 const addToDreamTeamButton = document.querySelector('.dream-team-btn');
 
@@ -333,10 +357,13 @@ async function addPokemonToDreamTeam(pokemonId) {
       localStorage.setItem('dream-team', JSON.stringify(dreamTeamData));
 
       // Log success or handle it in your own way
-      console.log(`Pokemon with ID ${pokemonId} added to the dream team!`);
+      console.log(`Pokemon with ID ${pokemonId} added to your dream team!`);
       
       // Fetch and log the Pokemon details
       const pokemonDetails = await fetchPokemonDetails(pokemonId);
+      const capitalizedPokemonName = capitalizeFirstLetter(pokemonDetails.name);
+      const message = `${capitalizedPokemonName} has been added to your dream team!`;
+      alert(message);
       console.log(`Pokemon details for ID ${pokemonId}:`, pokemonDetails);
     } else {
       // Log a message if the Pokemon is already in the party
@@ -370,6 +397,9 @@ async function addPokemonToBoxOne(pokemonId) {
       
       // Fetch and log the Pokemon details
       const pokemonDetails = await fetchPokemonDetails(pokemonId);
+      const capitalizedPokemonName = capitalizeFirstLetter(pokemonDetails.name);
+      const message = `${capitalizedPokemonName} has been added to Box 1!`;
+      alert(message);
       console.log(`Pokemon details for ID ${pokemonId}:`, pokemonDetails);
     } else {
       // Log a message if the Pokemon is already in the party
@@ -403,6 +433,9 @@ async function addPokemonToMtbattle(pokemonId) {
       
       // Fetch and log the Pokemon details
       const pokemonDetails = await fetchPokemonDetails(pokemonId);
+      const capitalizedPokemonName = capitalizeFirstLetter(pokemonDetails.name);
+      const message = `${capitalizedPokemonName} has been added to Mt. Battle!`;
+      alert(message);
       console.log(`Pokemon details for ID ${pokemonId}:`, pokemonDetails);
     } else {
       // Log a message if the Pokemon is already in the party
@@ -439,3 +472,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.scrollTo(0, parseInt(storedScrollPosition));
   }
 });
+
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
