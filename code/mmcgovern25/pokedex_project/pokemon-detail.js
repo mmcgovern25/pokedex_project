@@ -358,111 +358,231 @@ async function addPokemonToParty(pokemonId) {
 
 const addToDreamTeamButton = document.querySelector('.dream-team-btn');
 
-// Add click event listener to the "Add to Party" button
+// Add click event listener to the "Add to Dream Team" button
 addToDreamTeamButton.addEventListener('click', () => addPokemonToDreamTeam(currentPokemonId));
 
 async function addPokemonToDreamTeam(pokemonId) {
-  // Retrieve existing party data or initialize an empty array
+  // Retrieve existing dream team data or initialize an empty array
   const dreamTeamData = JSON.parse(localStorage.getItem('dream-team')) || [];
 
+  console.log('Current dream team data before checking length:', dreamTeamData);
+  console.log('Dream Team length:', dreamTeamData.length);
+  console.log('Pokemon ID:', pokemonId);
+
   if (dreamTeamData.length < 15) {
-    // Check if the selected Pokemon is not already in the party
+    // Check if the selected Pokemon is not already in the dream team
     if (!dreamTeamData.includes(pokemonId)) {
-      // Add the Pokemon ID to the party data
+      // Add the Pokemon ID to the dream team data
       dreamTeamData.push(pokemonId);
 
-      // Save the updated party data to localStorage
+      // Save the updated dream team data to localStorage
       localStorage.setItem('dream-team', JSON.stringify(dreamTeamData));
 
       // Log success or handle it in your own way
-      console.log(`Pokemon with ID ${pokemonId} added to your dream team!`);
+      console.log(`Pokemon with ID ${pokemonId} added to the dream team!`);
       
       // Fetch and log the Pokemon details
       const pokemonDetails = await fetchPokemonDetails(pokemonId);
       const capitalizedPokemonName = capitalizeFirstLetter(pokemonDetails.name);
       const message = `${capitalizedPokemonName} has been added to your dream team!`;
-      alert(message);
+      
+      Swal.fire({
+        title: 'Success!',
+        text: message,
+        icon: 'success',
+        confirmButtonText: 'OK',
+        customClass: {
+          popup: 'custom-swal-popup', // Add your custom CSS class
+        },
+      });
       console.log(`Pokemon details for ID ${pokemonId}:`, pokemonDetails);
     } else {
-      // Log a message if the Pokemon is already in the party
-      console.log(`Pokemon with ID ${pokemonId} is already in the party.`);
+      const message = 'This Pokemon is already in your dream team!';
+      
+      Swal.fire({
+        title: 'Error!',
+        text: message,
+        icon: 'error',
+        confirmButtonText: 'OK',
+        customClass: {
+          popup: 'custom-swal-popup-error', // Add your custom CSS class for error
+        },
+      });
+
+      console.log(`Pokemon with ID ${pokemonId} is already in the dream team.`);
     }
   } else {
-    console.log('Party is full! Cannot add more Pokemon.');
+    const message = 'Dream Team is already full! Cannot add more Pokemon.';
+    
+    Swal.fire({
+      title: 'Error!',
+      text: message,
+      icon: 'error',
+      confirmButtonText: 'OK',
+      customClass: {
+        popup: 'custom-swal-popup-error', // Add your custom CSS class for error
+      },
+    });
+
+    console.log('Dream Team is already full! Cannot add more Pokemon.');
+    console.log('Current dream team data:', dreamTeamData);
+    console.log('Dream Team length:', dreamTeamData.length);
+    console.log('Pokemon ID:', pokemonId);
   }
 }
 
+
 const addToBoxOneButton = document.querySelector('.box-one-btn');
 
-// Add click event listener to the "Add to Party" button
+// Add click event listener to the "Add to Box 1" button
 addToBoxOneButton.addEventListener('click', () => addPokemonToBoxOne(currentPokemonId));
 
 async function addPokemonToBoxOne(pokemonId) {
-  // Retrieve existing party data or initialize an empty array
+  // Retrieve existing box 1 data or initialize an empty array
   const boxOneData = JSON.parse(localStorage.getItem('box-one')) || [];
 
+  console.log('Current Box 1 data before checking length:', boxOneData);
+  console.log('Box 1 length:', boxOneData.length);
+  console.log('Pokemon ID:', pokemonId);
+
   if (boxOneData.length < 30) {
-    // Check if the selected Pokemon is not already in the party
+    // Check if the selected Pokemon is not already in Box 1
     if (!boxOneData.includes(pokemonId)) {
-      // Add the Pokemon ID to the party data
+      // Add the Pokemon ID to Box 1 data
       boxOneData.push(pokemonId);
 
-      // Save the updated party data to localStorage
+      // Save the updated Box 1 data to localStorage
       localStorage.setItem('box-one', JSON.stringify(boxOneData));
 
       // Log success or handle it in your own way
-      console.log(`Pokemon with ID ${pokemonId} added to the Box 1!`);
+      console.log(`Pokemon with ID ${pokemonId} added to Box 1!`);
       
       // Fetch and log the Pokemon details
       const pokemonDetails = await fetchPokemonDetails(pokemonId);
       const capitalizedPokemonName = capitalizeFirstLetter(pokemonDetails.name);
       const message = `${capitalizedPokemonName} has been added to Box 1!`;
-      alert(message);
+      
+      Swal.fire({
+        title: 'Success!',
+        text: message,
+        icon: 'success',
+        confirmButtonText: 'OK',
+        customClass: {
+          popup: 'custom-swal-popup', // Add your custom CSS class
+        },
+      });
       console.log(`Pokemon details for ID ${pokemonId}:`, pokemonDetails);
     } else {
-      // Log a message if the Pokemon is already in the party
-      console.log(`Pokemon with ID ${pokemonId} is already in box 1.`);
+      const message = 'This Pokemon is already in Box 1!';
+      
+      Swal.fire({
+        title: 'Error!',
+        text: message,
+        icon: 'error',
+        confirmButtonText: 'OK',
+        customClass: {
+          popup: 'custom-swal-popup-error', // Add your custom CSS class for error
+        },
+      });
+
+      console.log(`Pokemon with ID ${pokemonId} is already in Box 1.`);
     }
   } else {
-    console.log('Box 1 is full! Cannot add more Pokemon.');
+    const message = 'Box 1 is already full! Cannot add more Pokemon.';
+    
+    Swal.fire({
+      title: 'Error!',
+      text: message,
+      icon: 'error',
+      confirmButtonText: 'OK',
+      customClass: {
+        popup: 'custom-swal-popup-error', // Add your custom CSS class for error
+      },
+    });
+
+    console.log('Box 1 is already full! Cannot add more Pokemon.');
+    console.log('Current Box 1 data:', boxOneData);
+    console.log('Box 1 length:', boxOneData.length);
+    console.log('Pokemon ID:', pokemonId);
   }
 }
 
+
 const addToMtBattleButton = document.querySelector('.mt-battle-btn');
 
-// Add click event listener to the "Add to Party" button
-addToMtBattleButton.addEventListener('click', () => addPokemonToMtbattle(currentPokemonId));
+// Add click event listener to the "Add to Mt. Battle" button
+addToMtBattleButton.addEventListener('click', () => addPokemonToMtBattle(currentPokemonId));
 
-async function addPokemonToMtbattle(pokemonId) {
-  // Retrieve existing party data or initialize an empty array
+async function addPokemonToMtBattle(pokemonId) {
+  // Retrieve existing Mt. Battle data or initialize an empty array
   const mtBattleData = JSON.parse(localStorage.getItem('mt-battle')) || [];
 
+  console.log('Current Mt. Battle data before checking length:', mtBattleData);
+  console.log('Mt. Battle length:', mtBattleData.length);
+  console.log('Pokemon ID:', pokemonId);
+
   if (mtBattleData.length < 100) {
-    // Check if the selected Pokemon is not already in the party
+    // Check if the selected Pokemon is not already in Mt. Battle
     if (!mtBattleData.includes(pokemonId)) {
-      // Add the Pokemon ID to the party data
+      // Add the Pokemon ID to Mt. Battle data
       mtBattleData.push(pokemonId);
 
-      // Save the updated party data to localStorage
+      // Save the updated Mt. Battle data to localStorage
       localStorage.setItem('mt-battle', JSON.stringify(mtBattleData));
 
       // Log success or handle it in your own way
-      console.log(`Pokemon with ID ${pokemonId} added to the Box 1!`);
+      console.log(`Pokemon with ID ${pokemonId} added to Mt. Battle!`);
       
       // Fetch and log the Pokemon details
       const pokemonDetails = await fetchPokemonDetails(pokemonId);
       const capitalizedPokemonName = capitalizeFirstLetter(pokemonDetails.name);
       const message = `${capitalizedPokemonName} has been added to Mt. Battle!`;
-      alert(message);
+      
+      Swal.fire({
+        title: 'Success!',
+        text: message,
+        icon: 'success',
+        confirmButtonText: 'OK',
+        customClass: {
+          popup: 'custom-swal-popup', // Add your custom CSS class
+        },
+      });
       console.log(`Pokemon details for ID ${pokemonId}:`, pokemonDetails);
     } else {
-      // Log a message if the Pokemon is already in the party
-      console.log(`Pokemon with ID ${pokemonId} is already in box 1.`);
+      const message = 'This Pokemon is already in Mt. Battle!';
+      
+      Swal.fire({
+        title: 'Error!',
+        text: message,
+        icon: 'error',
+        confirmButtonText: 'OK',
+        customClass: {
+          popup: 'custom-swal-popup-error', // Add your custom CSS class for error
+        },
+      });
+
+      console.log(`Pokemon with ID ${pokemonId} is already in Mt. Battle.`);
     }
   } else {
-    console.log('Box 1 is full! Cannot add more Pokemon.');
+    const message = 'Mt. Battle is already full! Cannot add more Pokemon.';
+    
+    Swal.fire({
+      title: 'Error!',
+      text: message,
+      icon: 'error',
+      confirmButtonText: 'OK',
+      customClass: {
+        popup: 'custom-swal-popup-error', // Add your custom CSS class for error
+      },
+    });
+
+    console.log('Mt. Battle is already full! Cannot add more Pokemon.');
+    console.log('Current Mt. Battle data:', mtBattleData);
+    console.log('Mt. Battle length:', mtBattleData.length);
+    console.log('Pokemon ID:', pokemonId);
   }
 }
+
 
 
 
