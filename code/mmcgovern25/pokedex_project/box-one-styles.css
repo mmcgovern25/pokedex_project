@@ -1,7 +1,23 @@
-.box-one-bg {
-    background-image: url('../assets/detective-pikachu.jpg');
+* {
+	box-sizing: border-box;
 }
 
+.box-one-bg {
+  background-color: transparent; /* Set background color to transparent */
+}
+
+
+.box-one-page {
+	margin: 0;
+	padding: 1rem;
+	min-height: 100vh;
+	grid-template-columns: repeat(auto-fit, min(400px, 100%));
+	gap: 1rem;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(45deg, red, blue);
+	background-attachment: fixed;
+}
 
 .box-one-pokemon-list {
   background-color: rgba(255, 255, 255, .8);
