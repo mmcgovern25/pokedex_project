@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="mt-battle-styles.css" />
     <script src="./mt-battle.js" defer></script> 
 </head>
-<body>
-    <main class="main new-bg mt-battle-pokemon-list">
-      <header class="header home">
-        <div class="container">
+<body class="mt-battle-pokemon-list-top">
+    <main class="main new-bg">
+      <div class="container">
+        <header class="header home">
+        
           <div class="logo-wrapper">
             <img src="./assets/pokeball.svg" alt="pokeball" class="pokeball-back-btn" />
             <h1>Mt. Battle</h1>
@@ -99,15 +100,15 @@
             <button class="clear-button" onclick="clearParty()">Clear Party</button>
             </div>
           </div>
-          </div>
         </div>
       </header>
-      <section class="mt-battle-pokemon-list">
-        <div class="container">
+    </div>
+    <div class="container"></div>
+      <section class="mt-battle-pokemon-list-bottom">
           <div class="list-wrapper"></div>
-        </div>
         <div id="not-found-message">Pokemon not found</div>
       </section>
+    </div>
     </main>
   </body>
 </html>
