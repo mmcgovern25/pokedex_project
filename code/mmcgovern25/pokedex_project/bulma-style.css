@@ -3,7 +3,7 @@
     background-image: url('../assets/grass-background.png');
     background-size: cover; /* Adjust as needed */
     background-position: center; /* Adjust as needed */
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,17 +88,19 @@
     animation: blink .5s alternate infinite;
     animation-play-state: paused;
     cursor:pointer;
-    }
-    
-    .pokeball:hover .pokeball__button{
+}
+
+.pokeball:hover .pokeball__button {
     animation-play-state: running;
-    }
-    
-    @keyframes blink {
+}
+
+@keyframes blink {
     from { background: #eee;}
     to { background: #e74c3c; }
-    }
+}
 
-    .no-margin {
-        margin: 0;
-     }
+.no-margin {
+    margin: 0;
+ }
+    
+ 

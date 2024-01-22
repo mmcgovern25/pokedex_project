@@ -1,0 +1,20 @@
+.party-bg {
+    background-image: url('../assets/red.jpg')
+}
+
+.party-pokemon-list {
+    background-color: rgba(255, 255, 255, .8);
+    box-shadow: var(--drop-shadow-inner);
+    border-radius: 0.75rem;
+    min-height: calc(40% - 1rem);
+    width: calc(100% - 1rem);
+    max-height: 100px;
+  }
+  
+  @media screen and (min-width: 700px) {
+    /* Adjust styles for screens with a minimum width of 768 pixels */
+    .party-pokemon-list {
+      min-height: calc(20% - 1rem);
+    }
+  }
+  

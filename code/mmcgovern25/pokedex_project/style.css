@@ -308,7 +308,7 @@ body {
   background-color: var(--grayscale-white);
   box-shadow: var(--drop-shadow-inner);
   border-radius: 0.75rem;
-  min-height: calc(100% - 1rem);
+  height: 100vh; 
   width: calc(100% - 1rem);
 }
 
@@ -319,6 +319,10 @@ body {
   }
 }
 
+.custom-background {
+  /* ... your existing styles ... */
+  background-attachment: fixed;
+}
 
 
 .list-wrapper {
@@ -838,4 +842,10 @@ a.button {
   background-color: #ff3333; /* Red background */
   border-radius: 10px;
   color: #fff; /* White text */
+}
+
+.body.box-one-page {
+  background-image: url('../assets/box-1-background.png'); /* Replace 'your-image.jpg' with your image file */
+  background-size: cover;
+  /* Add other background styles as needed */
 }
