@@ -1,20 +1,35 @@
-.dream-team-bg {
-    background-image: url('../assets/pokemon-gym.png')
+* {
+	box-sizing: border-box;
+}
+
+.box-one-bg {
+  background-color: transparent; /* Set background color to transparent */
+}
+
+
+.box-one-page {
+	margin: 0;
+	min-height: 100vh;
+	grid-template-columns: repeat(auto-fit, min(400px, 100%));
+	gap: 1rem;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(45deg, red, blue);
+	background-attachment: fixed;
 }
 
 .dream-team-pokemon-list {
-    background-color: rgba(255, 255, 255, .7);
-    box-shadow: var(--drop-shadow-inner);
-    border-radius: 0.75rem;
-    min-height: calc(70% - 1rem);
-    width: calc(100% - 1rem);
-    max-height: 100px;
+  background-color: rgba(255, 255, 255, .7);
+  box-shadow: var(--drop-shadow-inner);
+  border-radius: 0.75rem;
+  min-height: calc(70% - 1rem);
+  width: calc(100% - 1rem);
+  max-height: 100px;
+}
+
+@media screen and (min-width: 860px) {
+  /* Adjust styles for screens with a minimum width of 768 pixels */
+  .dream-team-pokemon-list {
+    min-height: calc(40% - 1rem);
   }
-  
-  @media screen and (min-width: 860px) {
-    /* Adjust styles for screens with a minimum width of 768 pixels */
-    .dream-team-pokemon-list {
-      min-height: calc(40% - 1rem);
-    }
-  }
-  
+}
