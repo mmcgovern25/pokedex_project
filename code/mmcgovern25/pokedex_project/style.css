@@ -335,7 +335,7 @@ body {
 }
 
 .list-item {
-  border-radius: 8px;
+  border-radius: 12px;
   box-shadow: var(--drop-shadow);
   background-color: var(--grayscale-white);
   width: 8.85rem;

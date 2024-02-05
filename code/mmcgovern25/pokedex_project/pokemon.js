@@ -141,23 +141,8 @@ triggers.forEach(trigger => trigger.addEventListener('mouseleave', handleLeave))
 
 const pokemonListItems = document.querySelectorAll('.list-item');
 
-pokemonListItems.forEach((pokemon) => {
-  pokemon.addEventListener('mouseover', () => {
-    const pokemonType = pokemon.dataset.pokemonType;
-    const typeColor = getTypeColor(pokemonType); // Function to get color based on type
-    document.documentElement.style.setProperty('--hover-background-color', typeColor);
-  });
-
-  pokemon.addEventListener('mouseout', () => {
-    // Reset background color on mouse out
-    document.documentElement.style.setProperty('--hover-background-color', '');
-  });
-});
-
-
-// Assuming you have a reference to the "Party: Top 6 All Time" button
 const viewParty = document.querySelector('.view-party-link');
-const viewPartyText = document.querySelector('.view-party'); // Replace 'party-button' with the actual ID or class of your button
+const viewPartyText = document.querySelector('.view-party'); 
 
 viewParty.addEventListener('click', navigateToParty);
 viewPartyText.addEventListener('click', navigateToParty);
@@ -167,7 +152,7 @@ function navigateToParty() {
 }
 
 const viewDreamTeam = document.querySelector('.dream-team-link');
-const viewDreamTeamText = document.querySelector('.dream-team'); // Replace 'party-button' with the actual ID or class of your button
+const viewDreamTeamText = document.querySelector('.dream-team');
 
 viewDreamTeam.addEventListener('click', navigateToDreamTeam);
 viewDreamTeamText.addEventListener('click', navigateToDreamTeam);
@@ -178,7 +163,7 @@ function navigateToDreamTeam() {
 
 
 const viewBoxOne = document.querySelector('.box-1-link');
-const viewBoxOneText = document.querySelector('.box-1'); // Replace 'party-button' with the actual ID or class of your button
+const viewBoxOneText = document.querySelector('.box-1'); 
 
 viewBoxOne.addEventListener('click', navigateToBoxOne);
 viewBoxOneText.addEventListener('click', navigateToBoxOne);
@@ -189,7 +174,7 @@ function navigateToBoxOne() {
 
 
 const viewMtBattle = document.querySelector('.mt-battle-link');
-const viewMtBattleText = document.querySelector('.mt-battle'); // Replace 'party-button' with the actual ID or class of your button
+const viewMtBattleText = document.querySelector('.mt-battle'); 
 
 viewMtBattle.addEventListener('click', navigateToMtBattle);
 viewMtBattleText.addEventListener('click', navigateToMtBattle);
@@ -201,7 +186,6 @@ function navigateToMtBattle() {
 const indexPokeballBackBtn = document.querySelector('.index-pokeball-back-btn');
 
 indexPokeballBackBtn.addEventListener('click', () => {
-  // Redirect to the home page (you should replace 'index.html' with the actual home page file)
   window.location.href = 'intro.html';
 });
 
