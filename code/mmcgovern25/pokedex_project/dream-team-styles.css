@@ -2,6 +2,7 @@
 	box-sizing: border-box;
 }
 
+
 .box-one-bg {
   background-color: transparent; /* Set background color to transparent */
 }
@@ -33,3 +34,4 @@
     min-height: calc(40% - 1rem);
   }
 }
+

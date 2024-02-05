@@ -205,7 +205,7 @@ indexPokeballBackBtn.addEventListener('click', () => {
   window.location.href = 'intro.html';
 });
 
+// ... (Previous code)
 
-  
-
-  
+// ... (existing JavaScript code) ...
+// ... (existing JavaScript code) ...
