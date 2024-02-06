@@ -1,5 +1,10 @@
 let currentPokemonId = null;
 
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+
+
 document.addEventListener("DOMContentLoaded", () => {
   const MAX_POKEMONS = 649;
   const backButton = document.getElementById("back-btn");
@@ -8,8 +13,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (backButton) {
     backButton.addEventListener("click", () => {
-      // Store the current scroll position
-      localStorage.setItem('scrollPosition', window.scrollY);
+      const storedScrollPosition = localStorage.getItem('scrollPosition');
+
+      console.log('Stored scroll position:', storedScrollPosition);
+
+      if (storedScrollPosition) {
+          window.scrollTo(0, parseInt(storedScrollPosition));
+          console.log('Restored scroll position:', storedScrollPosition); 
+      }
+
       window.location.href = './index.html';
     });
   }

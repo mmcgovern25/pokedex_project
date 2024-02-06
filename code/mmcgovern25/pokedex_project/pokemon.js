@@ -16,6 +16,8 @@ fetch(`https://pokeapi.co/api/v2/pokemon?limit=${MAX_POKEMON}`)
 
   listWrapper.addEventListener("scroll", () => {
     localStorage.setItem('scrollPosition', listWrapper.scrollTop);
+
+    console.log('Scroll position set to:', scrollPosition);
   });
 
 
@@ -30,7 +32,6 @@ async function fetchPokemonDataBeforeRedirect(id) {
         res.json()
       ),
     ]);
-    localStorage.setItem('scrollPosition', listWrapper.scrollTop);
 
     return true;
   } catch (error) {
