@@ -4,7 +4,7 @@
 
 
 .box-one-bg {
-  background-color: transparent; /* Set background color to transparent */
+  background-color: transparent; 
 }
 
 
@@ -29,7 +29,6 @@
 }
 
 @media screen and (min-width: 860px) {
-  /* Adjust styles for screens with a minimum width of 768 pixels */
   .dream-team-pokemon-list {
     min-height: calc(40% - 1rem);
   }

@@ -112,15 +112,14 @@ pokemonListItems.forEach((pokemon) => {
   });
 
   pokemon.addEventListener('mouseout', () => {
-    // Reset background color on mouse out
     document.documentElement.style.setProperty('--hover-background-color', '');
   });
 });
 
 
-// Assuming you have a reference to the "Party: Top 6 All Time" button
+
 const viewParty = document.querySelector('.view-party-link');
-const viewPartyText = document.querySelector('.view-party'); // Replace 'party-button' with the actual ID or class of your button
+const viewPartyText = document.querySelector('.view-party'); 
 
 viewParty.addEventListener('click', navigateToParty);
 viewPartyText.addEventListener('click', navigateToParty);
@@ -130,7 +129,7 @@ function navigateToParty() {
 }
 
 const viewDreamTeam = document.querySelector('.dream-team-link');
-const viewDreamTeamText = document.querySelector('.dream-team'); // Replace 'party-button' with the actual ID or class of your button
+const viewDreamTeamText = document.querySelector('.dream-team'); 
 
 viewDreamTeam.addEventListener('click', navigateToDreamTeam);
 viewDreamTeamText.addEventListener('click', navigateToDreamTeam);
@@ -141,7 +140,7 @@ function navigateToDreamTeam() {
 
 
 const viewBoxOne = document.querySelector('.box-1-link');
-const viewBoxOneText = document.querySelector('.box-1'); // Replace 'party-button' with the actual ID or class of your button
+const viewBoxOneText = document.querySelector('.box-1'); 
 
 viewBoxOne.addEventListener('click', navigateToBoxOne);
 viewBoxOneText.addEventListener('click', navigateToBoxOne);
@@ -152,8 +151,7 @@ function navigateToBoxOne() {
 
 
 const viewMtBattle = document.querySelector('.mt-battle-link');
-const viewMtBattleText = document.querySelector('.mt-battle'); // Replace 'party-button' with the actual ID or class of your button
-
+const viewMtBattleText = document.querySelector('.mt-battle'); 
 viewMtBattle.addEventListener('click', navigateToMtBattle);
 viewMtBattleText.addEventListener('click', navigateToMtBattle);
 
@@ -162,31 +160,18 @@ function navigateToMtBattle() {
 }
 
 
-// party.js
-
-// ... (other code)
-
 async function fetchPokemonDetails(pokemonId) {
     try {
         const pokemon = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonId}`).then((res) => res.json());
 
-        // Create a div element to represent the Pokemon card
-        const pokemonCard = document.createElement('div');
-        pokemonCard.classList.add('pokemon-card'); // Add a class for styling
 
-        // Create an image element for the Pokemon's sprite
+        const pokemonCard = document.createElement('div');
+        pokemonCard.classList.add('pokemon-card'); 
+
         const pokemonImage = document.createElement('img');
         pokemonImage.src = pokemon.sprites.front_default;
-      
 
-        // Create a span element for the Pokemon's name
-    
-    
-
-        // Append the image and name to the card
         pokemonCard.appendChild(pokemonImage);
-
-        // Append the Pokemon card to the listWrapper
         listWrapper.appendChild(pokemonCard);
 
         console.log(`Pokemon details for ID ${pokemonId}:`, pokemon);
@@ -195,24 +180,15 @@ async function fetchPokemonDetails(pokemonId) {
     }
 }
 
-// Add this script to your existing JavaScript
-
 document.addEventListener("DOMContentLoaded", () => {
-    // Retrieve party data from localStorage
     const partyData = JSON.parse(localStorage.getItem('party')) || [];
-
-    // Get the container where Pokemon cards will be displayed
     const listWrapper = document.querySelector('.party-pokemon-list');
 
-    // Check if there are Pokemon IDs in the partyData
     if (partyData.length > 0) {
-        // Iterate through each Pokemon ID in the partyData
         partyData.forEach((pokemonId) => {
-            // Fetch Pokemon details using the ID and display them on the party page
             fetchPokemonDetails(pokemonId, listWrapper);
         });
     } else {
-        // Handle the case when the party is empty
         console.log('The party is empty.');
     }
 
@@ -220,13 +196,7 @@ document.addEventListener("DOMContentLoaded", () => {
     clearPartyButton.addEventListener('click', clearParty);
 });
 
-// ... (other code)
-
 function clearParty() {
-    // Your existing logic to clear local storage
-    // ...
-
-    // Clear all Pokemon sprites from the current page
     const partyPokemonList = document.querySelector('.party-pokemon-list');
     partyPokemonList.innerHTML = '';
 
@@ -236,11 +206,8 @@ function clearParty() {
     console.log('Clear Party button clicked!');
 }
 
-// Get the Pokeball image element
 const pokeballBackBtn = document.querySelector('.pokeball-back-btn');
 
-// Add click event listener
 pokeballBackBtn.addEventListener('click', () => {
-  // Redirect to the home page (you should replace 'index.html' with the actual home page file)
   window.location.href = 'index.html';
 });

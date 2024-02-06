@@ -752,14 +752,13 @@ a.button {
   border-radius: 12px;
   transition: background-color 0.3s, box-shadow 0.3s;
   color: white;
-  padding: 9px 7px; /* Adjust the padding as needed */
+  padding: 9px 7px;
   margin: 1px;
   border: none;
   box-shadow: var(--drop-shadow-inner);
   justify-content: center;
   flex-wrap: wrap;
   width: calc(50% - 5px);
-   /* Add margin to create space between buttons */
 }
 
 
@@ -772,12 +771,12 @@ a.button {
 
 .pokemon-list .list-item:hover {
   transition: background-color 0.3s ease;
-  background-color: red;  /* Set the desired hover background color */
+  background-color: red; 
 }
 
 .pokemon-list .list-item:hover .name-wrap {
   transition: background-color 0.3s ease;
-  background-color: red; /* Apply the hover effect to the .name-wrap */
+  background-color: red; 
 }
 
 
@@ -807,7 +806,7 @@ a.button {
 
 .clear-button p {
   font-size: var(--body3-font-size);
-  color: gray; /* Set the color to match the text color of "Rankings" */
+  color: gray; 
   text-decoration: none;
 }
 
@@ -839,15 +838,12 @@ a.button {
 }
 
 .custom-swal-popup-error {
-  background-color: #ff3333; /* Red background */
+  background-color: #ff3333; 
   border-radius: 10px;
-  color: #fff; /* White text */
+  color: #fff; 
 }
 
 .body.box-one-page {
   background-image: url('../assets/box-1-background.png'); /* Replace 'your-image.jpg' with your image file */
   background-size: cover;
-  /* Add other background styles as needed */
 }
-
-/* ... (existing CSS code) ... */

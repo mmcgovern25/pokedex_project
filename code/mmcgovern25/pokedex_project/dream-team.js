@@ -164,32 +164,17 @@ function navigateToMtBattle() {
     window.location.href = 'mt-battle.html';
 }
 
-
-// party.js
-
-// ... (other code)
-
 async function fetchPokemonDetails(pokemonId) {
     try {
         const pokemon = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonId}`).then((res) => res.json());
 
-        // Create a div element to represent the Pokemon card
         const pokemonCard = document.createElement('div');
-        pokemonCard.classList.add('pokemon-card'); // Add a class for styling
+        pokemonCard.classList.add('pokemon-card'); 
 
-        // Create an image element for the Pokemon's sprite
         const pokemonImage = document.createElement('img');
         pokemonImage.src = pokemon.sprites.front_default;
       
-
-        // Create a span element for the Pokemon's name
-    
-    
-
-        // Append the image and name to the card
         pokemonCard.appendChild(pokemonImage);
-
-        // Append the Pokemon card to the listWrapper
         listWrapper.appendChild(pokemonCard);
 
         console.log(`Pokemon details for ID ${pokemonId}:`, pokemon);
@@ -198,41 +183,29 @@ async function fetchPokemonDetails(pokemonId) {
     }
 }
 
-// Add this script to your existing JavaScript
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Retrieve party data from localStorage
     const dreamTeamData = JSON.parse(localStorage.getItem('dream-team')) || [];
 
-    // Get the container where Pokemon cards will be displayed
     const listWrapper = document.querySelector('.dream-team-pokemon-list');
 
-    // Check if there are Pokemon IDs in the partyData
     if (dreamTeamData.length > 0) {
-        // Iterate through each Pokemon ID in the partyData
         dreamTeamData.forEach((pokemonId) => {
-            // Fetch Pokemon details using the ID and display them on the party page
             fetchPokemonDetails(pokemonId, listWrapper);
         });
     } else {
-        // Handle the case when the party is empty
         console.log('The dream team is empty.');
     }
-
     const clearDreamTeamButton = document.querySelector('.clear-button');
     clearDreamTeamButton.addEventListener('click', clearDreamTeam);
 });
 
-// ... (other code)
 
 function clearDreamTeam() {
-    // Your existing logic to clear local storage
     console.log('Clearing dream team Data');
     localStorage.removeItem('dream-team');
     localStorage.setItem('isDreamTeamCleared', 'true');
 
-
-    // Clear all Pokemon sprites from the current page
     const dreamTeamPokemonList = document.querySelector('.dream-team-pokemon-list');
     dreamTeamPokemonList.innerHTML = '';
 
@@ -241,9 +214,7 @@ function clearDreamTeam() {
 
 const pokeballBackBtn = document.querySelector('.pokeball-back-btn');
 
-// Add click event listener
 pokeballBackBtn.addEventListener('click', () => {
-  // Redirect to the home page (you should replace 'index.html' with the actual home page file)
   window.location.href = 'index.html';
 });
 

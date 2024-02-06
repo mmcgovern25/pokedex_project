@@ -117,10 +117,8 @@ pokemonListItems.forEach((pokemon) => {
   });
 });
 
-
-// Assuming you have a reference to the "Party: Top 6 All Time" button
 const viewParty = document.querySelector('.view-party-link');
-const viewPartyText = document.querySelector('.view-party'); // Replace 'party-button' with the actual ID or class of your button
+const viewPartyText = document.querySelector('.view-party'); 
 
 viewParty.addEventListener('click', navigateToParty);
 viewPartyText.addEventListener('click', navigateToParty);
@@ -130,7 +128,7 @@ function navigateToParty() {
 }
 
 const viewDreamTeam = document.querySelector('.dream-team-link');
-const viewDreamTeamText = document.querySelector('.dream-team'); // Replace 'party-button' with the actual ID or class of your button
+const viewDreamTeamText = document.querySelector('.dream-team');
 
 viewDreamTeam.addEventListener('click', navigateToDreamTeam);
 viewDreamTeamText.addEventListener('click', navigateToDreamTeam);
@@ -139,9 +137,8 @@ function navigateToDreamTeam() {
     window.location.href = 'dream-team.html';
 }
 
-
 const viewBoxOne = document.querySelector('.box-1-link');
-const viewBoxOneText = document.querySelector('.box-1'); // Replace 'party-button' with the actual ID or class of your button
+const viewBoxOneText = document.querySelector('.box-1'); 
 
 viewBoxOne.addEventListener('click', navigateToBoxOne);
 viewBoxOneText.addEventListener('click', navigateToBoxOne);
@@ -161,32 +158,16 @@ function navigateToMtBattle() {
     window.location.href = 'mt-battle.html';
 }
 
-
-// party.js
-
-// ... (other code)
-
 async function fetchPokemonDetails(pokemonId) {
     try {
         const pokemon = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonId}`).then((res) => res.json());
 
-        // Create a div element to represent the Pokemon card
         const pokemonCard = document.createElement('div');
-        pokemonCard.classList.add('pokemon-card'); // Add a class for styling
+        pokemonCard.classList.add('pokemon-card'); 
 
-        // Create an image element for the Pokemon's sprite
         const pokemonImage = document.createElement('img');
         pokemonImage.src = pokemon.sprites.front_default;
-      
-
-        // Create a span element for the Pokemon's name
-    
-    
-
-        // Append the image and name to the card
         pokemonCard.appendChild(pokemonImage);
-
-        // Append the Pokemon card to the listWrapper
         listWrapper.appendChild(pokemonCard);
 
         console.log(`Pokemon details for ID ${pokemonId}:`, pokemon);
@@ -195,24 +176,17 @@ async function fetchPokemonDetails(pokemonId) {
     }
 }
 
-// Add this script to your existing JavaScript
-
 document.addEventListener("DOMContentLoaded", () => {
-    // Retrieve party data from localStorage
-    const boxOneData = JSON.parse(localStorage.getItem('box-one')) || [];
 
-    // Get the container where Pokemon cards will be displayed
+    const boxOneData = JSON.parse(localStorage.getItem('box-one')) || [];
     const listWrapper = document.querySelector('.box-one-pokemon-list');
 
-    // Check if there are Pokemon IDs in the partyData
     if (boxOneData.length > 0) {
-        // Iterate through each Pokemon ID in the partyData
+
         boxOneData.forEach((pokemonId) => {
-            // Fetch Pokemon details using the ID and display them on the party page
             fetchPokemonDetails(pokemonId, listWrapper);
         });
     } else {
-        // Handle the case when the party is empty
         console.log('box one is empty.');
     }
 
@@ -220,16 +194,12 @@ document.addEventListener("DOMContentLoaded", () => {
     clearBoxOneButton.addEventListener('click', clearBoxOne);
 });
 
-// ... (other code)
-
 function clearBoxOne() {
-    // Your existing logic to clear local storage
     console.log('Clearing Box One Data');
     localStorage.removeItem('box-one');
     localStorage.setItem('isBoxOneCleared', 'true');
 
     console.log('Box One Data Cleared!');
-    // Clear all Pokemon sprites from the current page
     const boxOnePokemonList = document.querySelector('.box-one-pokemon-list');
     boxOnePokemonList.innerHTML = '';
 
@@ -238,9 +208,7 @@ function clearBoxOne() {
 
 const pokeballBackBtn = document.querySelector('.pokeball-back-btn');
 
-// Add click event listener
 pokeballBackBtn.addEventListener('click', () => {
-  // Redirect to the home page (you should replace 'index.html' with the actual home page file)
   window.location.href = 'index.html';
 });
 

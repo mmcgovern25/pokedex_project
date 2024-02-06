@@ -107,20 +107,18 @@ const pokemonListItems = document.querySelectorAll('.list-item');
 pokemonListItems.forEach((pokemon) => {
   pokemon.addEventListener('mouseover', () => {
     const pokemonType = pokemon.dataset.pokemonType;
-    const typeColor = getTypeColor(pokemonType); // Function to get color based on type
+    const typeColor = getTypeColor(pokemonType); 
     document.documentElement.style.setProperty('--hover-background-color', typeColor);
   });
 
   pokemon.addEventListener('mouseout', () => {
-    // Reset background color on mouse out
     document.documentElement.style.setProperty('--hover-background-color', '');
   });
 });
 
 
-// Assuming you have a reference to the "Party: Top 6 All Time" button
 const viewParty = document.querySelector('.view-party-link');
-const viewPartyText = document.querySelector('.view-party'); // Replace 'party-button' with the actual ID or class of your button
+const viewPartyText = document.querySelector('.view-party'); 
 
 viewParty.addEventListener('click', navigateToParty);
 viewPartyText.addEventListener('click', navigateToParty);
@@ -130,7 +128,7 @@ function navigateToParty() {
 }
 
 const viewDreamTeam = document.querySelector('.dream-team-link');
-const viewDreamTeamText = document.querySelector('.dream-team'); // Replace 'party-button' with the actual ID or class of your button
+const viewDreamTeamText = document.querySelector('.dream-team'); 
 
 viewDreamTeam.addEventListener('click', navigateToDreamTeam);
 viewDreamTeamText.addEventListener('click', navigateToDreamTeam);
@@ -141,7 +139,7 @@ function navigateToDreamTeam() {
 
 
 const viewBoxOne = document.querySelector('.box-1-link');
-const viewBoxOneText = document.querySelector('.box-1'); // Replace 'party-button' with the actual ID or class of your button
+const viewBoxOneText = document.querySelector('.box-1'); 
 
 viewBoxOne.addEventListener('click', navigateToBoxOne);
 viewBoxOneText.addEventListener('click', navigateToBoxOne);
@@ -152,7 +150,7 @@ function navigateToBoxOne() {
 
 
 const viewMtBattle = document.querySelector('.mt-battle-link');
-const viewMtBattleText = document.querySelector('.mt-battle'); // Replace 'party-button' with the actual ID or class of your button
+const viewMtBattleText = document.querySelector('.mt-battle'); 
 
 viewMtBattle.addEventListener('click', navigateToMtBattle);
 viewMtBattleText.addEventListener('click', navigateToMtBattle);
@@ -162,57 +160,35 @@ function navigateToMtBattle() {
 }
 
 
-// party.js
-
-// ... (other code)
-
 async function fetchPokemonDetails(pokemonId) {
     try {
         const pokemon = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonId}`).then((res) => res.json());
 
-        // Create a div element to represent the Pokemon card
         const pokemonCard = document.createElement('div');
-        pokemonCard.classList.add('pokemon-card'); // Add a class for styling
+        pokemonCard.classList.add('pokemon-card'); 
 
-        // Create an image element for the Pokemon's sprite
         const pokemonImage = document.createElement('img');
         pokemonImage.src = pokemon.sprites.front_default;
-      
-
-        // Create a span element for the Pokemon's name
-    
-    
-
-        // Append the image and name to the card
         pokemonCard.appendChild(pokemonImage);
-
-        // Append the Pokemon card to the listWrapper
         listWrapper.appendChild(pokemonCard);
-
         console.log(`Pokemon details for ID ${pokemonId}:`, pokemon);
     } catch (error) {
         console.error(`An error occurred while fetching Pokemon details for ID ${pokemonId}:`, error);
     }
 }
 
-// Add this script to your existing JavaScript
-
 document.addEventListener("DOMContentLoaded", () => {
-    // Retrieve party data from localStorage
+
     const mtBattleData = JSON.parse(localStorage.getItem('mt-battle')) || [];
 
-    // Get the container where Pokemon cards will be displayed
     const listWrapper = document.querySelector('.mt-battle-pokemon-list');
 
-    // Check if there are Pokemon IDs in the partyData
     if (mtBattleData.length > 0) {
-        // Iterate through each Pokemon ID in the partyData
         mtBattleData.forEach((pokemonId) => {
-            // Fetch Pokemon details using the ID and display them on the party page
             fetchPokemonDetails(pokemonId, listWrapper);
         });
     } else {
-        // Handle the case when the party is empty
+
         console.log('mt battle is empty.');
     }
 
@@ -220,16 +196,13 @@ document.addEventListener("DOMContentLoaded", () => {
     clearMtBattleButton.addEventListener('click', clearMtBattle);
 });
 
-// ... (other code)
 
 function clearMtBattle() {
-    // Your existing logic to clear local storage
     console.log('Clearing mt battle data');
     localStorage.removeItem('mt-battle');
     localStorage.setItem('isMtBattleCleared', 'true');
 
     console.log('Mt Battle Data Cleared!');
-    // Clear all Pokemon sprites from the current page
     const mtBattlePokemonList = document.querySelector('.mt-battle-pokemon-list');
     mtBattlePokemonList.innerHTML = '';
 
@@ -238,8 +211,6 @@ function clearMtBattle() {
 
 const pokeballBackBtn = document.querySelector('.pokeball-back-btn');
 
-// Add click event listener
 pokeballBackBtn.addEventListener('click', () => {
-  // Redirect to the home page (you should replace 'index.html' with the actual home page file)
   window.location.href = 'index.html';
 });

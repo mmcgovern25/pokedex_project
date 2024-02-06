@@ -54,7 +54,7 @@ body {
   }
   
   @media screen and (min-width: 860px) {
-    /* Adjust styles for screens with a minimum width of 768 pixels */
+    
     .mt-battle-pokemon-list {
       min-height: calc(85% - 1rem);
     }
