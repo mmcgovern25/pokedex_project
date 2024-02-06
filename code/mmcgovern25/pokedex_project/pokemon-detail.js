@@ -39,9 +39,8 @@ async function loadPokemon(id) {
 
     const storedScrollPosition = localStorage.getItem('scrollPosition');
 
-    // Check if there's a stored scroll position
     if (storedScrollPosition) {
-      // Scroll to the stored position
+
       window.scrollTo(0, parseInt(storedScrollPosition));
     }
 
@@ -290,36 +289,25 @@ function getEnglishFlavorText(pokemonSpecies) {
 }
 
 
-// Assuming you have a reference to the "Add to Party" button
-// Add click event listener to the "Add to Party" button
-// Assuming you have a reference to the "Add to Party" button
 const addToPartyButton = document.querySelector('.party-btn');
-
-// Add click event listener to the "Add to Party" button
 addToPartyButton.addEventListener('click', () => addPokemonToParty(currentPokemonId));
 
 async function addPokemonToParty(pokemonId) {
-  // Retrieve existing party data or initialize an empty Set
+ 
   const partyData = new Set(JSON.parse(localStorage.getItem('party')) || []);
 
   console.log('Current party data before checking length:', partyData);
   console.log('Party length:', partyData.size);
   console.log('Pokemon ID:', pokemonId);
 
-  // Check if the selected Pokemon is not already in the party
+
   if (!partyData.has(pokemonId)) {
-    // Check if the party has room for more Pokemon
     if (partyData.size < 6) {
-      // Add the Pokemon ID to the party data
+      
       partyData.add(pokemonId);
-
-      // Save the updated party data to localStorage
       localStorage.setItem('party', JSON.stringify(Array.from(partyData)));
-
-      // Log success or handle it in your own way
       console.log(`Pokemon with ID ${pokemonId} added to the party!`);
 
-      // Fetch and log the Pokemon details
       const pokemonDetails = await fetchPokemonDetails(pokemonId);
       const capitalizedPokemonName = capitalizeFirstLetter(pokemonDetails.name);
       const message1 = `${capitalizedPokemonName} has been added to your party!`;
@@ -330,7 +318,7 @@ async function addPokemonToParty(pokemonId) {
         icon: 'success',
         confirmButtonText: 'OK',
         customClass: {
-          popup: 'custom-swal-popup', // Add your custom CSS class
+          popup: 'custom-swal-popup', 
         },
       });
       console.log(`Pokemon details for ID ${pokemonId}:`, pokemonDetails);
@@ -343,7 +331,7 @@ async function addPokemonToParty(pokemonId) {
         icon: 'error',
         confirmButtonText: 'OK',
         customClass: {
-          popup: 'custom-swal-popup-error', // Add your custom CSS class for error
+          popup: 'custom-swal-popup-error', 
         },
       });
 
@@ -370,11 +358,10 @@ async function addPokemonToParty(pokemonId) {
 
 const addToDreamTeamButton = document.querySelector('.dream-team-btn');
 
-// Add click event listener to the "Add to Dream Team" button
 addToDreamTeamButton.addEventListener('click', () => addPokemonToDreamTeam(currentPokemonId));
 
 async function addPokemonToDreamTeam(pokemonId) {
-  // Retrieve existing dream team data or initialize an empty array
+
   const dreamTeamData = JSON.parse(localStorage.getItem('dream-team')) || [];
 
   console.log('Current dream team data before checking length:', dreamTeamData);
@@ -382,18 +369,12 @@ async function addPokemonToDreamTeam(pokemonId) {
   console.log('Pokemon ID:', pokemonId);
 
   if (dreamTeamData.length < 15) {
-    // Check if the selected Pokemon is not already in the dream team
     if (!dreamTeamData.includes(pokemonId)) {
-      // Add the Pokemon ID to the dream team data
       dreamTeamData.push(pokemonId);
-
-      // Save the updated dream team data to localStorage
       localStorage.setItem('dream-team', JSON.stringify(dreamTeamData));
 
-      // Log success or handle it in your own way
       console.log(`Pokemon with ID ${pokemonId} added to the dream team!`);
-      
-      // Fetch and log the Pokemon details
+
       const pokemonDetails = await fetchPokemonDetails(pokemonId);
       const capitalizedPokemonName = capitalizeFirstLetter(pokemonDetails.name);
       const message = `${capitalizedPokemonName} has been added to your dream team!`;
@@ -404,7 +385,7 @@ async function addPokemonToDreamTeam(pokemonId) {
         icon: 'success',
         confirmButtonText: 'OK',
         customClass: {
-          popup: 'custom-swal-popup', // Add your custom CSS class
+          popup: 'custom-swal-popup', 
         },
       });
       console.log(`Pokemon details for ID ${pokemonId}:`, pokemonDetails);
@@ -417,7 +398,7 @@ async function addPokemonToDreamTeam(pokemonId) {
         icon: 'error',
         confirmButtonText: 'OK',
         customClass: {
-          popup: 'custom-swal-popup-error', // Add your custom CSS class for error
+          popup: 'custom-swal-popup-error',
         },
       });
 
@@ -432,7 +413,7 @@ async function addPokemonToDreamTeam(pokemonId) {
       icon: 'error',
       confirmButtonText: 'OK',
       customClass: {
-        popup: 'custom-swal-popup-error', // Add your custom CSS class for error
+        popup: 'custom-swal-popup-error', 
       },
     });
 
@@ -446,11 +427,10 @@ async function addPokemonToDreamTeam(pokemonId) {
 
 const addToBoxOneButton = document.querySelector('.box-one-btn');
 
-// Add click event listener to the "Add to Box 1" button
+
 addToBoxOneButton.addEventListener('click', () => addPokemonToBoxOne(currentPokemonId));
 
 async function addPokemonToBoxOne(pokemonId) {
-  // Retrieve existing box 1 data or initialize an empty array
   const boxOneData = JSON.parse(localStorage.getItem('box-one')) || [];
 
   console.log('Current Box 1 data before checking length:', boxOneData);
@@ -458,18 +438,13 @@ async function addPokemonToBoxOne(pokemonId) {
   console.log('Pokemon ID:', pokemonId);
 
   if (boxOneData.length < 30) {
-    // Check if the selected Pokemon is not already in Box 1
     if (!boxOneData.includes(pokemonId)) {
-      // Add the Pokemon ID to Box 1 data
       boxOneData.push(pokemonId);
 
-      // Save the updated Box 1 data to localStorage
       localStorage.setItem('box-one', JSON.stringify(boxOneData));
 
-      // Log success or handle it in your own way
       console.log(`Pokemon with ID ${pokemonId} added to Box 1!`);
       
-      // Fetch and log the Pokemon details
       const pokemonDetails = await fetchPokemonDetails(pokemonId);
       const capitalizedPokemonName = capitalizeFirstLetter(pokemonDetails.name);
       const message = `${capitalizedPokemonName} has been added to Box 1!`;
@@ -480,7 +455,7 @@ async function addPokemonToBoxOne(pokemonId) {
         icon: 'success',
         confirmButtonText: 'OK',
         customClass: {
-          popup: 'custom-swal-popup', // Add your custom CSS class
+          popup: 'custom-swal-popup', 
         },
       });
       console.log(`Pokemon details for ID ${pokemonId}:`, pokemonDetails);
@@ -493,7 +468,7 @@ async function addPokemonToBoxOne(pokemonId) {
         icon: 'error',
         confirmButtonText: 'OK',
         customClass: {
-          popup: 'custom-swal-popup-error', // Add your custom CSS class for error
+          popup: 'custom-swal-popup-error', 
         },
       });
 
@@ -508,7 +483,7 @@ async function addPokemonToBoxOne(pokemonId) {
       icon: 'error',
       confirmButtonText: 'OK',
       customClass: {
-        popup: 'custom-swal-popup-error', // Add your custom CSS class for error
+        popup: 'custom-swal-popup-error', 
       },
     });
 
@@ -522,11 +497,10 @@ async function addPokemonToBoxOne(pokemonId) {
 
 const addToMtBattleButton = document.querySelector('.mt-battle-btn');
 
-// Add click event listener to the "Add to Mt. Battle" button
+
 addToMtBattleButton.addEventListener('click', () => addPokemonToMtBattle(currentPokemonId));
 
 async function addPokemonToMtBattle(pokemonId) {
-  // Retrieve existing Mt. Battle data or initialize an empty array
   const mtBattleData = JSON.parse(localStorage.getItem('mt-battle')) || [];
 
   console.log('Current Mt. Battle data before checking length:', mtBattleData);
@@ -534,18 +508,13 @@ async function addPokemonToMtBattle(pokemonId) {
   console.log('Pokemon ID:', pokemonId);
 
   if (mtBattleData.length < 100) {
-    // Check if the selected Pokemon is not already in Mt. Battle
     if (!mtBattleData.includes(pokemonId)) {
-      // Add the Pokemon ID to Mt. Battle data
       mtBattleData.push(pokemonId);
 
-      // Save the updated Mt. Battle data to localStorage
       localStorage.setItem('mt-battle', JSON.stringify(mtBattleData));
 
-      // Log success or handle it in your own way
       console.log(`Pokemon with ID ${pokemonId} added to Mt. Battle!`);
       
-      // Fetch and log the Pokemon details
       const pokemonDetails = await fetchPokemonDetails(pokemonId);
       const capitalizedPokemonName = capitalizeFirstLetter(pokemonDetails.name);
       const message = `${capitalizedPokemonName} has been added to Mt. Battle!`;
@@ -556,7 +525,7 @@ async function addPokemonToMtBattle(pokemonId) {
         icon: 'success',
         confirmButtonText: 'OK',
         customClass: {
-          popup: 'custom-swal-popup', // Add your custom CSS class
+          popup: 'custom-swal-popup',
         },
       });
       console.log(`Pokemon details for ID ${pokemonId}:`, pokemonDetails);
@@ -569,7 +538,7 @@ async function addPokemonToMtBattle(pokemonId) {
         icon: 'error',
         confirmButtonText: 'OK',
         customClass: {
-          popup: 'custom-swal-popup-error', // Add your custom CSS class for error
+          popup: 'custom-swal-popup-error',
         },
       });
 
@@ -584,7 +553,7 @@ async function addPokemonToMtBattle(pokemonId) {
       icon: 'error',
       confirmButtonText: 'OK',
       customClass: {
-        popup: 'custom-swal-popup-error', // Add your custom CSS class for error
+        popup: 'custom-swal-popup-error', 
       },
     });
 
@@ -594,10 +563,6 @@ async function addPokemonToMtBattle(pokemonId) {
     console.log('Pokemon ID:', pokemonId);
   }
 }
-
-
-
-
 
 async function fetchPokemonDetails(pokemonId) {
   try {
@@ -610,18 +575,6 @@ async function fetchPokemonDetails(pokemonId) {
   }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  // ... rest of your existing code
-
-  // Retrieve the stored scroll position
-  const storedScrollPosition = localStorage.getItem('scrollPosition');
-
-  // Check if there's a stored scroll position
-  if (storedScrollPosition) {
-    // Scroll to the stored position
-    window.scrollTo(0, parseInt(storedScrollPosition));
-  }
-});
 
 function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);

@@ -14,11 +14,12 @@ fetch(`https://pokeapi.co/api/v2/pokemon?limit=${MAX_POKEMON}`)
     displayPokemons(allPokemons);
   });
 
-  listWrapper.addEventListener("scroll", () => {
-    localStorage.setItem('scrollPosition', listWrapper.scrollTop);
+listWrapper.addEventListener("scroll", () => {
+  const scrollPosition = listWrapper.scrollTop;
+  localStorage.setItem('scrollPosition', scrollPosition);
 
-    console.log('Scroll position set to:', scrollPosition);
-  });
+  console.log('Scroll position set to:', scrollPosition);
+});
 
 
 async function fetchPokemonDataBeforeRedirect(id) {
@@ -38,6 +39,7 @@ async function fetchPokemonDataBeforeRedirect(id) {
     console.error("Failed to fetch Pokemon data before redirect");
   }
 }
+
 
 function displayPokemons(pokemon) {
   listWrapper.innerHTML = "";
