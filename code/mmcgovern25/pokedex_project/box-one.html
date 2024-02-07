@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="./pokemon.js" defer></script>
-    <script src="./search.js" defer></script>
-    <script src="redirect.js"></script>
-  </head>
-  <body>
-    <main class="main">
+    <link rel="stylesheet" href="box-one-styles.css" />
+    <script src="./box-one.js" defer></script>
+</head>
+<body class="dream-bg">
+    <main class="main box-one-bg">
       <header class="header home">
         <div class="container">
           <div class="logo-wrapper">
-            <img src="./assets/pokeball.svg" alt="pokeball" class="index-pokeball-back-btn" />
-            <h1>hey mom</h1>
+            <img src="./assets/pokeball.svg" alt="pokeball" class="pokeball-back-btn" />
+            <h1>Box 1</h1>
           </div>
           <div class="search-wrapper">
             <div class="search-wrap">
@@ -41,6 +40,7 @@
               <div class="sort-wrap">
                 <img
                   src="./assets/sorting.svg"
+                  src
                   alt="sorting"
                   class="sort-icon"
                   id="sort-icon"
@@ -82,7 +82,7 @@
                     </li>
                     <li>
                       <span class="dream-team">Dream Team:</span>
-                      <a class="dream-team-link">Top 12 All Time</a>
+                      <a class="dream-team-link">Top 15 All Time</a>
                     </li>
                     <li>
                       <span class="box-1">Box 1:</span>
@@ -90,48 +90,24 @@
                     </li>
                     <li>
                       <span class="mt-battle">Mt. Battle:</span>
-                      <a class="mt-battle-link">Top 100 All Time</a>
+                      <a class="mt-battle-link">Top 50 All Time</a>
                     </li>
                   </ul>
                 </li>
               </ul>
             </nav>
-
+            <button class="clear-button" onclick="clearParty()">Clear Box 1</button>
             </div>
           </div>
           </div>
         </div>
       </header>
-      <section class="pokemon-list">
+      <section class="box-one-pokemon-list">
         <div class="container">
-          <div class="list-wrapper">
-          </div>
+          <div class="list-wrapper"></div>
         </div>
         <div id="not-found-message">Pokemon not found</div>
       </section>
     </main>
-    <script type="module">
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
-      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
-
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      const firebaseConfig = {
-        apiKey: "AIzaSyCnqBdXsBfoOXXzcN4COzK5K4gKqd9rGtU",
-        authDomain: "pokemon-power-rankings.firebaseapp.com",
-        projectId: "pokemon-power-rankings",
-        storageBucket: "pokemon-power-rankings.appspot.com",
-        messagingSenderId: "733109879965",
-        appId: "1:733109879965:web:bd567e265b9f1b41ed4074",
-        measurementId: "G-06M3FVVBJQ"
-      };
-
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-      const analytics = getAnalytics(app);
-    </script>
   </body>
 </html>
