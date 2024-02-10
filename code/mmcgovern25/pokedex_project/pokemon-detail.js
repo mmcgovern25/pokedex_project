@@ -19,11 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (storedScrollPosition) {
           window.scrollTo(0, parseInt(storedScrollPosition));
-<<<<<<< HEAD
           console.log('Restored scroll position:', storedScrollPosition);
-=======
-          console.log('Restored scroll position:', storedScrollPosition); 
->>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
       }
 
       window.location.href = './index.html';
@@ -297,11 +293,6 @@ const addToPartyButton = document.querySelector('.party-btn');
 addToPartyButton.addEventListener('click', () => addPokemonToParty(currentPokemonId));
 
 async function addPokemonToParty(pokemonId) {
-<<<<<<< HEAD
-
-=======
- 
->>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
   const partyData = new Set(JSON.parse(localStorage.getItem('party')) || []);
 
   console.log('Current party data before checking length:', partyData);
@@ -311,11 +302,6 @@ async function addPokemonToParty(pokemonId) {
 
   if (!partyData.has(pokemonId)) {
     if (partyData.size < 6) {
-<<<<<<< HEAD
-
-=======
-      
->>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
       partyData.add(pokemonId);
       localStorage.setItem('party', JSON.stringify(Array.from(partyData)));
       console.log(`Pokemon with ID ${pokemonId} added to the party!`);
@@ -330,11 +316,7 @@ async function addPokemonToParty(pokemonId) {
         icon: 'success',
         confirmButtonText: 'OK',
         customClass: {
-<<<<<<< HEAD
           popup: 'custom-swal-popup',
-=======
-          popup: 'custom-swal-popup', 
->>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
         },
       });
       console.log(`Pokemon details for ID ${pokemonId}:`, pokemonDetails);
@@ -347,11 +329,7 @@ async function addPokemonToParty(pokemonId) {
         icon: 'error',
         confirmButtonText: 'OK',
         customClass: {
-<<<<<<< HEAD
           popup: 'custom-swal-popup-error',
-=======
-          popup: 'custom-swal-popup-error', 
->>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
         },
       });
 
@@ -398,32 +376,18 @@ async function addPokemonToDreamTeam(pokemonId) {
       const pokemonDetails = await fetchPokemonDetails(pokemonId);
       const capitalizedPokemonName = capitalizeFirstLetter(pokemonDetails.name);
       const message = `${capitalizedPokemonName} has been added to your dream team!`;
-<<<<<<< HEAD
-
-=======
-      
->>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
       Swal.fire({
         title: 'Success!',
         text: message,
         icon: 'success',
         confirmButtonText: 'OK',
         customClass: {
-<<<<<<< HEAD
           popup: 'custom-swal-popup',
-=======
-          popup: 'custom-swal-popup', 
->>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
         },
       });
       console.log(`Pokemon details for ID ${pokemonId}:`, pokemonDetails);
     } else {
       const message = 'This Pokemon is already in your dream team!';
-<<<<<<< HEAD
-
-=======
-      
->>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
       Swal.fire({
         title: 'Error!',
         text: message,
@@ -438,22 +402,13 @@ async function addPokemonToDreamTeam(pokemonId) {
     }
   } else {
     const message = 'Dream Team is already full! Cannot add more Pokemon.';
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
     Swal.fire({
       title: 'Error!',
       text: message,
       icon: 'error',
       confirmButtonText: 'OK',
       customClass: {
-<<<<<<< HEAD
         popup: 'custom-swal-popup-error',
-=======
-        popup: 'custom-swal-popup-error', 
->>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
       },
     });
 
@@ -484,51 +439,30 @@ async function addPokemonToBoxOne(pokemonId) {
       localStorage.setItem('box-one', JSON.stringify(boxOneData));
 
       console.log(`Pokemon with ID ${pokemonId} added to Box 1!`);
-<<<<<<< HEAD
 
       const pokemonDetails = await fetchPokemonDetails(pokemonId);
       const capitalizedPokemonName = capitalizeFirstLetter(pokemonDetails.name);
       const message = `${capitalizedPokemonName} has been added to Box 1!`;
 
-=======
-      
-      const pokemonDetails = await fetchPokemonDetails(pokemonId);
-      const capitalizedPokemonName = capitalizeFirstLetter(pokemonDetails.name);
-      const message = `${capitalizedPokemonName} has been added to Box 1!`;
-      
->>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
       Swal.fire({
         title: 'Success!',
         text: message,
         icon: 'success',
         confirmButtonText: 'OK',
         customClass: {
-<<<<<<< HEAD
           popup: 'custom-swal-popup',
-=======
-          popup: 'custom-swal-popup', 
->>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
         },
       });
       console.log(`Pokemon details for ID ${pokemonId}:`, pokemonDetails);
     } else {
       const message = 'This Pokemon is already in Box 1!';
-<<<<<<< HEAD
-
-=======
-      
->>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
       Swal.fire({
         title: 'Error!',
         text: message,
         icon: 'error',
         confirmButtonText: 'OK',
         customClass: {
-<<<<<<< HEAD
           popup: 'custom-swal-popup-error',
-=======
-          popup: 'custom-swal-popup-error', 
->>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
         },
       });
 
@@ -536,22 +470,14 @@ async function addPokemonToBoxOne(pokemonId) {
     }
   } else {
     const message = 'Box 1 is already full! Cannot add more Pokemon.';
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
     Swal.fire({
       title: 'Error!',
       text: message,
       icon: 'error',
       confirmButtonText: 'OK',
       customClass: {
-<<<<<<< HEAD
         popup: 'custom-swal-popup-error',
-=======
-        popup: 'custom-swal-popup-error', 
->>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
       },
     });
 
@@ -582,19 +508,11 @@ async function addPokemonToMtBattle(pokemonId) {
       localStorage.setItem('mt-battle', JSON.stringify(mtBattleData));
 
       console.log(`Pokemon with ID ${pokemonId} added to Mt. Battle!`);
-<<<<<<< HEAD
 
       const pokemonDetails = await fetchPokemonDetails(pokemonId);
       const capitalizedPokemonName = capitalizeFirstLetter(pokemonDetails.name);
       const message = `${capitalizedPokemonName} has been added to Mt. Battle!`;
 
-=======
-      
-      const pokemonDetails = await fetchPokemonDetails(pokemonId);
-      const capitalizedPokemonName = capitalizeFirstLetter(pokemonDetails.name);
-      const message = `${capitalizedPokemonName} has been added to Mt. Battle!`;
-      
->>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
       Swal.fire({
         title: 'Success!',
         text: message,
@@ -607,11 +525,7 @@ async function addPokemonToMtBattle(pokemonId) {
       console.log(`Pokemon details for ID ${pokemonId}:`, pokemonDetails);
     } else {
       const message = 'This Pokemon is already in Mt. Battle!';
-<<<<<<< HEAD
 
-=======
-      
->>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
       Swal.fire({
         title: 'Error!',
         text: message,
@@ -626,22 +540,14 @@ async function addPokemonToMtBattle(pokemonId) {
     }
   } else {
     const message = 'Mt. Battle is already full! Cannot add more Pokemon.';
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
     Swal.fire({
       title: 'Error!',
       text: message,
       icon: 'error',
       confirmButtonText: 'OK',
       customClass: {
-<<<<<<< HEAD
         popup: 'custom-swal-popup-error',
-=======
-        popup: 'custom-swal-popup-error', 
->>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
       },
     });
 
@@ -667,7 +573,3 @@ async function fetchPokemonDetails(pokemonId) {
 function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9

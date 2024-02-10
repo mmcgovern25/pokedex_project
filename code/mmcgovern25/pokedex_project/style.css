@@ -142,11 +142,7 @@ body {
 }
 
 .search-wrap > input {
-<<<<<<< HEAD
   margin-right: 5px;
-=======
-  margin-right: 5px; 
->>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
   width: 50%;
   /* Adjust the margin as needed */
 }
@@ -312,11 +308,7 @@ body {
   background-color: var(--grayscale-white);
   box-shadow: var(--drop-shadow-inner);
   border-radius: 0.75rem;
-<<<<<<< HEAD
   height: 100vh;
-=======
-  height: 100vh; 
->>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
   width: calc(100% - 1rem);
 }
 
@@ -774,29 +766,13 @@ a.button {
   filter: brightness(70%);
   box-shadow: 0px 1px 3px 2px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-<<<<<<< HEAD
-
-=======
-  
->>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
 }
 
 .pokemon-list .list-item:hover {
   transition: background-color 0.3s ease;
-<<<<<<< HEAD
   background-color: red;
-=======
-  background-color: red; 
->>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
-}
-
-.pokemon-list .list-item:hover .name-wrap {
-  transition: background-color 0.3s ease;
-<<<<<<< HEAD
   background-color: red;
-=======
-  background-color: red; 
->>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
+  background-color: red;
 }
 
 
@@ -813,11 +789,6 @@ a.button {
     width: 150px;
     height: 32px;
   }
-<<<<<<< HEAD
-
-=======
-  
->>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
 
 .clear-button:hover {
     filter: brightness(70%);
@@ -830,11 +801,7 @@ a.button {
 
 .clear-button p {
   font-size: var(--body3-font-size);
-<<<<<<< HEAD
   color: gray;
-=======
-  color: gray; 
->>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
   text-decoration: none;
 }
 
@@ -866,15 +833,9 @@ a.button {
 }
 
 .custom-swal-popup-error {
-<<<<<<< HEAD
   background-color: #ff3333;
   border-radius: 10px;
   color: #fff;
-=======
-  background-color: #ff3333; 
-  border-radius: 10px;
-  color: #fff; 
->>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
 }
 
 .body.box-one-page {

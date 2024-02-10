@@ -18,11 +18,6 @@
 }
 
 @media screen and (min-width: 860px) {
-<<<<<<< HEAD
-
-=======
-  
->>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
   .box-one-pokemon-list {
     min-height: calc(55% - 1rem);
   }

@@ -50,7 +50,6 @@ body {
     border-radius: 0.75rem;
     width: calc(100% - 1rem);
     margin-bottom: 100px;
-<<<<<<< HEAD
 
   }
 
@@ -60,14 +59,3 @@ body {
       min-height: calc(85% - 1rem);
     }
   }
-=======
-    
-  }
-  
-  @media screen and (min-width: 860px) {
-    
-    .mt-battle-pokemon-list {
-      min-height: calc(85% - 1rem);
-    }
-  }
->>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9

@@ -145,11 +145,7 @@ triggers.forEach(trigger => trigger.addEventListener('mouseleave', handleLeave))
 const pokemonListItems = document.querySelectorAll('.list-item');
 
 const viewParty = document.querySelector('.view-party-link');
-<<<<<<< HEAD
 const viewPartyText = document.querySelector('.view-party');
-=======
-const viewPartyText = document.querySelector('.view-party'); 
->>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
 
 viewParty.addEventListener('click', navigateToParty);
 viewPartyText.addEventListener('click', navigateToParty);
@@ -170,11 +166,7 @@ function navigateToDreamTeam() {
 
 
 const viewBoxOne = document.querySelector('.box-1-link');
-<<<<<<< HEAD
 const viewBoxOneText = document.querySelector('.box-1');
-=======
-const viewBoxOneText = document.querySelector('.box-1'); 
->>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
 
 viewBoxOne.addEventListener('click', navigateToBoxOne);
 viewBoxOneText.addEventListener('click', navigateToBoxOne);
@@ -185,11 +177,7 @@ function navigateToBoxOne() {
 
 
 const viewMtBattle = document.querySelector('.mt-battle-link');
-<<<<<<< HEAD
 const viewMtBattleText = document.querySelector('.mt-battle');
-=======
-const viewMtBattleText = document.querySelector('.mt-battle'); 
->>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
 
 viewMtBattle.addEventListener('click', navigateToMtBattle);
 viewMtBattleText.addEventListener('click', navigateToMtBattle);
@@ -207,7 +195,3 @@ indexPokeballBackBtn.addEventListener('click', () => {
 // ... (Previous code)
 
 // ... (existing JavaScript code) ...
-<<<<<<< HEAD
-=======
-// ... (existing JavaScript code) ...
->>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
