@@ -34,4 +34,8 @@ function handleSortIconOnClick() {
     .querySelector(".filter-wrapper")
     .classList.toggle("filter-wrapper-open");
   document.querySelector("body").classList.toggle("filter-wrapper-overlay");
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9

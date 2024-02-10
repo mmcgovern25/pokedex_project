@@ -16,7 +16,11 @@ fetch(`https://pokeapi.co/api/v2/pokemon?limit=${MAX_POKEMON}`)
 
 async function fetchPokemonDataBeforeRedirect(id) {
   try {
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
     const [pokemon, pokemonSpecies] = await Promise.all([
       fetch(`https://pokeapi.co/api/v2/pokemon/${id}`).then((res) =>
         res.json()
@@ -118,7 +122,11 @@ pokemonListItems.forEach((pokemon) => {
 });
 
 const viewParty = document.querySelector('.view-party-link');
+<<<<<<< HEAD
 const viewPartyText = document.querySelector('.view-party');
+=======
+const viewPartyText = document.querySelector('.view-party'); 
+>>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
 
 viewParty.addEventListener('click', navigateToParty);
 viewPartyText.addEventListener('click', navigateToParty);
@@ -138,7 +146,11 @@ function navigateToDreamTeam() {
 }
 
 const viewBoxOne = document.querySelector('.box-1-link');
+<<<<<<< HEAD
 const viewBoxOneText = document.querySelector('.box-1');
+=======
+const viewBoxOneText = document.querySelector('.box-1'); 
+>>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
 
 viewBoxOne.addEventListener('click', navigateToBoxOne);
 viewBoxOneText.addEventListener('click', navigateToBoxOne);
@@ -163,7 +175,11 @@ async function fetchPokemonDetails(pokemonId) {
         const pokemon = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonId}`).then((res) => res.json());
 
         const pokemonCard = document.createElement('div');
+<<<<<<< HEAD
         pokemonCard.classList.add('pokemon-card');
+=======
+        pokemonCard.classList.add('pokemon-card'); 
+>>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
 
         const pokemonImage = document.createElement('img');
         pokemonImage.src = pokemon.sprites.front_default;
@@ -211,3 +227,8 @@ const pokeballBackBtn = document.querySelector('.pokeball-back-btn');
 pokeballBackBtn.addEventListener('click', () => {
   window.location.href = 'index.html';
 });
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9

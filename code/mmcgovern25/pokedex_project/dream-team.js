@@ -16,7 +16,11 @@ fetch(`https://pokeapi.co/api/v2/pokemon?limit=${MAX_POKEMON}`)
 
 async function fetchPokemonDataBeforeRedirect(id) {
   try {
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
     const [pokemon, pokemonSpecies] = await Promise.all([
       fetch(`https://pokeapi.co/api/v2/pokemon/${id}`).then((res) =>
         res.json()
@@ -169,11 +173,19 @@ async function fetchPokemonDetails(pokemonId) {
         const pokemon = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonId}`).then((res) => res.json());
 
         const pokemonCard = document.createElement('div');
+<<<<<<< HEAD
         pokemonCard.classList.add('pokemon-card');
 
         const pokemonImage = document.createElement('img');
         pokemonImage.src = pokemon.sprites.front_default;
 
+=======
+        pokemonCard.classList.add('pokemon-card'); 
+
+        const pokemonImage = document.createElement('img');
+        pokemonImage.src = pokemon.sprites.front_default;
+      
+>>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
         pokemonCard.appendChild(pokemonImage);
         listWrapper.appendChild(pokemonCard);
 
@@ -217,3 +229,7 @@ const pokeballBackBtn = document.querySelector('.pokeball-back-btn');
 pokeballBackBtn.addEventListener('click', () => {
   window.location.href = 'index.html';
 });
+<<<<<<< HEAD
+=======
+
+>>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9

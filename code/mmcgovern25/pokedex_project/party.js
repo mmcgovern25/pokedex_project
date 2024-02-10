@@ -16,7 +16,11 @@ fetch(`https://pokeapi.co/api/v2/pokemon?limit=${MAX_POKEMON}`)
 
 async function fetchPokemonDataBeforeRedirect(id) {
   try {
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
     const [pokemon, pokemonSpecies] = await Promise.all([
       fetch(`https://pokeapi.co/api/v2/pokemon/${id}`).then((res) =>
         res.json()
@@ -119,7 +123,11 @@ pokemonListItems.forEach((pokemon) => {
 
 
 const viewParty = document.querySelector('.view-party-link');
+<<<<<<< HEAD
 const viewPartyText = document.querySelector('.view-party');
+=======
+const viewPartyText = document.querySelector('.view-party'); 
+>>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
 
 viewParty.addEventListener('click', navigateToParty);
 viewPartyText.addEventListener('click', navigateToParty);
@@ -129,7 +137,11 @@ function navigateToParty() {
 }
 
 const viewDreamTeam = document.querySelector('.dream-team-link');
+<<<<<<< HEAD
 const viewDreamTeamText = document.querySelector('.dream-team');
+=======
+const viewDreamTeamText = document.querySelector('.dream-team'); 
+>>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
 
 viewDreamTeam.addEventListener('click', navigateToDreamTeam);
 viewDreamTeamText.addEventListener('click', navigateToDreamTeam);
@@ -140,7 +152,11 @@ function navigateToDreamTeam() {
 
 
 const viewBoxOne = document.querySelector('.box-1-link');
+<<<<<<< HEAD
 const viewBoxOneText = document.querySelector('.box-1');
+=======
+const viewBoxOneText = document.querySelector('.box-1'); 
+>>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
 
 viewBoxOne.addEventListener('click', navigateToBoxOne);
 viewBoxOneText.addEventListener('click', navigateToBoxOne);
@@ -151,7 +167,11 @@ function navigateToBoxOne() {
 
 
 const viewMtBattle = document.querySelector('.mt-battle-link');
+<<<<<<< HEAD
 const viewMtBattleText = document.querySelector('.mt-battle');
+=======
+const viewMtBattleText = document.querySelector('.mt-battle'); 
+>>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
 viewMtBattle.addEventListener('click', navigateToMtBattle);
 viewMtBattleText.addEventListener('click', navigateToMtBattle);
 
@@ -166,7 +186,11 @@ async function fetchPokemonDetails(pokemonId) {
 
 
         const pokemonCard = document.createElement('div');
+<<<<<<< HEAD
         pokemonCard.classList.add('pokemon-card');
+=======
+        pokemonCard.classList.add('pokemon-card'); 
+>>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
 
         const pokemonImage = document.createElement('img');
         pokemonImage.src = pokemon.sprites.front_default;

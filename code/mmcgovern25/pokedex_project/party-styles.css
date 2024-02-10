@@ -1,4 +1,5 @@
 .party-bg {
+<<<<<<< HEAD
   background-image: url('../assets/pokemon-gym.png')
 }
 
@@ -17,3 +18,24 @@
     min-height: calc(20% - 1rem);
   }
 }
+=======
+    background-image: url('../assets/pokemon-gym.png')
+}
+
+.party-pokemon-list {
+    background-color: rgba(255, 255, 255, .8);
+    box-shadow: var(--drop-shadow-inner);
+    border-radius: 0.75rem;
+    min-height: calc(40% - 1rem);
+    width: calc(100% - 1rem);
+    max-height: 100px;
+  }
+  
+  @media screen and (min-width: 700px) {
+  
+    .party-pokemon-list {
+      min-height: calc(20% - 1rem);
+    }
+  }
+  
+>>>>>>> 892fb12bc5c324a5ba8de5ef9924b8978bc48bd9
